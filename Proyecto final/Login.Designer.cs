@@ -34,7 +34,7 @@ namespace Proyecto_final
             this.label4 = new System.Windows.Forms.Label();
             this.lbNombreUsuario = new System.Windows.Forms.Label();
             this.txtclave = new System.Windows.Forms.TextBox();
-            this.txtdocumento = new System.Windows.Forms.TextBox();
+            this.txtnomusuario = new System.Windows.Forms.TextBox();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -59,6 +59,7 @@ namespace Proyecto_final
             this.btncancelar.Text = "CANCELAR";
             this.btncancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btncancelar.UseVisualStyleBackColor = false;
+            this.btncancelar.Click += new System.EventHandler(this.btncancelar_Click);
             // 
             // btningresar
             // 
@@ -78,6 +79,7 @@ namespace Proyecto_final
             this.btningresar.Text = "INGRESAR";
             this.btningresar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btningresar.UseVisualStyleBackColor = false;
+            this.btningresar.Click += new System.EventHandler(this.btningresar_Click);
             // 
             // label4
             // 
@@ -105,12 +107,12 @@ namespace Proyecto_final
             this.txtclave.Size = new System.Drawing.Size(295, 22);
             this.txtclave.TabIndex = 13;
             // 
-            // txtdocumento
+            // txtnomusuario
             // 
-            this.txtdocumento.Location = new System.Drawing.Point(269, 45);
-            this.txtdocumento.Name = "txtdocumento";
-            this.txtdocumento.Size = new System.Drawing.Size(295, 22);
-            this.txtdocumento.TabIndex = 12;
+            this.txtnomusuario.Location = new System.Drawing.Point(269, 45);
+            this.txtnomusuario.Name = "txtnomusuario";
+            this.txtnomusuario.Size = new System.Drawing.Size(295, 22);
+            this.txtnomusuario.TabIndex = 12;
             // 
             // iconPictureBox1
             // 
@@ -158,12 +160,13 @@ namespace Proyecto_final
             this.Controls.Add(this.label4);
             this.Controls.Add(this.lbNombreUsuario);
             this.Controls.Add(this.txtclave);
-            this.Controls.Add(this.txtdocumento);
+            this.Controls.Add(this.txtnomusuario);
             this.Controls.Add(this.iconPictureBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -178,7 +181,7 @@ namespace Proyecto_final
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lbNombreUsuario;
         private System.Windows.Forms.TextBox txtclave;
-        private System.Windows.Forms.TextBox txtdocumento;
+        private System.Windows.Forms.TextBox txtnomusuario;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
