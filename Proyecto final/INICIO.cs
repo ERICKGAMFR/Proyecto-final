@@ -20,6 +20,8 @@ namespace Proyecto_final
         private static Form FormularioActivo = null;
         public INICIO()
         {
+            /*if (objUSUARIO == null) usuarioactual = new USUARIO() { NombreCompleto = "ADMIN PREDEFINIDO", id_usuario = 0};
+            else usuarioactual = objUSUARIO;*/
             InitializeComponent();
         }
 
@@ -35,7 +37,7 @@ namespace Proyecto_final
                 MenuActivo.BackColor = Color.White;
 
             }
-            menu.BackColor = Color.Silver;
+            menu.BackColor = Color.DarkGray;
             MenuActivo = menu;
 
             if (FormularioActivo != null)
@@ -47,10 +49,57 @@ namespace Proyecto_final
             formulario.TopLevel = false;
             formulario.FormBorderStyle = FormBorderStyle.None;
             formulario.Dock = DockStyle.Fill;
-            formulario.BackColor = Color.SteelBlue;
+            formulario.BackColor = Color.SlateGray;
 
             Contenedor.Controls.Add(formulario);
             formulario.Show();
+        }
+
+
+
+        private void btnsalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void menuusuarios_Click(object sender, EventArgs e)
+        {
+            Abrirformulario(menuusuarios, new frmUsuario());
+        }
+
+        private void submenuregitarventa_Click(object sender, EventArgs e)
+        {
+            Abrirformulario(menuventas, new frmVenta());
+        }
+
+        private void submenuverdetalleventa_Click(object sender, EventArgs e)
+        {
+            Abrirformulario(menuventas, new frmDetalleVenta());
+        }
+
+        private void menuvisitas_Click(object sender, EventArgs e)
+        {
+            Abrirformulario(menuvisitas, new  frmregistar_Visitantes());
+        }
+
+        private void menumiembros_Click(object sender, EventArgs e)
+        {
+            Abrirformulario(menumiembros, new frmMienbros());
+        }
+
+        private void submenucategoria_Click(object sender, EventArgs e)
+        {
+            Abrirformulario(menuinventario, new frmcategoria());
+        }
+
+        private void submenuproducto_Click(object sender, EventArgs e)
+        {
+            Abrirformulario(menuinventario, new frmProducto());
+        }
+
+        private void menureportes_Click(object sender, EventArgs e)
+        {
+            Abrirformulario(menureportes, new frmReportes());
         }
     }
 }
