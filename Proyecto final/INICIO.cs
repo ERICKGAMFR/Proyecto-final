@@ -17,6 +17,7 @@ namespace Proyecto_final
     {
        // private static USUARIO usuarioactual;
         private static IconMenuItem MenuActivo = null;
+        private static IconButton a = null;
         private static Form FormularioActivo = null;
         public INICIO()
         {
@@ -30,14 +31,15 @@ namespace Proyecto_final
 
         }
 
-        private void Abrirformulario(IconMenuItem menu, Form formulario)
+        private void Abrirformulario (IconMenuItem menu, Form formulario)
         {
+            
             if (MenuActivo != null)
             {
-                MenuActivo.BackColor = Color.White;
+                MenuActivo.BackColor = Color.DarkGray;
 
             }
-            menu.BackColor = Color.DarkGray;
+            menu.BackColor = Color.SlateGray;
             MenuActivo = menu;
 
             if (FormularioActivo != null)
@@ -55,7 +57,24 @@ namespace Proyecto_final
             formulario.Show();
         }
 
+        private void Abrirformulariobtn(IconButton b, Form formulario)
+        {
+            if (a != null)
+            {
+                a.BackColor = Color.DarkGray;
 
+            }
+            b.BackColor = Color.SlateGray;
+            a = b;
+            FormularioActivo = formulario;
+            formulario.TopLevel = false;
+            formulario.FormBorderStyle = FormBorderStyle.None;
+            formulario.Dock = DockStyle.Fill;
+            formulario.BackColor = Color.SlateGray;
+
+            Contenedor.Controls.Add(formulario);
+            formulario.Show();
+        }
 
         private void btnsalir_Click(object sender, EventArgs e)
         {
@@ -100,6 +119,11 @@ namespace Proyecto_final
         private void menureportes_Click(object sender, EventArgs e)
         {
             Abrirformulario(menureportes, new frmReportes());
+        }
+
+        private void btnusuario_Click(object sender, EventArgs e)
+        {
+            Abrirformulariobtn(btnusuario, new frmUsuario());
         }
     }
 }

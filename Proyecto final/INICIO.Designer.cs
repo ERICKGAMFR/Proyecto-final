@@ -48,7 +48,10 @@ namespace Proyecto_final
             this.iconMenuItem1 = new FontAwesome.Sharp.IconMenuItem();
             this.Contenedor = new System.Windows.Forms.Panel();
             this.btnsalir = new FontAwesome.Sharp.IconButton();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnusuario = new FontAwesome.Sharp.IconButton();
             this.menu.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menutitulo
@@ -59,7 +62,7 @@ namespace Proyecto_final
             this.menutitulo.Location = new System.Drawing.Point(0, 0);
             this.menutitulo.Name = "menutitulo";
             this.menutitulo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.menutitulo.Size = new System.Drawing.Size(1186, 73);
+            this.menutitulo.Size = new System.Drawing.Size(1192, 73);
             this.menutitulo.TabIndex = 2;
             this.menutitulo.Text = "menuStrip2";
             // 
@@ -69,7 +72,7 @@ namespace Proyecto_final
             this.lblusuario.BackColor = System.Drawing.Color.SlateGray;
             this.lblusuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblusuario.ForeColor = System.Drawing.Color.White;
-            this.lblusuario.Location = new System.Drawing.Point(966, 28);
+            this.lblusuario.Location = new System.Drawing.Point(989, 28);
             this.lblusuario.Name = "lblusuario";
             this.lblusuario.Size = new System.Drawing.Size(71, 18);
             this.lblusuario.TabIndex = 7;
@@ -81,7 +84,7 @@ namespace Proyecto_final
             this.lbUsuario.BackColor = System.Drawing.Color.SlateGray;
             this.lbUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbUsuario.ForeColor = System.Drawing.Color.White;
-            this.lbUsuario.Location = new System.Drawing.Point(882, 28);
+            this.lbUsuario.Location = new System.Drawing.Point(905, 28);
             this.lbUsuario.Name = "lbUsuario";
             this.lbUsuario.Size = new System.Drawing.Size(89, 18);
             this.lbUsuario.TabIndex = 6;
@@ -101,6 +104,7 @@ namespace Proyecto_final
             // 
             // menu
             // 
+            this.menu.BackColor = System.Drawing.Color.Silver;
             this.menu.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuusuarios,
@@ -112,7 +116,7 @@ namespace Proyecto_final
             this.menuacercade});
             this.menu.Location = new System.Drawing.Point(0, 73);
             this.menu.Name = "menu";
-            this.menu.Size = new System.Drawing.Size(1186, 78);
+            this.menu.Size = new System.Drawing.Size(1192, 78);
             this.menu.TabIndex = 9;
             this.menu.Text = "menuStrip1";
             // 
@@ -151,7 +155,7 @@ namespace Proyecto_final
             this.submenuregitarventa.IconColor = System.Drawing.Color.Black;
             this.submenuregitarventa.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.submenuregitarventa.Name = "submenuregitarventa";
-            this.submenuregitarventa.Size = new System.Drawing.Size(224, 26);
+            this.submenuregitarventa.Size = new System.Drawing.Size(180, 26);
             this.submenuregitarventa.Text = "REGISTAR";
             this.submenuregitarventa.Click += new System.EventHandler(this.submenuregitarventa_Click);
             // 
@@ -161,7 +165,7 @@ namespace Proyecto_final
             this.submenuverdetalleventa.IconColor = System.Drawing.Color.Black;
             this.submenuverdetalleventa.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.submenuverdetalleventa.Name = "submenuverdetalleventa";
-            this.submenuverdetalleventa.Size = new System.Drawing.Size(224, 26);
+            this.submenuverdetalleventa.Size = new System.Drawing.Size(180, 26);
             this.submenuverdetalleventa.Text = "VER DETALLE";
             this.submenuverdetalleventa.Click += new System.EventHandler(this.submenuverdetalleventa_Click);
             // 
@@ -212,7 +216,7 @@ namespace Proyecto_final
             this.submenucategoria.IconColor = System.Drawing.Color.Black;
             this.submenucategoria.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.submenucategoria.Name = "submenucategoria";
-            this.submenucategoria.Size = new System.Drawing.Size(224, 26);
+            this.submenucategoria.Size = new System.Drawing.Size(170, 26);
             this.submenucategoria.Text = "CATEGORIA";
             this.submenucategoria.Click += new System.EventHandler(this.submenucategoria_Click);
             // 
@@ -222,7 +226,7 @@ namespace Proyecto_final
             this.submenuproducto.IconColor = System.Drawing.Color.Black;
             this.submenuproducto.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.submenuproducto.Name = "submenuproducto";
-            this.submenuproducto.Size = new System.Drawing.Size(224, 26);
+            this.submenuproducto.Size = new System.Drawing.Size(170, 26);
             this.submenuproducto.Text = "PRODUCTO";
             this.submenuproducto.Click += new System.EventHandler(this.submenuproducto_Click);
             // 
@@ -264,7 +268,7 @@ namespace Proyecto_final
             // 
             this.Contenedor.Location = new System.Drawing.Point(0, 154);
             this.Contenedor.Name = "Contenedor";
-            this.Contenedor.Size = new System.Drawing.Size(1186, 324);
+            this.Contenedor.Size = new System.Drawing.Size(913, 513);
             this.Contenedor.TabIndex = 11;
             // 
             // btnsalir
@@ -283,11 +287,34 @@ namespace Proyecto_final
             this.btnsalir.UseVisualStyleBackColor = false;
             this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.btnusuario);
+            this.panel1.Location = new System.Drawing.Point(936, 154);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(255, 512);
+            this.panel1.TabIndex = 14;
+            // 
+            // btnusuario
+            // 
+            this.btnusuario.IconChar = FontAwesome.Sharp.IconChar.IdCard;
+            this.btnusuario.IconColor = System.Drawing.Color.Black;
+            this.btnusuario.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnusuario.Location = new System.Drawing.Point(3, 3);
+            this.btnusuario.Name = "btnusuario";
+            this.btnusuario.Size = new System.Drawing.Size(103, 81);
+            this.btnusuario.TabIndex = 0;
+            this.btnusuario.Text = "Usuarios";
+            this.btnusuario.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnusuario.UseVisualStyleBackColor = true;
+            this.btnusuario.Click += new System.EventHandler(this.btnusuario_Click);
+            // 
             // INICIO
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1186, 476);
+            this.ClientSize = new System.Drawing.Size(1192, 672);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnsalir);
             this.Controls.Add(this.Contenedor);
             this.Controls.Add(this.menu);
@@ -302,6 +329,7 @@ namespace Proyecto_final
             this.Load += new System.EventHandler(this.INICIO_Load);
             this.menu.ResumeLayout(false);
             this.menu.PerformLayout();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -328,5 +356,7 @@ namespace Proyecto_final
         private FontAwesome.Sharp.IconMenuItem iconMenuItem1;
         private System.Windows.Forms.Panel Contenedor;
         private FontAwesome.Sharp.IconButton btnsalir;
+        private System.Windows.Forms.Panel panel1;
+        private FontAwesome.Sharp.IconButton btnusuario;
     }
 }
