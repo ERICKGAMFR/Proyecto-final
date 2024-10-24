@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Proyecto_final.Utilidades;
 
 namespace Proyecto_final
 {
@@ -20,23 +21,57 @@ namespace Proyecto_final
             InitializeComponent();
         }
 
-        private void Abrirformulariobtn(IconButton b, Form formulario)
+       
+
+        private void dgvusuario_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (a != null)
+            if (dgvusuario.Columns[e.ColumnIndex].Name == "dgvbtnseleccionar")
             {
-                a.BackColor = Color.DarkGray;
+                int indice = e.RowIndex;
+                if (indice >= 0)
+                {
+                    //txtindice.Text = indice.ToString();
+                    //txtid.Text = dgvusuario.Rows[indice].Cells["Id"].Value.ToString();
+                    txtNombre.Text = dgvusuario.Rows[indice].Cells["NombreU"].Value.ToString();
+                    txtphone.Text = dgvusuario.Rows[indice].Cells["NombreCompleto"].Value.ToString();
+                    txtcorreo.Text = dgvusuario.Rows[indice].Cells["Correo"].Value.ToString();
+                    txtclave.Text = dgvusuario.Rows[indice].Cells["Clave"].Value.ToString();
 
+
+                    foreach (optioncombo oc in cborol.Items)
+                    {
+                        if (Convert.ToInt32(oc.Valor) == Convert.ToInt32(dgvusuario.Rows[indice].Cells["id_rol"].Value.ToString()))
+                        {
+                            int indice_combo = cborol.Items.IndexOf(oc);
+                            cborol.SelectedIndex = indice_combo;
+                            break;
+                        }
+                    }
+
+                    foreach (optioncombo oc in cboestado.Items)
+                    {
+                        if (Convert.ToInt32(oc.Valor) == Convert.ToInt32(dgvusuario.Rows[indice].Cells["EstadoValor"].Value.ToString()))
+                        {
+                            int indice_combo = cboestado.Items.IndexOf(oc);
+                            cboestado.SelectedIndex = indice_combo;
+                            break;
+                        }
+                    }
+                }
             }
-            //b.BackColor = Color.SlateGray;
-            a = b;
-            FormularioActivo = formulario;
-            formulario.TopLevel = false;
-            formulario.FormBorderStyle = FormBorderStyle.None;
-            formulario.Dock = DockStyle.Fill;
-            //formulario.BackColor = Color.SlateGray;
+        }
 
-            conte_listau.Controls.Add(formulario);
-            formulario.Show();
+        private void frmUsuario_Load(object sender, EventArgs e)
+        {
+            cboestado.Items.Add(new optioncombo() { Valor = 1, Texto = "Activo" });
+            cboestado.Items.Add(new optioncombo() { Valor = 0, Texto = "No Activo" });
+            cboestado.DisplayMember = "Texto";
+            cboestado.ValueMember = "Valor";
+            cboestado.SelectedIndex = 0;
         }
     }
 }
+
+
+    
+
