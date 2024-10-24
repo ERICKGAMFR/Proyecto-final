@@ -33,9 +33,12 @@ namespace Proyecto_final
             this.lblusuario = new System.Windows.Forms.Label();
             this.lbUsuario = new System.Windows.Forms.Label();
             this.lbtitulo = new System.Windows.Forms.Label();
-            this.iconMenuItem1 = new FontAwesome.Sharp.IconMenuItem();
             this.Contenedor = new System.Windows.Forms.Panel();
             this.Con_botonee = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.ibtnsalir = new FontAwesome.Sharp.IconButton();
             this.ibtnacercade = new FontAwesome.Sharp.IconButton();
             this.ibtninventario = new FontAwesome.Sharp.IconButton();
@@ -43,8 +46,11 @@ namespace Proyecto_final
             this.ibtnmiembros = new FontAwesome.Sharp.IconButton();
             this.ibtnvisita = new FontAwesome.Sharp.IconButton();
             this.ibtnusuario = new FontAwesome.Sharp.IconButton();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.iconMenuItem1 = new FontAwesome.Sharp.IconMenuItem();
             this.Con_botonee.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menutitulo
@@ -65,9 +71,9 @@ namespace Proyecto_final
             this.lblusuario.BackColor = System.Drawing.Color.SlateGray;
             this.lblusuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblusuario.ForeColor = System.Drawing.Color.White;
-            this.lblusuario.Location = new System.Drawing.Point(989, 28);
+            this.lblusuario.Location = new System.Drawing.Point(1094, 17);
             this.lblusuario.Name = "lblusuario";
-            this.lblusuario.Size = new System.Drawing.Size(71, 18);
+            this.lblusuario.Size = new System.Drawing.Size(61, 15);
             this.lblusuario.TabIndex = 7;
             this.lblusuario.Text = "lblusuario";
             // 
@@ -77,9 +83,9 @@ namespace Proyecto_final
             this.lbUsuario.BackColor = System.Drawing.Color.SlateGray;
             this.lbUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbUsuario.ForeColor = System.Drawing.Color.White;
-            this.lbUsuario.Location = new System.Drawing.Point(905, 28);
+            this.lbUsuario.Location = new System.Drawing.Point(988, 28);
             this.lbUsuario.Name = "lbUsuario";
-            this.lbUsuario.Size = new System.Drawing.Size(89, 18);
+            this.lbUsuario.Size = new System.Drawing.Size(72, 15);
             this.lbUsuario.TabIndex = 6;
             this.lbUsuario.Text = "USUARIOS:";
             // 
@@ -89,20 +95,11 @@ namespace Proyecto_final
             this.lbtitulo.BackColor = System.Drawing.Color.SlateGray;
             this.lbtitulo.Font = new System.Drawing.Font("Stencil", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbtitulo.ForeColor = System.Drawing.Color.White;
-            this.lbtitulo.Location = new System.Drawing.Point(58, 7);
+            this.lbtitulo.Location = new System.Drawing.Point(276, 28);
             this.lbtitulo.Name = "lbtitulo";
-            this.lbtitulo.Size = new System.Drawing.Size(248, 33);
+            this.lbtitulo.Size = new System.Drawing.Size(196, 26);
             this.lbtitulo.TabIndex = 8;
             this.lbtitulo.Text = "Nombre del GYM";
-            // 
-            // iconMenuItem1
-            // 
-            this.iconMenuItem1.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconMenuItem1.IconColor = System.Drawing.Color.Black;
-            this.iconMenuItem1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconMenuItem1.Name = "iconMenuItem1";
-            this.iconMenuItem1.Size = new System.Drawing.Size(32, 19);
-            this.iconMenuItem1.Text = "iconMenuItem1";
             // 
             // Contenedor
             // 
@@ -125,6 +122,47 @@ namespace Proyecto_final
             this.Con_botonee.Name = "Con_botonee";
             this.Con_botonee.Size = new System.Drawing.Size(133, 649);
             this.Con_botonee.TabIndex = 14;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Proyecto_final.Properties.Resources.Captura_de_pantalla_2024_10_24_001053;
+            this.pictureBox3.Location = new System.Drawing.Point(923, 0);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(76, 94);
+            this.pictureBox3.TabIndex = 17;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Location = new System.Drawing.Point(802, 4);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(84, 65);
+            this.pictureBox2.TabIndex = 16;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Proyecto_final.Properties.Resources.logo_unach_p_fondo_negro;
+            this.pictureBox1.Location = new System.Drawing.Point(14, 6);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(108, 64);
+            this.pictureBox1.TabIndex = 15;
+            this.pictureBox1.TabStop = false;
+            // 
+            // iconButton1
+            // 
+            this.iconButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.House;
+            this.iconButton1.IconColor = System.Drawing.Color.Black;
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.Location = new System.Drawing.Point(8, 7);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Size = new System.Drawing.Size(110, 69);
+            this.iconButton1.TabIndex = 7;
+            this.iconButton1.Text = "Inicio";
+            this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.iconButton1.UseVisualStyleBackColor = true;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
             // 
             // ibtnsalir
             // 
@@ -230,26 +268,23 @@ namespace Proyecto_final
             this.ibtnusuario.UseVisualStyleBackColor = true;
             this.ibtnusuario.Click += new System.EventHandler(this.btnusuario_Click);
             // 
-            // iconButton1
+            // iconMenuItem1
             // 
-            this.iconButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.House;
-            this.iconButton1.IconColor = System.Drawing.Color.Black;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.Location = new System.Drawing.Point(8, 7);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(110, 69);
-            this.iconButton1.TabIndex = 7;
-            this.iconButton1.Text = "Inicio";
-            this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.iconButton1.UseVisualStyleBackColor = true;
-            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
+            this.iconMenuItem1.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.iconMenuItem1.IconColor = System.Drawing.Color.Black;
+            this.iconMenuItem1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconMenuItem1.Name = "iconMenuItem1";
+            this.iconMenuItem1.Size = new System.Drawing.Size(32, 19);
+            this.iconMenuItem1.Text = "iconMenuItem1";
             // 
             // INICIO
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1202, 718);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Con_botonee);
             this.Controls.Add(this.Contenedor);
             this.Controls.Add(this.lbtitulo);
@@ -262,6 +297,9 @@ namespace Proyecto_final
             this.Text = "INICIO";
             this.Load += new System.EventHandler(this.INICIO_Load);
             this.Con_botonee.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -284,5 +322,8 @@ namespace Proyecto_final
         private FontAwesome.Sharp.IconButton ibtnmiembros;
         private FontAwesome.Sharp.IconButton ibtnvisita;
         private FontAwesome.Sharp.IconButton iconButton1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
