@@ -35,9 +35,15 @@ namespace Proyecto_final
             this.lbtitulo = new System.Windows.Forms.Label();
             this.iconMenuItem1 = new FontAwesome.Sharp.IconMenuItem();
             this.Contenedor = new System.Windows.Forms.Panel();
-            this.btnsalir = new FontAwesome.Sharp.IconButton();
             this.Con_botonee = new System.Windows.Forms.Panel();
-            this.btnusuario = new FontAwesome.Sharp.IconButton();
+            this.ibtnsalir = new FontAwesome.Sharp.IconButton();
+            this.ibtnacercade = new FontAwesome.Sharp.IconButton();
+            this.ibtninventario = new FontAwesome.Sharp.IconButton();
+            this.ibtnventas = new FontAwesome.Sharp.IconButton();
+            this.ibtnmiembros = new FontAwesome.Sharp.IconButton();
+            this.ibtnvisita = new FontAwesome.Sharp.IconButton();
+            this.ibtnusuario = new FontAwesome.Sharp.IconButton();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.Con_botonee.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,7 +55,7 @@ namespace Proyecto_final
             this.menutitulo.Location = new System.Drawing.Point(0, 0);
             this.menutitulo.Name = "menutitulo";
             this.menutitulo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.menutitulo.Size = new System.Drawing.Size(1192, 73);
+            this.menutitulo.Size = new System.Drawing.Size(1202, 73);
             this.menutitulo.TabIndex = 2;
             this.menutitulo.Text = "menuStrip2";
             // 
@@ -83,7 +89,7 @@ namespace Proyecto_final
             this.lbtitulo.BackColor = System.Drawing.Color.SlateGray;
             this.lbtitulo.Font = new System.Drawing.Font("Stencil", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbtitulo.ForeColor = System.Drawing.Color.White;
-            this.lbtitulo.Location = new System.Drawing.Point(58, 13);
+            this.lbtitulo.Location = new System.Drawing.Point(58, 7);
             this.lbtitulo.Name = "lbtitulo";
             this.lbtitulo.Size = new System.Drawing.Size(248, 33);
             this.lbtitulo.TabIndex = 8;
@@ -100,56 +106,151 @@ namespace Proyecto_final
             // 
             // Contenedor
             // 
-            this.Contenedor.Location = new System.Drawing.Point(0, 76);
+            this.Contenedor.Location = new System.Drawing.Point(0, 70);
             this.Contenedor.Name = "Contenedor";
-            this.Contenedor.Size = new System.Drawing.Size(953, 599);
+            this.Contenedor.Size = new System.Drawing.Size(1074, 649);
             this.Contenedor.TabIndex = 11;
-            // 
-            // btnsalir
-            // 
-            this.btnsalir.BackColor = System.Drawing.Color.SlateGray;
-            this.btnsalir.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnsalir.FlatAppearance.BorderSize = 0;
-            this.btnsalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnsalir.IconChar = FontAwesome.Sharp.IconChar.LongArrowLeft;
-            this.btnsalir.IconColor = System.Drawing.Color.Black;
-            this.btnsalir.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnsalir.Location = new System.Drawing.Point(12, 18);
-            this.btnsalir.Name = "btnsalir";
-            this.btnsalir.Size = new System.Drawing.Size(40, 28);
-            this.btnsalir.TabIndex = 12;
-            this.btnsalir.UseVisualStyleBackColor = false;
-            this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
             // 
             // Con_botonee
             // 
-            this.Con_botonee.Controls.Add(this.btnusuario);
-            this.Con_botonee.Location = new System.Drawing.Point(959, 76);
+            this.Con_botonee.Controls.Add(this.iconButton1);
+            this.Con_botonee.Controls.Add(this.ibtnsalir);
+            this.Con_botonee.Controls.Add(this.ibtnacercade);
+            this.Con_botonee.Controls.Add(this.ibtninventario);
+            this.Con_botonee.Controls.Add(this.ibtnventas);
+            this.Con_botonee.Controls.Add(this.ibtnmiembros);
+            this.Con_botonee.Controls.Add(this.ibtnvisita);
+            this.Con_botonee.Controls.Add(this.ibtnusuario);
+            this.Con_botonee.Location = new System.Drawing.Point(1072, 70);
             this.Con_botonee.Name = "Con_botonee";
-            this.Con_botonee.Size = new System.Drawing.Size(241, 599);
+            this.Con_botonee.Size = new System.Drawing.Size(133, 649);
             this.Con_botonee.TabIndex = 14;
             // 
-            // btnusuario
+            // ibtnsalir
             // 
-            this.btnusuario.IconChar = FontAwesome.Sharp.IconChar.IdCard;
-            this.btnusuario.IconColor = System.Drawing.Color.Black;
-            this.btnusuario.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnusuario.Location = new System.Drawing.Point(12, 14);
-            this.btnusuario.Name = "btnusuario";
-            this.btnusuario.Size = new System.Drawing.Size(103, 81);
-            this.btnusuario.TabIndex = 0;
-            this.btnusuario.Text = "Usuarios";
-            this.btnusuario.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnusuario.UseVisualStyleBackColor = true;
-            this.btnusuario.Click += new System.EventHandler(this.btnusuario_Click);
+            this.ibtnsalir.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ibtnsalir.IconChar = FontAwesome.Sharp.IconChar.ArrowAltCircleLeft;
+            this.ibtnsalir.IconColor = System.Drawing.Color.Black;
+            this.ibtnsalir.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ibtnsalir.Location = new System.Drawing.Point(8, 529);
+            this.ibtnsalir.Name = "ibtnsalir";
+            this.ibtnsalir.Size = new System.Drawing.Size(110, 69);
+            this.ibtnsalir.TabIndex = 6;
+            this.ibtnsalir.Text = "Salir";
+            this.ibtnsalir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.ibtnsalir.UseVisualStyleBackColor = true;
+            this.ibtnsalir.Click += new System.EventHandler(this.ibtnsalir_Click);
+            // 
+            // ibtnacercade
+            // 
+            this.ibtnacercade.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ibtnacercade.IconChar = FontAwesome.Sharp.IconChar.Info;
+            this.ibtnacercade.IconColor = System.Drawing.Color.Black;
+            this.ibtnacercade.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ibtnacercade.Location = new System.Drawing.Point(8, 454);
+            this.ibtnacercade.Name = "ibtnacercade";
+            this.ibtnacercade.Size = new System.Drawing.Size(110, 69);
+            this.ibtnacercade.TabIndex = 5;
+            this.ibtnacercade.Text = "Acerca de";
+            this.ibtnacercade.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.ibtnacercade.UseVisualStyleBackColor = true;
+            // 
+            // ibtninventario
+            // 
+            this.ibtninventario.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ibtninventario.IconChar = FontAwesome.Sharp.IconChar.Inbox;
+            this.ibtninventario.IconColor = System.Drawing.Color.Black;
+            this.ibtninventario.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ibtninventario.Location = new System.Drawing.Point(8, 379);
+            this.ibtninventario.Name = "ibtninventario";
+            this.ibtninventario.Size = new System.Drawing.Size(110, 69);
+            this.ibtninventario.TabIndex = 4;
+            this.ibtninventario.Text = "Inventario";
+            this.ibtninventario.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.ibtninventario.UseVisualStyleBackColor = true;
+            this.ibtninventario.Click += new System.EventHandler(this.ibtninventario_Click);
+            // 
+            // ibtnventas
+            // 
+            this.ibtnventas.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ibtnventas.IconChar = FontAwesome.Sharp.IconChar.SackDollar;
+            this.ibtnventas.IconColor = System.Drawing.Color.Black;
+            this.ibtnventas.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ibtnventas.Location = new System.Drawing.Point(8, 304);
+            this.ibtnventas.Name = "ibtnventas";
+            this.ibtnventas.Size = new System.Drawing.Size(110, 69);
+            this.ibtnventas.TabIndex = 3;
+            this.ibtnventas.Text = "Ventas";
+            this.ibtnventas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.ibtnventas.UseVisualStyleBackColor = true;
+            this.ibtnventas.Click += new System.EventHandler(this.ibtnventas_Click);
+            // 
+            // ibtnmiembros
+            // 
+            this.ibtnmiembros.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ibtnmiembros.IconChar = FontAwesome.Sharp.IconChar.UserGroup;
+            this.ibtnmiembros.IconColor = System.Drawing.Color.Black;
+            this.ibtnmiembros.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ibtnmiembros.Location = new System.Drawing.Point(8, 229);
+            this.ibtnmiembros.Name = "ibtnmiembros";
+            this.ibtnmiembros.Size = new System.Drawing.Size(110, 69);
+            this.ibtnmiembros.TabIndex = 2;
+            this.ibtnmiembros.Text = "Miembros";
+            this.ibtnmiembros.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.ibtnmiembros.UseVisualStyleBackColor = true;
+            this.ibtnmiembros.Click += new System.EventHandler(this.ibtnmiembros_Click);
+            // 
+            // ibtnvisita
+            // 
+            this.ibtnvisita.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ibtnvisita.IconChar = FontAwesome.Sharp.IconChar.UserClock;
+            this.ibtnvisita.IconColor = System.Drawing.Color.Black;
+            this.ibtnvisita.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ibtnvisita.Location = new System.Drawing.Point(8, 154);
+            this.ibtnvisita.Name = "ibtnvisita";
+            this.ibtnvisita.Size = new System.Drawing.Size(110, 69);
+            this.ibtnvisita.TabIndex = 1;
+            this.ibtnvisita.Text = "Visitantes";
+            this.ibtnvisita.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.ibtnvisita.UseVisualStyleBackColor = true;
+            this.ibtnvisita.Click += new System.EventHandler(this.ibtnvisita_Click);
+            // 
+            // ibtnusuario
+            // 
+            this.ibtnusuario.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ibtnusuario.IconChar = FontAwesome.Sharp.IconChar.IdCard;
+            this.ibtnusuario.IconColor = System.Drawing.Color.Black;
+            this.ibtnusuario.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ibtnusuario.Location = new System.Drawing.Point(8, 79);
+            this.ibtnusuario.Name = "ibtnusuario";
+            this.ibtnusuario.Size = new System.Drawing.Size(110, 69);
+            this.ibtnusuario.TabIndex = 0;
+            this.ibtnusuario.Text = "Usuarios";
+            this.ibtnusuario.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.ibtnusuario.UseVisualStyleBackColor = true;
+            this.ibtnusuario.Click += new System.EventHandler(this.btnusuario_Click);
+            // 
+            // iconButton1
+            // 
+            this.iconButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.House;
+            this.iconButton1.IconColor = System.Drawing.Color.Black;
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.Location = new System.Drawing.Point(8, 7);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Size = new System.Drawing.Size(110, 69);
+            this.iconButton1.TabIndex = 7;
+            this.iconButton1.Text = "Inicio";
+            this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.iconButton1.UseVisualStyleBackColor = true;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
             // 
             // INICIO
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1192, 672);
+            this.ClientSize = new System.Drawing.Size(1202, 718);
             this.Controls.Add(this.Con_botonee);
-            this.Controls.Add(this.btnsalir);
             this.Controls.Add(this.Contenedor);
             this.Controls.Add(this.lbtitulo);
             this.Controls.Add(this.lblusuario);
@@ -174,8 +275,14 @@ namespace Proyecto_final
         private System.Windows.Forms.Label lbtitulo;
         private FontAwesome.Sharp.IconMenuItem iconMenuItem1;
         private System.Windows.Forms.Panel Contenedor;
-        private FontAwesome.Sharp.IconButton btnsalir;
         private System.Windows.Forms.Panel Con_botonee;
-        private FontAwesome.Sharp.IconButton btnusuario;
+        private FontAwesome.Sharp.IconButton ibtnusuario;
+        private FontAwesome.Sharp.IconButton ibtnsalir;
+        private FontAwesome.Sharp.IconButton ibtnacercade;
+        private FontAwesome.Sharp.IconButton ibtninventario;
+        private FontAwesome.Sharp.IconButton ibtnventas;
+        private FontAwesome.Sharp.IconButton ibtnmiembros;
+        private FontAwesome.Sharp.IconButton ibtnvisita;
+        private FontAwesome.Sharp.IconButton iconButton1;
     }
 }
