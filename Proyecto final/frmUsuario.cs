@@ -69,6 +69,16 @@ namespace Proyecto_final
             cboestado.ValueMember = "Valor";
             cboestado.SelectedIndex = 0;
         }
+
+        private void lbNU_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbtitulolistausuario_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

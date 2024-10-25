@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Proyecto_final
 {
-    public partial class frmProducto : Form
+    public partial class frmentrenadores : Form
     {
-        public frmProducto()
+        public frmentrenadores()
         {
             InitializeComponent();
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

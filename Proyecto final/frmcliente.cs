@@ -10,14 +10,24 @@ using System.Windows.Forms;
 
 namespace Proyecto_final
 {
-    public partial class frmProducto : Form
+    public partial class frmcliente : Form
     {
-        public frmProducto()
+        public frmcliente()
         {
             InitializeComponent();
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void lbNU_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmcliente_Load(object sender, EventArgs e)
         {
 
         }

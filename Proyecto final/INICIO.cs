@@ -124,6 +124,17 @@ namespace Proyecto_final
                 FormularioActivo = null;
             }
         }
+
+        private void ibtnclientes_Click(object sender, EventArgs e)
+        {
+            Abrirformulariobtn(ibtnclientes, new frmcliente()); 
+        }
+            private void ibtnentrenadores_Click(object sender, EventArgs e)
+        {
+            Abrirformulariobtn(ibtnentrenadores, new frmentrenadores());
+        }
+
+
     }
 }
 
