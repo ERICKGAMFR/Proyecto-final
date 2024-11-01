@@ -36,6 +36,7 @@ namespace Proyecto_final
             this.iconMenuItem1 = new FontAwesome.Sharp.IconMenuItem();
             this.Contenedor = new System.Windows.Forms.Panel();
             this.Con_botonee = new System.Windows.Forms.Panel();
+            this.ibtnentrenadores = new FontAwesome.Sharp.IconButton();
             this.ibtnclientes = new FontAwesome.Sharp.IconButton();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.ibtnsalir = new FontAwesome.Sharp.IconButton();
@@ -45,7 +46,6 @@ namespace Proyecto_final
             this.ibtnmiembros = new FontAwesome.Sharp.IconButton();
             this.ibtnvisita = new FontAwesome.Sharp.IconButton();
             this.ibtnusuario = new FontAwesome.Sharp.IconButton();
-            this.ibtnentrenadores = new FontAwesome.Sharp.IconButton();
             this.Con_botonee.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -130,6 +130,22 @@ namespace Proyecto_final
             this.Con_botonee.Size = new System.Drawing.Size(267, 633);
             this.Con_botonee.TabIndex = 14;
             // 
+            // ibtnentrenadores
+            // 
+            this.ibtnentrenadores.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ibtnentrenadores.IconChar = FontAwesome.Sharp.IconChar.WeightHanging;
+            this.ibtnentrenadores.IconColor = System.Drawing.Color.Black;
+            this.ibtnentrenadores.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ibtnentrenadores.IconSize = 50;
+            this.ibtnentrenadores.Location = new System.Drawing.Point(142, 334);
+            this.ibtnentrenadores.Name = "ibtnentrenadores";
+            this.ibtnentrenadores.Size = new System.Drawing.Size(106, 88);
+            this.ibtnentrenadores.TabIndex = 9;
+            this.ibtnentrenadores.Text = "Entrenadores";
+            this.ibtnentrenadores.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.ibtnentrenadores.UseVisualStyleBackColor = true;
+            this.ibtnentrenadores.Click += new System.EventHandler(this.ibtnentrenadores_Click);
+            // 
             // ibtnclientes
             // 
             this.ibtnclientes.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -185,7 +201,7 @@ namespace Proyecto_final
             this.ibtnacercade.IconColor = System.Drawing.Color.Black;
             this.ibtnacercade.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ibtnacercade.IconSize = 50;
-            this.ibtnacercade.Location = new System.Drawing.Point(30, 428);
+            this.ibtnacercade.Location = new System.Drawing.Point(26, 428);
             this.ibtnacercade.Name = "ibtnacercade";
             this.ibtnacercade.Size = new System.Drawing.Size(106, 88);
             this.ibtnacercade.TabIndex = 5;
@@ -272,22 +288,6 @@ namespace Proyecto_final
             this.ibtnusuario.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.ibtnusuario.UseVisualStyleBackColor = true;
             this.ibtnusuario.Click += new System.EventHandler(this.btnusuario_Click);
-            // 
-            // ibtnentrenadores
-            // 
-            this.ibtnentrenadores.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ibtnentrenadores.IconChar = FontAwesome.Sharp.IconChar.WeightHanging;
-            this.ibtnentrenadores.IconColor = System.Drawing.Color.Black;
-            this.ibtnentrenadores.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ibtnentrenadores.IconSize = 50;
-            this.ibtnentrenadores.Location = new System.Drawing.Point(142, 334);
-            this.ibtnentrenadores.Name = "ibtnentrenadores";
-            this.ibtnentrenadores.Size = new System.Drawing.Size(106, 88);
-            this.ibtnentrenadores.TabIndex = 9;
-            this.ibtnentrenadores.Text = "Entrenadores";
-            this.ibtnentrenadores.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.ibtnentrenadores.UseVisualStyleBackColor = true;
-            this.ibtnentrenadores.Click += new System.EventHandler(this.ibtnentrenadores_Click);
             // 
             // INICIO
             // 

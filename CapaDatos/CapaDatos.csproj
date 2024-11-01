@@ -31,6 +31,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MySql.Data, Version=9.0.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector NET 9.0\MySql.Data.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -41,8 +45,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CD_CLIENTE.cs" />
+    <Compile Include="CD_DETALLEVENTA.cs" />
+    <Compile Include="CD_ENTRENADORES.cs" />
+    <Compile Include="CD_ESTATUS.cs" />
+    <Compile Include="CD_PERMISO.cs" />
+    <Compile Include="CD_PRODUCTOS.cs" />
+    <Compile Include="CD_ROL.cs" />
+    <Compile Include="CD_USUARIO.cs" />
+    <Compile Include="CD_VENTA.cs" />
     <Compile Include="ConexionBD.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaEntidades\CapaEntidades.csproj">
+      <Project>{62e9183a-3e6e-4596-a147-c8376e081710}</Project>
+      <Name>CapaEntidades</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

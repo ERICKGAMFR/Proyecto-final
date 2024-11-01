@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CapaEntidades;
+using CapaNegocios;
 
 namespace Proyecto_final
 {
@@ -24,16 +26,15 @@ namespace Proyecto_final
 
         private void btningresar_Click(object sender, EventArgs e)
         {
-            INICIO form = new INICIO(/*ousuario*/);
-            /*List<USUARIO> TEST = new CN_USUARIO().Listar();
+            List<USUARIO> TEST = new CN_USUARIOS().Listar();
 
-            USUARIO ousuario = new CN_USUARIO().Listar().Where(u => u.Documento == txtdocumento.Text
+            USUARIO ousuario = new CN_USUARIOS().Listar().Where(u => u.Nombre_Usuario == txtnomusuario.Text
             && u.Clave == txtclave.Text).FirstOrDefault();
 
             if (ousuario != null)
             {
 
-                INICIO form = new INICIO(ousuario);
+                INICIO form = new INICIO(/*ousuario*/);
 
                 form.Show();
                 this.Hide();
@@ -42,21 +43,20 @@ namespace Proyecto_final
             }
             else
             {
-                MessageBox.Show("NO SE ENCONTRO EL USUARIO", "MENSAJE", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-            }*/
-            form.Show();
-            this.Hide();
+                frmRegisprevio form = new frmRegisprevio();
+                form.Show();
+                this.Hide();
 
-            form.FormClosing += frm_closing;
+                form.FormClosing += frm_closing;
+                MessageBox.Show("NO SE ENCONTRO EL USUARIO", "MENSAJE", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                
+            }
         }
 
         private void frm_closing(object sender, FormClosingEventArgs e)
         {
             txtclave.Clear();
             txtnomusuario.Clear();
-            /*forma en la que el video enseña a vaciar los campos:
-            txtdocumento.Text = "";
-            txtclave.Text = "";*/
 
             this.Show();
 

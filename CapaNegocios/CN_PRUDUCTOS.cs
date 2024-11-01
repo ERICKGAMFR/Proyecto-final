@@ -4,10 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CapaEntidades
-{
-    class USUARIO
-    {
+using CapaDatos;
+using CapaEntidades;
 
+namespace CapaNegocios
+{
+    public class CN_PRUDUCTOS
+    {
     }
 }

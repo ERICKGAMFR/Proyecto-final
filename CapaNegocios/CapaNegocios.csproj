@@ -41,7 +41,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CN_CLIENTE.cs" />
+    <Compile Include="CN_DETALLEVENTA.cs" />
+    <Compile Include="CN_ENTRENADORES.cs" />
+    <Compile Include="CN_ESTATUS.cs" />
+    <Compile Include="CN_PERMISO.cs" />
+    <Compile Include="CN_PRUDUCTOS.cs" />
+    <Compile Include="CN_ROL.cs" />
+    <Compile Include="CN_USUARIOS.cs" />
+    <Compile Include="CN_VENTA.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaDatos\CapaDatos.csproj">
+      <Project>{582eb29e-0513-4227-88d1-fb4daa39f7eb}</Project>
+      <Name>CapaDatos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CapaEntidades\CapaEntidades.csproj">
+      <Project>{62e9183a-3e6e-4596-a147-c8376e081710}</Project>
+      <Name>CapaEntidades</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

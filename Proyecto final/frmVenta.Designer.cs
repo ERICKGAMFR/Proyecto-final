@@ -33,16 +33,19 @@ namespace Proyecto_final
             this.ibtnsave = new FontAwesome.Sharp.IconButton();
             this.ibtneliminar = new FontAwesome.Sharp.IconButton();
             this.ibtnexportarexcel = new FontAwesome.Sharp.IconButton();
-            this.Id_Venta = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Monto_pago = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Monto_Total = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lbtituloventa = new System.Windows.Forms.Label();
             this.lbbuscar = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.ibtnbusca = new FontAwesome.Sharp.IconButton();
             this.ibtnlimpiar = new FontAwesome.Sharp.IconButton();
+            this.dgvbtnseleciona = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Id_Venta = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cli_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cli_Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Monto_pago = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Monto_Total = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fecha_Creacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvusuario)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,15 +53,18 @@ namespace Proyecto_final
             // 
             this.dgvusuario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvusuario.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvbtnseleciona,
             this.Id_Venta,
-            this.Nombre,
+            this.Cli_ID,
+            this.Cli_Nombre,
             this.Monto_pago,
-            this.Monto_Total});
-            this.dgvusuario.Location = new System.Drawing.Point(163, 46);
-            this.dgvusuario.Margin = new System.Windows.Forms.Padding(2);
+            this.Monto_Total,
+            this.fecha_Creacion});
+            this.dgvusuario.Location = new System.Drawing.Point(217, 57);
+            this.dgvusuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvusuario.Name = "dgvusuario";
             this.dgvusuario.RowHeadersWidth = 51;
-            this.dgvusuario.Size = new System.Drawing.Size(618, 432);
+            this.dgvusuario.Size = new System.Drawing.Size(824, 532);
             this.dgvusuario.TabIndex = 98;
             // 
             // ibtnsave
@@ -66,10 +72,10 @@ namespace Proyecto_final
             this.ibtnsave.IconChar = FontAwesome.Sharp.IconChar.FloppyDisk;
             this.ibtnsave.IconColor = System.Drawing.Color.ForestGreen;
             this.ibtnsave.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ibtnsave.Location = new System.Drawing.Point(22, 103);
-            this.ibtnsave.Margin = new System.Windows.Forms.Padding(2);
+            this.ibtnsave.Location = new System.Drawing.Point(29, 127);
+            this.ibtnsave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ibtnsave.Name = "ibtnsave";
-            this.ibtnsave.Size = new System.Drawing.Size(64, 57);
+            this.ibtnsave.Size = new System.Drawing.Size(85, 70);
             this.ibtnsave.TabIndex = 129;
             this.ibtnsave.Text = "Guardar";
             this.ibtnsave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -80,10 +86,10 @@ namespace Proyecto_final
             this.ibtneliminar.IconChar = FontAwesome.Sharp.IconChar.X;
             this.ibtneliminar.IconColor = System.Drawing.Color.Red;
             this.ibtneliminar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ibtneliminar.Location = new System.Drawing.Point(22, 186);
-            this.ibtneliminar.Margin = new System.Windows.Forms.Padding(2);
+            this.ibtneliminar.Location = new System.Drawing.Point(29, 229);
+            this.ibtneliminar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ibtneliminar.Name = "ibtneliminar";
-            this.ibtneliminar.Size = new System.Drawing.Size(64, 57);
+            this.ibtneliminar.Size = new System.Drawing.Size(85, 70);
             this.ibtneliminar.TabIndex = 130;
             this.ibtneliminar.Text = "Eliminar";
             this.ibtneliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -94,47 +100,21 @@ namespace Proyecto_final
             this.ibtnexportarexcel.IconChar = FontAwesome.Sharp.IconChar.FileExcel;
             this.ibtnexportarexcel.IconColor = System.Drawing.Color.Green;
             this.ibtnexportarexcel.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ibtnexportarexcel.Location = new System.Drawing.Point(22, 282);
-            this.ibtnexportarexcel.Margin = new System.Windows.Forms.Padding(2);
+            this.ibtnexportarexcel.Location = new System.Drawing.Point(29, 347);
+            this.ibtnexportarexcel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ibtnexportarexcel.Name = "ibtnexportarexcel";
-            this.ibtnexportarexcel.Size = new System.Drawing.Size(64, 68);
+            this.ibtnexportarexcel.Size = new System.Drawing.Size(85, 84);
             this.ibtnexportarexcel.TabIndex = 131;
             this.ibtnexportarexcel.Text = "Exportar a excel";
             this.ibtnexportarexcel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.ibtnexportarexcel.UseVisualStyleBackColor = true;
             // 
-            // Id_Venta
-            // 
-            this.Id_Venta.HeaderText = "Id Ventas";
-            this.Id_Venta.MinimumWidth = 6;
-            this.Id_Venta.Name = "Id_Venta";
-            this.Id_Venta.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Id_Venta.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Id_Venta.Visible = false;
-            this.Id_Venta.Width = 125;
-            // 
-            // Nombre
-            // 
-            this.Nombre.HeaderText = "Nombre";
-            this.Nombre.Name = "Nombre";
-            // 
-            // Monto_pago
-            // 
-            this.Monto_pago.HeaderText = "Monto Pgo";
-            this.Monto_pago.Name = "Monto_pago";
-            // 
-            // Monto_Total
-            // 
-            this.Monto_Total.HeaderText = "Monto Total";
-            this.Monto_Total.Name = "Monto_Total";
-            // 
             // lbtituloventa
             // 
             this.lbtituloventa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbtituloventa.Location = new System.Drawing.Point(159, 3);
-            this.lbtituloventa.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbtituloventa.Location = new System.Drawing.Point(212, 4);
             this.lbtituloventa.Name = "lbtituloventa";
-            this.lbtituloventa.Size = new System.Drawing.Size(622, 75);
+            this.lbtituloventa.Size = new System.Drawing.Size(829, 92);
             this.lbtituloventa.TabIndex = 132;
             this.lbtituloventa.Text = "LISTA DE VENTAS:";
             // 
@@ -142,10 +122,9 @@ namespace Proyecto_final
             // 
             this.lbbuscar.AutoSize = true;
             this.lbbuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbbuscar.Location = new System.Drawing.Point(351, 12);
-            this.lbbuscar.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbbuscar.Location = new System.Drawing.Point(468, 15);
             this.lbbuscar.Name = "lbbuscar";
-            this.lbbuscar.Size = new System.Drawing.Size(81, 17);
+            this.lbbuscar.Size = new System.Drawing.Size(97, 20);
             this.lbbuscar.TabIndex = 133;
             this.lbbuscar.Text = "Buscar por:";
             this.lbbuscar.Click += new System.EventHandler(this.lbbuscar_Click);
@@ -153,18 +132,18 @@ namespace Proyecto_final
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(436, 11);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBox1.Location = new System.Drawing.Point(581, 14);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(95, 21);
+            this.comboBox1.Size = new System.Drawing.Size(125, 24);
             this.comboBox1.TabIndex = 134;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(545, 12);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox1.Location = new System.Drawing.Point(727, 15);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(126, 20);
+            this.textBox1.Size = new System.Drawing.Size(167, 22);
             this.textBox1.TabIndex = 135;
             // 
             // ibtnbusca
@@ -173,10 +152,10 @@ namespace Proyecto_final
             this.ibtnbusca.IconColor = System.Drawing.Color.Black;
             this.ibtnbusca.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ibtnbusca.IconSize = 30;
-            this.ibtnbusca.Location = new System.Drawing.Point(688, 4);
-            this.ibtnbusca.Margin = new System.Windows.Forms.Padding(2);
+            this.ibtnbusca.Location = new System.Drawing.Point(917, 5);
+            this.ibtnbusca.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ibtnbusca.Name = "ibtnbusca";
-            this.ibtnbusca.Size = new System.Drawing.Size(30, 35);
+            this.ibtnbusca.Size = new System.Drawing.Size(40, 43);
             this.ibtnbusca.TabIndex = 136;
             this.ibtnbusca.UseVisualStyleBackColor = true;
             // 
@@ -186,18 +165,70 @@ namespace Proyecto_final
             this.ibtnlimpiar.IconColor = System.Drawing.Color.Black;
             this.ibtnlimpiar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ibtnlimpiar.IconSize = 30;
-            this.ibtnlimpiar.Location = new System.Drawing.Point(751, 3);
-            this.ibtnlimpiar.Margin = new System.Windows.Forms.Padding(2);
+            this.ibtnlimpiar.Location = new System.Drawing.Point(1001, 4);
+            this.ibtnlimpiar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ibtnlimpiar.Name = "ibtnlimpiar";
-            this.ibtnlimpiar.Size = new System.Drawing.Size(30, 35);
+            this.ibtnlimpiar.Size = new System.Drawing.Size(40, 43);
             this.ibtnlimpiar.TabIndex = 137;
             this.ibtnlimpiar.UseVisualStyleBackColor = true;
             // 
+            // dgvbtnseleciona
+            // 
+            this.dgvbtnseleciona.HeaderText = "";
+            this.dgvbtnseleciona.MinimumWidth = 6;
+            this.dgvbtnseleciona.Name = "dgvbtnseleciona";
+            this.dgvbtnseleciona.Width = 30;
+            // 
+            // Id_Venta
+            // 
+            this.Id_Venta.HeaderText = "Folio";
+            this.Id_Venta.MinimumWidth = 6;
+            this.Id_Venta.Name = "Id_Venta";
+            this.Id_Venta.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Id_Venta.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Id_Venta.Width = 125;
+            // 
+            // Cli_ID
+            // 
+            this.Cli_ID.HeaderText = "ID cliente";
+            this.Cli_ID.MinimumWidth = 6;
+            this.Cli_ID.Name = "Cli_ID";
+            this.Cli_ID.Visible = false;
+            this.Cli_ID.Width = 125;
+            // 
+            // Cli_Nombre
+            // 
+            this.Cli_Nombre.HeaderText = "Nombre Cliente ";
+            this.Cli_Nombre.MinimumWidth = 6;
+            this.Cli_Nombre.Name = "Cli_Nombre";
+            this.Cli_Nombre.Width = 150;
+            // 
+            // Monto_pago
+            // 
+            this.Monto_pago.HeaderText = "Monto de Pago";
+            this.Monto_pago.MinimumWidth = 6;
+            this.Monto_pago.Name = "Monto_pago";
+            this.Monto_pago.Width = 140;
+            // 
+            // Monto_Total
+            // 
+            this.Monto_Total.HeaderText = "Monto Total";
+            this.Monto_Total.MinimumWidth = 6;
+            this.Monto_Total.Name = "Monto_Total";
+            this.Monto_Total.Width = 125;
+            // 
+            // fecha_Creacion
+            // 
+            this.fecha_Creacion.HeaderText = "FECHA DE VENTA";
+            this.fecha_Creacion.MinimumWidth = 6;
+            this.fecha_Creacion.Name = "fecha_Creacion";
+            this.fecha_Creacion.Width = 200;
+            // 
             // frmVenta
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(792, 489);
+            this.ClientSize = new System.Drawing.Size(1056, 602);
             this.Controls.Add(this.ibtnlimpiar);
             this.Controls.Add(this.ibtnbusca);
             this.Controls.Add(this.textBox1);
@@ -208,6 +239,7 @@ namespace Proyecto_final
             this.Controls.Add(this.ibtnsave);
             this.Controls.Add(this.dgvusuario);
             this.Controls.Add(this.lbtituloventa);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmVenta";
             this.Text = "frmVenta";
             ((System.ComponentModel.ISupportInitialize)(this.dgvusuario)).EndInit();
@@ -222,15 +254,18 @@ namespace Proyecto_final
         private FontAwesome.Sharp.IconButton ibtnsave;
         private FontAwesome.Sharp.IconButton ibtneliminar;
         private FontAwesome.Sharp.IconButton ibtnexportarexcel;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Id_Venta;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Monto_pago;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Monto_Total;
         private System.Windows.Forms.Label lbtituloventa;
         private System.Windows.Forms.Label lbbuscar;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.TextBox textBox1;
         private FontAwesome.Sharp.IconButton ibtnbusca;
         private FontAwesome.Sharp.IconButton ibtnlimpiar;
+        private System.Windows.Forms.DataGridViewButtonColumn dgvbtnseleciona;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Id_Venta;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Cli_ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Cli_Nombre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Monto_pago;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Monto_Total;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fecha_Creacion;
     }
 }
