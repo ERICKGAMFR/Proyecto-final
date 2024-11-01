@@ -28,17 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvcliente = new System.Windows.Forms.DataGridView();
-            this.dgvbtnseleciona = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Id_Cliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NombreC = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Edad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Telefono_emer = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Domicilio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Ciudad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Correo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Estatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ibtnsave = new FontAwesome.Sharp.IconButton();
             this.ibtneliminar = new FontAwesome.Sharp.IconButton();
             this.ibtnexportarexcel = new FontAwesome.Sharp.IconButton();
@@ -65,11 +56,25 @@
             this.lbtitulolistaclientes = new System.Windows.Forms.Label();
             this.cboestatus = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.dgvbtnseleciona = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Id_Cliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NombreC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Edad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Telefono_emer = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Correo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Domicilio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ciudad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Estatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FechaCreacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FechaTermina = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvcliente)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvcliente
             // 
+            this.dgvcliente.AllowUserToAddRows = false;
+            this.dgvcliente.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             this.dgvcliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvcliente.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dgvbtnseleciona,
@@ -78,102 +83,32 @@
             this.Edad,
             this.Telefono,
             this.Telefono_emer,
+            this.Correo,
             this.Domicilio,
             this.Ciudad,
-            this.Correo,
-            this.Estatus});
+            this.Estatus,
+            this.FechaCreacion,
+            this.FechaTermina});
             this.dgvcliente.EnableHeadersVisualStyles = false;
             this.dgvcliente.Location = new System.Drawing.Point(216, 96);
             this.dgvcliente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvcliente.MultiSelect = false;
             this.dgvcliente.Name = "dgvcliente";
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvcliente.RowHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvcliente.RowHeadersVisible = false;
             this.dgvcliente.RowHeadersWidth = 51;
             this.dgvcliente.Size = new System.Drawing.Size(873, 534);
             this.dgvcliente.TabIndex = 1;
             this.dgvcliente.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvusuario_CellContentClick);
             this.dgvcliente.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dgvusuario_CellPainting);
-            // 
-            // dgvbtnseleciona
-            // 
-            this.dgvbtnseleciona.HeaderText = "";
-            this.dgvbtnseleciona.MinimumWidth = 6;
-            this.dgvbtnseleciona.Name = "dgvbtnseleciona";
-            this.dgvbtnseleciona.Width = 20;
-            // 
-            // Id_Cliente
-            // 
-            this.Id_Cliente.HeaderText = "Id Cliente";
-            this.Id_Cliente.MinimumWidth = 6;
-            this.Id_Cliente.Name = "Id_Cliente";
-            this.Id_Cliente.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Id_Cliente.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Id_Cliente.Visible = false;
-            this.Id_Cliente.Width = 125;
-            // 
-            // NombreC
-            // 
-            this.NombreC.HeaderText = "Nombre Cliente";
-            this.NombreC.MinimumWidth = 6;
-            this.NombreC.Name = "NombreC";
-            this.NombreC.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.NombreC.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.NombreC.Width = 125;
-            // 
-            // Edad
-            // 
-            this.Edad.HeaderText = "Edad";
-            this.Edad.MinimumWidth = 6;
-            this.Edad.Name = "Edad";
-            this.Edad.Width = 125;
-            // 
-            // Telefono
-            // 
-            this.Telefono.HeaderText = "Telefono";
-            this.Telefono.MinimumWidth = 6;
-            this.Telefono.Name = "Telefono";
-            this.Telefono.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Telefono.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Telefono.Width = 125;
-            // 
-            // Telefono_emer
-            // 
-            this.Telefono_emer.HeaderText = "Telefono de Emergencia";
-            this.Telefono_emer.MinimumWidth = 6;
-            this.Telefono_emer.Name = "Telefono_emer";
-            this.Telefono_emer.Width = 125;
-            // 
-            // Domicilio
-            // 
-            this.Domicilio.HeaderText = "Domicilio";
-            this.Domicilio.MinimumWidth = 6;
-            this.Domicilio.Name = "Domicilio";
-            this.Domicilio.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Domicilio.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Domicilio.Width = 125;
-            // 
-            // Ciudad
-            // 
-            this.Ciudad.HeaderText = "Ciudad";
-            this.Ciudad.MinimumWidth = 6;
-            this.Ciudad.Name = "Ciudad";
-            this.Ciudad.Width = 125;
-            // 
-            // Correo
-            // 
-            this.Correo.HeaderText = "Correo";
-            this.Correo.MinimumWidth = 6;
-            this.Correo.Name = "Correo";
-            this.Correo.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Correo.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Correo.Width = 125;
-            // 
-            // Estatus
-            // 
-            this.Estatus.HeaderText = "Estatus";
-            this.Estatus.MinimumWidth = 6;
-            this.Estatus.Name = "Estatus";
-            this.Estatus.Width = 125;
             // 
             // ibtnsave
             // 
@@ -205,6 +140,7 @@
             this.ibtneliminar.Text = "Eliminar";
             this.ibtneliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.ibtneliminar.UseVisualStyleBackColor = true;
+            this.ibtneliminar.Click += new System.EventHandler(this.ibtneliminar_Click);
             // 
             // ibtnexportarexcel
             // 
@@ -438,6 +374,102 @@
             this.label2.TabIndex = 76;
             this.label2.Text = "Estatus:";
             // 
+            // dgvbtnseleciona
+            // 
+            this.dgvbtnseleciona.HeaderText = "";
+            this.dgvbtnseleciona.MinimumWidth = 6;
+            this.dgvbtnseleciona.Name = "dgvbtnseleciona";
+            this.dgvbtnseleciona.Width = 20;
+            // 
+            // Id_Cliente
+            // 
+            this.Id_Cliente.HeaderText = "Id Cliente";
+            this.Id_Cliente.MinimumWidth = 6;
+            this.Id_Cliente.Name = "Id_Cliente";
+            this.Id_Cliente.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Id_Cliente.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Id_Cliente.Visible = false;
+            this.Id_Cliente.Width = 125;
+            // 
+            // NombreC
+            // 
+            this.NombreC.HeaderText = "Nombre Cliente";
+            this.NombreC.MinimumWidth = 6;
+            this.NombreC.Name = "NombreC";
+            this.NombreC.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.NombreC.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.NombreC.Width = 125;
+            // 
+            // Edad
+            // 
+            this.Edad.HeaderText = "Edad";
+            this.Edad.MinimumWidth = 6;
+            this.Edad.Name = "Edad";
+            this.Edad.Width = 125;
+            // 
+            // Telefono
+            // 
+            this.Telefono.HeaderText = "Telefono";
+            this.Telefono.MinimumWidth = 6;
+            this.Telefono.Name = "Telefono";
+            this.Telefono.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Telefono.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Telefono.Width = 125;
+            // 
+            // Telefono_emer
+            // 
+            this.Telefono_emer.HeaderText = "Telefono de Emergencia";
+            this.Telefono_emer.MinimumWidth = 6;
+            this.Telefono_emer.Name = "Telefono_emer";
+            this.Telefono_emer.Width = 125;
+            // 
+            // Correo
+            // 
+            this.Correo.HeaderText = "Correo";
+            this.Correo.MinimumWidth = 6;
+            this.Correo.Name = "Correo";
+            this.Correo.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Correo.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Correo.Width = 125;
+            // 
+            // Domicilio
+            // 
+            this.Domicilio.HeaderText = "Domicilio";
+            this.Domicilio.MinimumWidth = 6;
+            this.Domicilio.Name = "Domicilio";
+            this.Domicilio.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Domicilio.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Domicilio.Width = 125;
+            // 
+            // Ciudad
+            // 
+            this.Ciudad.HeaderText = "Ciudad";
+            this.Ciudad.MinimumWidth = 6;
+            this.Ciudad.Name = "Ciudad";
+            this.Ciudad.Width = 125;
+            // 
+            // Estatus
+            // 
+            this.Estatus.HeaderText = "Estatus";
+            this.Estatus.MinimumWidth = 6;
+            this.Estatus.Name = "Estatus";
+            this.Estatus.Width = 125;
+            // 
+            // FechaCreacion
+            // 
+            this.FechaCreacion.HeaderText = "Fecha De Registro";
+            this.FechaCreacion.MinimumWidth = 6;
+            this.FechaCreacion.Name = "FechaCreacion";
+            this.FechaCreacion.Width = 125;
+            // 
+            // FechaTermina
+            // 
+            this.FechaTermina.HeaderText = "Fecha Termina";
+            this.FechaTermina.MinimumWidth = 6;
+            this.FechaTermina.Name = "FechaTermina";
+            this.FechaTermina.Visible = false;
+            this.FechaTermina.Width = 125;
+            // 
             // frmcliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -516,9 +548,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Edad;
         private System.Windows.Forms.DataGridViewTextBoxColumn Telefono;
         private System.Windows.Forms.DataGridViewTextBoxColumn Telefono_emer;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Correo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Domicilio;
         private System.Windows.Forms.DataGridViewTextBoxColumn Ciudad;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Correo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Estatus;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FechaCreacion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FechaTermina;
     }
 }

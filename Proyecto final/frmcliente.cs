@@ -95,17 +95,22 @@ namespace Proyecto_final
                 int rowIndex = dgvcliente.Rows.Add();
                 DataGridViewRow row = dgvcliente.Rows[rowIndex];
 
-                row.Cells["CliNombre"].Value = item.Cli_Nombre;
-                row.Cells["CliEdad"].Value = item.Cli_Edad;
-                row.Cells["CliTelefono"].Value = item.Cli_Telefono;
-                row.Cells["CliTelefonoEmergencia"].Value = item.Cli_Telefono_Emer;
-                row.Cells["CliCorreo"].Value = item.Cli_Correo;
-                row.Cells["CliDomicilio"].Value = item.Cli_Domicilio;
-                row.Cells["CliColonia"].Value = item.Cli_Colonia;
-                row.Cells["EstId"].Value = item.oestatus.est_id;
-                row.Cells["EstDescripcion"].Value = item.oestatus.Est_descricion;
+                row.Cells["NombreC"].Value = item.Cli_Nombre;
+                row.Cells["Edad"].Value = item.Cli_Edad;
+                row.Cells["Telefono"].Value = item.Cli_Telefono;
+                row.Cells["Telefono_emer"].Value = item.Cli_Telefono_Emer;
+                row.Cells["Correo"].Value = item.Cli_Correo;
+                row.Cells["Domicilio"].Value = item.Cli_Domicilio;
+                row.Cells["Ciudad"].Value = item.Cli_Colonia;
+                row.Cells["Estatus"].Value = item.oestatus.Est_descricion;
                 row.Cells["FechaCreacion"].Value = item.Fecha_Creacion;
                 row.Cells["FechaTermina"].Value = item.Fecha_termina;
+                /*
+                row.Cells["EstId"].Value = item.oestatus.est_id;
+                row.Cells["Id_Cliente"].Value = item.oestatus.Est_descricion;
+                row.Cells["FechaCreacion"].Value = item.Fecha_Creacion;
+                row.Cells["FechaTermina"].Value = item.Fecha_termina;
+                */
             }
 
         }
@@ -125,6 +130,8 @@ namespace Proyecto_final
                 oestatus = new ESTATUS() {est_id = Convert.ToInt32(((optioncombo)cboestatus.SelectedItem).Valor)}
             };
 
+
+
             string nombre = txtNombreCliente.Text;
             int edad = Convert.ToInt32(txtEdad.Text);
             string telefono = txtTelefono.Text;
@@ -134,7 +141,30 @@ namespace Proyecto_final
             string colonia = txtCiudad.Text;
             int estadoId = Convert.ToInt32(((optioncombo)cboestatus.SelectedItem).Valor);
 
-            objcn_cliente.ingresarcln(nombre, edad, telefono, telefono911, correo, domicilio, colonia, estadoId);
+            if (objcn_cliente.sihay(nombre))
+            {
+
+                try
+                {
+                  objcn_cliente.actualiza(nombre, edad, telefono, telefono911, correo, domicilio, colonia, estadoId);
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error al actualizar el usuario: " + ex.Message);
+                }
+            }
+            else
+            {
+                try
+                {
+                    objcn_cliente.ingresarcln(nombre, edad, telefono, telefono911, correo, domicilio, colonia, estadoId);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error al registrar el usuario: " + ex.Message);
+                }
+            }
 
             CargarClientes();
             Limpiar();
@@ -197,6 +227,14 @@ namespace Proyecto_final
             txtdomicilio.Text = " ";
             txtCiudad.Text = "";
             cboestatus.SelectedIndex = 0;
+        }
+
+        private void ibtneliminar_Click(object sender, EventArgs e)
+        {
+            string Cli_Nombre = txtNombreCliente.Text;
+            objcn_cliente.byebye(Cli_Nombre);
+            CargarClientes();
+            Limpiar();
         }
     }
 }

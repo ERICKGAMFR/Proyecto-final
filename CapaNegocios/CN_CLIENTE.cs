@@ -16,9 +16,24 @@ namespace CapaNegocios
             return objCD_CLIENTE.Listar();
         }
 
-        public void ingresarcln(string nombre, int edad, string telefono, string telefono911, string correo, string domicilio, string colonia, int estadoId)
+        public void ingresarcln(string Cli_Nombre, int edad, string telefono, string telefono911, string correo, string domicilio, string colonia, int estadoId)
         {
-            objCD_CLIENTE.ingresar_cliente(nombre, edad, telefono, telefono911, correo, domicilio, colonia, estadoId);
+            objCD_CLIENTE.ingresar_cliente(Cli_Nombre, edad, telefono, telefono911, correo, domicilio, colonia, estadoId);
+        }
+
+        public bool sihay(string Cli_Nombre)
+        {
+            return objCD_CLIENTE.clienteexiste(Cli_Nombre);
+        }
+
+        public void actualiza(string Cli_Nombre, int edad, string telefono, string telefono911, string correo, string domicilio, string colonia, int estadoId)
+        {
+            objCD_CLIENTE.actualizarPorNombreCliente(Cli_Nombre, edad,  telefono,  telefono911,  correo,  domicilio,  colonia,  estadoId);
+        }
+
+        public void byebye (string Cli_Nombre)
+        {
+            objCD_CLIENTE.eliminar(Cli_Nombre);
         }
     }
 }
