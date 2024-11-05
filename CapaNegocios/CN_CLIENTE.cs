@@ -35,5 +35,10 @@ namespace CapaNegocios
         {
             objCD_CLIENTE.eliminar(Cli_Nombre);
         }
+
+        public List<CLIENTE> LDM()
+        {
+            return objCD_CLIENTE.Listar_miembros();
+        }
     }
 }

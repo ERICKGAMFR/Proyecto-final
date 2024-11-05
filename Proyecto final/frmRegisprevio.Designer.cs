@@ -192,6 +192,7 @@ namespace Proyecto_final
             this.Name = "frmRegisprevio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmRegisprevio";
+            this.Load += new System.EventHandler(this.frmRegisprevio_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -36,6 +36,26 @@ namespace Proyecto_final
 
             this.Close();
         }
+
+        private void frmRegisprevio_Load(object sender, EventArgs e)
+        {
+
+            cboestado.Items.Add(new optioncombo() { Valor = 1, Texto = "Activo" });
+            cboestado.Items.Add(new optioncombo() { Valor = 0, Texto = "No Activo" });
+            cboestado.DisplayMember = "Texto";
+            cboestado.ValueMember = "Valor";
+            cboestado.SelectedIndex = 0;
+
+            List<ROL> listarol = new CN_ROL().Listar();
+
+            foreach (ROL item in listarol)
+            {
+                cborol.Items.Add(new optioncombo() { Valor = item.Id_Rol, Texto = item.Descripcion });
+            }
+            cborol.DisplayMember = "Texto";
+            cborol.ValueMember = "Valor";
+            cborol.SelectedIndex = 0;
+        }
     }
     
 }

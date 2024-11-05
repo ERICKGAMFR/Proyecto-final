@@ -211,7 +211,62 @@ namespace CapaDatos
             }
         }
 
+        public List<CLIENTE> Listar_miembros()
+        {
+            List<CLIENTE> listamiembros = new List<CLIENTE>();
+            using (MySqlConnection ocadena = new MySqlConnection(conectadobb))
+            {
+                try
+                {
 
+                    /*
+                    SELECT c.Cli_Id, c.Cli_Nombre, e.Est_descricion, c.Cli_Edad, c.Cli_Telefono, c.Cli_Telefono_Emer, 
+                    c.Cli_Correo, c.Cli_Domicilio, c.Cli_Colonia, c.Est_id, c.Fecha_Creacion, c.Fecha_termina
+                    FROM cliente c
+                    INNER JOIN Estatus e ON e.Est_id = c.Est_id where e.Est_descricion = "miembro";
+                    */
+                    StringBuilder query = new StringBuilder();
+                    query.AppendLine(" SELECT c.Cli_Id, c.Cli_Nombre, e.Est_descricion, c.Cli_Edad, c.Cli_Telefono, c.Cli_Telefono_Emer,c.Cli_Correo,");
+                    query.AppendLine(" c.Cli_Domicilio, c.Cli_Colonia, c.Est_id, c.Fecha_Creacion, c.Fecha_termina FROM cliente c INNER JOIN Estatus e ON e.Est_id = c.Est_id where e.Est_descricion = 'miembro' ");
+
+
+                    MySqlCommand cmd = new MySqlCommand(query.ToString(), ocadena);
+                    cmd.CommandType = CommandType.Text;
+
+                    ocadena.Open();
+
+                    using (MySqlDataReader dr = cmd.ExecuteReader())
+                    {
+                        while (dr.Read())
+                        {
+                            listamiembros.Add(new CLIENTE()
+                            {
+                                Cli_Id = Convert.ToInt32(dr["Cli_Id"]),
+                                Cli_Nombre = dr["Cli_Nombre"].ToString(),
+                                Cli_Edad = Convert.ToInt32(dr["Cli_Edad"]),
+                                Cli_Telefono = dr["Cli_Telefono"].ToString(),
+                                Cli_Telefono_Emer = dr["Cli_Telefono_Emer"].ToString(),
+                                Cli_Correo = dr["Cli_Correo"].ToString(),
+                                Cli_Domicilio = dr["Cli_Domicilio"].ToString(),
+                                Cli_Colonia = dr["Cli_Colonia"].ToString(),
+                                oestatus = new ESTATUS()
+                                {
+                                    est_id = Convert.ToInt32(dr["est_id"]),
+                                    Est_descricion = dr["Est_descricion"].ToString()
+                                },
+                                Fecha_Creacion = dr["Fecha_Creacion"].ToString(),
+                                Fecha_termina = dr["Fecha_termina"].ToString()
+                            });
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("Error al listar los clientes: " + ex.Message + " | StackTrace: " + ex.StackTrace, ex);
+                }
+            }
+            return listamiembros;
+        }
 
 
     }

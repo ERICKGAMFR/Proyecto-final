@@ -383,12 +383,11 @@
             // 
             // Id_Cliente
             // 
-            this.Id_Cliente.HeaderText = "Id Cliente";
+            this.Id_Cliente.HeaderText = "Identificador del Cliente";
             this.Id_Cliente.MinimumWidth = 6;
             this.Id_Cliente.Name = "Id_Cliente";
             this.Id_Cliente.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.Id_Cliente.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Id_Cliente.Visible = false;
             this.Id_Cliente.Width = 125;
             // 
             // NombreC

@@ -13,7 +13,7 @@ namespace CapaEntidades
         public int Prod_Cantidad { get; set; }
         public decimal Prod_Precio { get; set; }
         public string Prod_FechaCad { get; set; }
-        public string FechaRegistro { get; set; }
+        public DateTime Fecha_Creacion { get; set; }
 
     }
 }

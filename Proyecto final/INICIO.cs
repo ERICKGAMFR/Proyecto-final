@@ -15,42 +15,46 @@ namespace Proyecto_final
 {
     public partial class INICIO : Form
     {
+        // private static USUARIO usuarioactual;
         private static USUARIO usuarioactual;
         private static IconButton a = null;
         private static Form FormularioActivo = null;
 
-        public INICIO(/*USUARIO objUSUARIO*/)
+        public INICIO()
         {
-            //usuarioactual = objUSUARIO;
-            //if (objUSUARIO == null) usuarioactual = new USUARIO() { Nombre_Usuario = "ADMIN PREDEFINIDO", Id_Usuario = 1 };
-           // else usuarioactual = objUSUARIO;
+
             InitializeComponent();
         }
 
         private void INICIO_Load(object sender, EventArgs e)
         {
             Con_botonee.BackColor = Color.SlateGray;
-           /* List<PERMISO> Listaper = new CN_PERMISO().Listar(usuarioactual.Id_Usuario);
+            /* List<PERMISO> Listaper = new CN_PERMISO().Listar(usuarioactual.Id_Usuario);
 
 
-            foreach (IconButton iconButton in Con_botonee.Controls.OfType<IconButton>())
-            {
-                foreach (var permiso in Listaper)
-                {
-                    Console.WriteLine($"Comparando iconButton.Name: {iconButton.Name} con permiso.Nombremenu: {permiso.Nombremenu}");
-                }
+
+             foreach (IconButton iconButton in Con_botonee.Controls.OfType<IconButton>())
+             {
+                 foreach (var permiso in Listaper)
+                 {
+                     Console.WriteLine($"Comparando iconButton.Name: {iconButton.Name} con permiso.Nombremenu: {permiso.Nombremenu}");
+                 }
 
 
-                bool encontrado = Listaper.Any(m => m.Nombremenu == iconButton.Name);
+                 bool encontrado = Listaper.Any(m => m.Nombremenu == iconButton.Name);
 
 
-                if (!encontrado)
-                {
-                    iconButton.Visible = false;
-                }
-            }*/
+                 if (!encontrado)
+                 {
+                     iconButton.Visible = false;
+                 }
+
+            usuarioactual.Nombre_Usuario
+             }*/
+
+           //{ lblusuario.Text = usuarioactual.Nombre_Usuario;
         }
-        
+
         private void Abrirformulariobtn(IconButton b, Form formulario)
         {
            

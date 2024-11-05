@@ -34,7 +34,7 @@ namespace Proyecto_final
             if (ousuario != null)
             {
 
-                INICIO form = new INICIO(/*ousuario*/);
+                INICIO form = new INICIO();
 
                 form.Show();
                 this.Hide();
@@ -43,12 +43,19 @@ namespace Proyecto_final
             }
             else
             {
-                frmRegisprevio form = new frmRegisprevio();
-                form.Show();
-                this.Hide();
+                if(TEST == null)
+                {
+                   
+                    frmRegisprevio form = new frmRegisprevio();
+                    form.Show();
+                    this.Hide();
 
-                form.FormClosing += frm_closing;
-                MessageBox.Show("NO SE ENCONTRO EL USUARIO", "MENSAJE", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    form.FormClosing += frm_closing;
+                }
+                else
+                {
+                    MessageBox.Show("NO SE ENCONTRO EL USUARIO", "MENSAJE", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }              
                 
             }
         }
