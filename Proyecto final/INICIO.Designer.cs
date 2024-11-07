@@ -36,7 +36,6 @@ namespace Proyecto_final
             this.iconMenuItem1 = new FontAwesome.Sharp.IconMenuItem();
             this.Contenedor = new System.Windows.Forms.Panel();
             this.Con_botonee = new System.Windows.Forms.Panel();
-            this.ibtnentrenadores = new FontAwesome.Sharp.IconButton();
             this.ibtnclientes = new FontAwesome.Sharp.IconButton();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.ibtnsalir = new FontAwesome.Sharp.IconButton();
@@ -115,7 +114,6 @@ namespace Proyecto_final
             // 
             // Con_botonee
             // 
-            this.Con_botonee.Controls.Add(this.ibtnentrenadores);
             this.Con_botonee.Controls.Add(this.ibtnclientes);
             this.Con_botonee.Controls.Add(this.iconButton1);
             this.Con_botonee.Controls.Add(this.ibtnsalir);
@@ -129,22 +127,6 @@ namespace Proyecto_final
             this.Con_botonee.Name = "Con_botonee";
             this.Con_botonee.Size = new System.Drawing.Size(267, 633);
             this.Con_botonee.TabIndex = 14;
-            // 
-            // ibtnentrenadores
-            // 
-            this.ibtnentrenadores.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ibtnentrenadores.IconChar = FontAwesome.Sharp.IconChar.WeightHanging;
-            this.ibtnentrenadores.IconColor = System.Drawing.Color.Black;
-            this.ibtnentrenadores.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ibtnentrenadores.IconSize = 50;
-            this.ibtnentrenadores.Location = new System.Drawing.Point(142, 334);
-            this.ibtnentrenadores.Name = "ibtnentrenadores";
-            this.ibtnentrenadores.Size = new System.Drawing.Size(106, 88);
-            this.ibtnentrenadores.TabIndex = 9;
-            this.ibtnentrenadores.Text = "Entrenadores";
-            this.ibtnentrenadores.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.ibtnentrenadores.UseVisualStyleBackColor = true;
-            this.ibtnentrenadores.Click += new System.EventHandler(this.ibtnentrenadores_Click);
             // 
             // ibtnclientes
             // 
@@ -185,7 +167,7 @@ namespace Proyecto_final
             this.ibtnsalir.IconColor = System.Drawing.Color.Black;
             this.ibtnsalir.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ibtnsalir.IconSize = 50;
-            this.ibtnsalir.Location = new System.Drawing.Point(142, 428);
+            this.ibtnsalir.Location = new System.Drawing.Point(142, 52);
             this.ibtnsalir.Name = "ibtnsalir";
             this.ibtnsalir.Size = new System.Drawing.Size(106, 88);
             this.ibtnsalir.TabIndex = 6;
@@ -201,7 +183,7 @@ namespace Proyecto_final
             this.ibtnacercade.IconColor = System.Drawing.Color.Black;
             this.ibtnacercade.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ibtnacercade.IconSize = 50;
-            this.ibtnacercade.Location = new System.Drawing.Point(26, 428);
+            this.ibtnacercade.Location = new System.Drawing.Point(149, 428);
             this.ibtnacercade.Name = "ibtnacercade";
             this.ibtnacercade.Size = new System.Drawing.Size(106, 88);
             this.ibtnacercade.TabIndex = 5;
@@ -216,7 +198,7 @@ namespace Proyecto_final
             this.ibtninventario.IconColor = System.Drawing.Color.Black;
             this.ibtninventario.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ibtninventario.IconSize = 50;
-            this.ibtninventario.Location = new System.Drawing.Point(26, 334);
+            this.ibtninventario.Location = new System.Drawing.Point(85, 334);
             this.ibtninventario.Name = "ibtninventario";
             this.ibtninventario.Size = new System.Drawing.Size(106, 88);
             this.ibtninventario.TabIndex = 4;
@@ -280,7 +262,7 @@ namespace Proyecto_final
             this.ibtnusuario.IconColor = System.Drawing.Color.Black;
             this.ibtnusuario.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ibtnusuario.IconSize = 50;
-            this.ibtnusuario.Location = new System.Drawing.Point(142, 52);
+            this.ibtnusuario.Location = new System.Drawing.Point(26, 428);
             this.ibtnusuario.Name = "ibtnusuario";
             this.ibtnusuario.Size = new System.Drawing.Size(106, 88);
             this.ibtnusuario.TabIndex = 0;
@@ -329,6 +311,5 @@ namespace Proyecto_final
         private FontAwesome.Sharp.IconButton ibtnvisita;
         private FontAwesome.Sharp.IconButton iconButton1;
         private FontAwesome.Sharp.IconButton ibtnclientes;
-        private FontAwesome.Sharp.IconButton ibtnentrenadores;
     }
 }

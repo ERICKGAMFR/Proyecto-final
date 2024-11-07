@@ -70,24 +70,12 @@ namespace Proyecto_final
                     item.Fecha_Creacion, item.Fecha_termina });
             }
 
-            /*
-             foreach (USUARIO item in listausuario)
-            {
-                dgvusuario.Rows.Add(new object[] { "",item.Id_Usuario,item.Nombre_Usuario,item.Telefono,item.Correo,item.Clave,
-                item.oROl.Id_Rol,item.oROl.Descripcion,
-                item.Estado == true ? 1 : 0,
-                item.Estado == true ? "Activo" : "No Activo",
-                });
-            }
-            cborol.DisplayMember = "Texto";
-            cborol.ValueMember = "Valor";
-            cborol.SelectedIndex = 0;
-                */
+      
 
         }
         private void CargarClientes()
         {
-            dgvcliente.Rows.Clear(); // Limpia el DataGridView antes de recargar
+            dgvcliente.Rows.Clear(); 
             List<CLIENTE> ptcliente = new CN_CLIENTE().Listar();
 
             foreach (CLIENTE item in ptcliente)
@@ -95,6 +83,7 @@ namespace Proyecto_final
                 int rowIndex = dgvcliente.Rows.Add();
                 DataGridViewRow row = dgvcliente.Rows[rowIndex];
 
+                row.Cells["Id_Cliente"].Value = item.Cli_Id;
                 row.Cells["NombreC"].Value = item.Cli_Nombre;
                 row.Cells["Edad"].Value = item.Cli_Edad;
                 row.Cells["Telefono"].Value = item.Cli_Telefono;
@@ -105,12 +94,6 @@ namespace Proyecto_final
                 row.Cells["Estatus"].Value = item.oestatus.Est_descricion;
                 row.Cells["FechaCreacion"].Value = item.Fecha_Creacion;
                 row.Cells["FechaTermina"].Value = item.Fecha_termina;
-                /*
-                row.Cells["EstId"].Value = item.oestatus.est_id;
-                row.Cells["Id_Cliente"].Value = item.oestatus.Est_descricion;
-                row.Cells["FechaCreacion"].Value = item.Fecha_Creacion;
-                row.Cells["FechaTermina"].Value = item.Fecha_termina;
-                */
             }
 
         }
@@ -196,27 +179,28 @@ namespace Proyecto_final
                 int indice = e.RowIndex;
                 if (indice >= 0)
                 {
-
+                    // Asignar los valores de las celdas a los TextBox
                     txtNombreCliente.Text = dgvcliente.Rows[indice].Cells["NombreC"].Value.ToString();
                     txtEdad.Text = dgvcliente.Rows[indice].Cells["Edad"].Value.ToString();
                     txtTelefono.Text = dgvcliente.Rows[indice].Cells["Telefono"].Value.ToString();
                     txtTelefonoEmergencia.Text = dgvcliente.Rows[indice].Cells["Telefono_emer"].Value.ToString();
                     txtCorreo.Text = dgvcliente.Rows[indice].Cells["Correo"].Value.ToString();
-                    txtdomicilio.Text = dgvcliente.Rows[indice].Cells["Domicilio" ].Value.ToString();
+                    txtdomicilio.Text = dgvcliente.Rows[indice].Cells["Domicilio"].Value.ToString();
                     txtCiudad.Text = dgvcliente.Rows[indice].Cells["Ciudad"].Value.ToString();
+
+                    // Comparar el ID del estatus para seleccionar el elemento correcto en el ComboBox
                     foreach (optioncombo oc in cboestatus.Items)
                     {
-                        if (Convert.ToInt32(oc.Valor) == Convert.ToInt32(dgvcliente.Rows[indice].Cells["Id_Cliente"].Value))
+                        if (oc.Texto == dgvcliente.Rows[indice].Cells["Estatus"].Value.ToString())
                         {
                             cboestatus.SelectedItem = oc;
                             break;
                         }
                     }
-
                 }
             }
-
         }
+
         private void Limpiar()
         {
             txtNombreCliente.Text = " ";

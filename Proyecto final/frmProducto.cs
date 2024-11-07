@@ -49,6 +49,17 @@ namespace Proyecto_final
 
         private void frmProducto_Load(object sender, EventArgs e)
         {
+            foreach (DataGridViewColumn columna in dgvprod.Columns)
+            {
+                if (columna.Visible == true && columna.Name != "btnseleccionar")
+                {
+                    cbobusqueda.Items.Add(new optioncombo() { Valor = columna.Name, Texto = columna.HeaderText });
+                }
+            }
+            cbobusqueda.DisplayMember = "Texto";
+            cbobusqueda.ValueMember = "Valor";
+            cbobusqueda.SelectedIndex = 0;
+
 
             List<PRODUCTO> listainv = new CN_PRUDUCTOS().Listar();
 

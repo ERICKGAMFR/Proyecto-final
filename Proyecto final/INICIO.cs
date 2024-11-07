@@ -155,10 +155,7 @@ namespace Proyecto_final
         {
             Abrirformulariobtn(ibtnclientes, new frmcliente()); 
         }
-            private void ibtnentrenadores_Click(object sender, EventArgs e)
-        {
-            Abrirformulariobtn(ibtnentrenadores, new frmentrenadores());
-        }
+
 
 
     }

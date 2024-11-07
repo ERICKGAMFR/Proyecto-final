@@ -34,14 +34,14 @@ namespace Proyecto_final
             this.ibtnexportarexcel = new FontAwesome.Sharp.IconButton();
             this.dgvmiembro = new System.Windows.Forms.DataGridView();
             this.lbbuscar = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbobusqueda = new System.Windows.Forms.ComboBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.ibtnbusca = new FontAwesome.Sharp.IconButton();
             this.ibtnlimpiar = new FontAwesome.Sharp.IconButton();
             this.dgvbtnsleciona = new System.Windows.Forms.DataGridViewButtonColumn();
             this.estatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Id_Cliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NombreC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NombreM = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Telefono_emer = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Correo = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -98,7 +98,7 @@ namespace Proyecto_final
             this.dgvbtnsleciona,
             this.estatus,
             this.Id_Cliente,
-            this.NombreC,
+            this.NombreM,
             this.Telefono,
             this.Telefono_emer,
             this.Correo,
@@ -113,6 +113,7 @@ namespace Proyecto_final
             this.dgvmiembro.Size = new System.Drawing.Size(955, 506);
             this.dgvmiembro.TabIndex = 95;
             this.dgvmiembro.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvusuario_CellContentClick);
+            this.dgvmiembro.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dgvmiembro_CellPainting);
             // 
             // lbbuscar
             // 
@@ -124,14 +125,14 @@ namespace Proyecto_final
             this.lbbuscar.TabIndex = 96;
             this.lbbuscar.Text = "Buscar por:";
             // 
-            // comboBox1
+            // cbobusqueda
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(589, 70);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(125, 24);
-            this.comboBox1.TabIndex = 97;
+            this.cbobusqueda.FormattingEnabled = true;
+            this.cbobusqueda.Location = new System.Drawing.Point(589, 70);
+            this.cbobusqueda.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbobusqueda.Name = "cbobusqueda";
+            this.cbobusqueda.Size = new System.Drawing.Size(125, 24);
+            this.cbobusqueda.TabIndex = 97;
             // 
             // textBox1
             // 
@@ -191,14 +192,14 @@ namespace Proyecto_final
             this.Id_Cliente.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.Id_Cliente.Width = 125;
             // 
-            // NombreC
+            // NombreM
             // 
-            this.NombreC.HeaderText = "Nombre Miembro";
-            this.NombreC.MinimumWidth = 6;
-            this.NombreC.Name = "NombreC";
-            this.NombreC.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.NombreC.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.NombreC.Width = 125;
+            this.NombreM.HeaderText = "Nombre Miembro";
+            this.NombreM.MinimumWidth = 6;
+            this.NombreM.Name = "NombreM";
+            this.NombreM.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.NombreM.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.NombreM.Width = 125;
             // 
             // Telefono
             // 
@@ -262,7 +263,7 @@ namespace Proyecto_final
             this.Controls.Add(this.ibtnlimpiar);
             this.Controls.Add(this.ibtnbusca);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cbobusqueda);
             this.Controls.Add(this.lbbuscar);
             this.Controls.Add(this.dgvmiembro);
             this.Controls.Add(this.ibtnexportarexcel);
@@ -285,14 +286,14 @@ namespace Proyecto_final
         private FontAwesome.Sharp.IconButton ibtnexportarexcel;
         private System.Windows.Forms.DataGridView dgvmiembro;
         private System.Windows.Forms.Label lbbuscar;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbobusqueda;
         private System.Windows.Forms.TextBox textBox1;
         private FontAwesome.Sharp.IconButton ibtnbusca;
         private FontAwesome.Sharp.IconButton ibtnlimpiar;
         private System.Windows.Forms.DataGridViewButtonColumn dgvbtnsleciona;
         private System.Windows.Forms.DataGridViewTextBoxColumn estatus;
         private System.Windows.Forms.DataGridViewTextBoxColumn Id_Cliente;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NombreC;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NombreM;
         private System.Windows.Forms.DataGridViewTextBoxColumn Telefono;
         private System.Windows.Forms.DataGridViewTextBoxColumn Telefono_emer;
         private System.Windows.Forms.DataGridViewTextBoxColumn Correo;

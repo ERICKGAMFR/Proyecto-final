@@ -40,5 +40,15 @@ namespace CapaNegocios
         {
             return objCD_CLIENTE.Listar_miembros();
         }
+
+        public List<CLIENTE> LDV()
+        {
+            return objCD_CLIENTE.Listar_visistas();
+        }
+
+        public void soyyootravez(int id )
+        {
+            objCD_CLIENTE.Renovar(id);
+        }
     }
 }
