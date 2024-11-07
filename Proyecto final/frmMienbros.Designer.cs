@@ -33,11 +33,6 @@ namespace Proyecto_final
             this.ibtnsave = new FontAwesome.Sharp.IconButton();
             this.ibtnexportarexcel = new FontAwesome.Sharp.IconButton();
             this.dgvmiembro = new System.Windows.Forms.DataGridView();
-            this.lbbuscar = new System.Windows.Forms.Label();
-            this.cbobusqueda = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.ibtnbusca = new FontAwesome.Sharp.IconButton();
-            this.ibtnlimpiar = new FontAwesome.Sharp.IconButton();
             this.dgvbtnsleciona = new System.Windows.Forms.DataGridViewButtonColumn();
             this.estatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Id_Cliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -49,6 +44,15 @@ namespace Proyecto_final
             this.Ciudad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FechaCreacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FechaTermina = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lbbuscar = new System.Windows.Forms.Label();
+            this.cbobusqueda = new System.Windows.Forms.ComboBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.ibtnbusca = new FontAwesome.Sharp.IconButton();
+            this.ibtnlimpiar = new FontAwesome.Sharp.IconButton();
+            this.txtid = new System.Windows.Forms.TextBox();
+            this.txtnombre = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvmiembro)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,7 +70,7 @@ namespace Proyecto_final
             this.ibtnsave.IconChar = FontAwesome.Sharp.IconChar.History;
             this.ibtnsave.IconColor = System.Drawing.Color.ForestGreen;
             this.ibtnsave.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ibtnsave.Location = new System.Drawing.Point(12, 174);
+            this.ibtnsave.Location = new System.Drawing.Point(12, 151);
             this.ibtnsave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ibtnsave.Name = "ibtnsave";
             this.ibtnsave.Size = new System.Drawing.Size(85, 79);
@@ -81,7 +85,7 @@ namespace Proyecto_final
             this.ibtnexportarexcel.IconChar = FontAwesome.Sharp.IconChar.FileExcel;
             this.ibtnexportarexcel.IconColor = System.Drawing.Color.Green;
             this.ibtnexportarexcel.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ibtnexportarexcel.Location = new System.Drawing.Point(12, 348);
+            this.ibtnexportarexcel.Location = new System.Drawing.Point(12, 473);
             this.ibtnexportarexcel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ibtnexportarexcel.Name = "ibtnexportarexcel";
             this.ibtnexportarexcel.Size = new System.Drawing.Size(85, 84);
@@ -106,14 +110,114 @@ namespace Proyecto_final
             this.Ciudad,
             this.FechaCreacion,
             this.FechaTermina});
-            this.dgvmiembro.Location = new System.Drawing.Point(121, 130);
+            this.dgvmiembro.Location = new System.Drawing.Point(114, 130);
             this.dgvmiembro.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgvmiembro.MultiSelect = false;
             this.dgvmiembro.Name = "dgvmiembro";
+            this.dgvmiembro.ReadOnly = true;
+            this.dgvmiembro.RowHeadersVisible = false;
             this.dgvmiembro.RowHeadersWidth = 51;
-            this.dgvmiembro.Size = new System.Drawing.Size(955, 506);
+            this.dgvmiembro.Size = new System.Drawing.Size(962, 485);
             this.dgvmiembro.TabIndex = 95;
             this.dgvmiembro.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvusuario_CellContentClick);
             this.dgvmiembro.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dgvmiembro_CellPainting);
+            // 
+            // dgvbtnsleciona
+            // 
+            this.dgvbtnsleciona.HeaderText = "";
+            this.dgvbtnsleciona.MinimumWidth = 6;
+            this.dgvbtnsleciona.Name = "dgvbtnsleciona";
+            this.dgvbtnsleciona.ReadOnly = true;
+            this.dgvbtnsleciona.Width = 30;
+            // 
+            // estatus
+            // 
+            this.estatus.HeaderText = "Estatus";
+            this.estatus.MinimumWidth = 6;
+            this.estatus.Name = "estatus";
+            this.estatus.ReadOnly = true;
+            this.estatus.Visible = false;
+            this.estatus.Width = 125;
+            // 
+            // Id_Cliente
+            // 
+            this.Id_Cliente.HeaderText = "Identificador de Cliente";
+            this.Id_Cliente.MinimumWidth = 6;
+            this.Id_Cliente.Name = "Id_Cliente";
+            this.Id_Cliente.ReadOnly = true;
+            this.Id_Cliente.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Id_Cliente.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Id_Cliente.Width = 125;
+            // 
+            // NombreM
+            // 
+            this.NombreM.HeaderText = "Nombre Miembro";
+            this.NombreM.MinimumWidth = 6;
+            this.NombreM.Name = "NombreM";
+            this.NombreM.ReadOnly = true;
+            this.NombreM.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.NombreM.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.NombreM.Width = 125;
+            // 
+            // Telefono
+            // 
+            this.Telefono.HeaderText = "Telefono";
+            this.Telefono.MinimumWidth = 6;
+            this.Telefono.Name = "Telefono";
+            this.Telefono.ReadOnly = true;
+            this.Telefono.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Telefono.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Telefono.Width = 125;
+            // 
+            // Telefono_emer
+            // 
+            this.Telefono_emer.HeaderText = "Telefono de Emergencia";
+            this.Telefono_emer.MinimumWidth = 6;
+            this.Telefono_emer.Name = "Telefono_emer";
+            this.Telefono_emer.ReadOnly = true;
+            this.Telefono_emer.Width = 125;
+            // 
+            // Correo
+            // 
+            this.Correo.HeaderText = "Correo";
+            this.Correo.MinimumWidth = 6;
+            this.Correo.Name = "Correo";
+            this.Correo.ReadOnly = true;
+            this.Correo.Width = 125;
+            // 
+            // Domicilio
+            // 
+            this.Domicilio.HeaderText = "Domicilio";
+            this.Domicilio.MinimumWidth = 6;
+            this.Domicilio.Name = "Domicilio";
+            this.Domicilio.ReadOnly = true;
+            this.Domicilio.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Domicilio.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Domicilio.Width = 125;
+            // 
+            // Ciudad
+            // 
+            this.Ciudad.HeaderText = "Ciudad";
+            this.Ciudad.MinimumWidth = 6;
+            this.Ciudad.Name = "Ciudad";
+            this.Ciudad.ReadOnly = true;
+            this.Ciudad.Width = 125;
+            // 
+            // FechaCreacion
+            // 
+            this.FechaCreacion.HeaderText = "Fecha Inicio";
+            this.FechaCreacion.MinimumWidth = 6;
+            this.FechaCreacion.Name = "FechaCreacion";
+            this.FechaCreacion.ReadOnly = true;
+            this.FechaCreacion.Width = 125;
+            // 
+            // FechaTermina
+            // 
+            this.FechaTermina.HeaderText = "Fecha Termina ";
+            this.FechaTermina.MinimumWidth = 6;
+            this.FechaTermina.Name = "FechaTermina";
+            this.FechaTermina.ReadOnly = true;
+            this.FechaTermina.Width = 125;
             // 
             // lbbuscar
             // 
@@ -168,98 +272,49 @@ namespace Proyecto_final
             this.ibtnlimpiar.TabIndex = 100;
             this.ibtnlimpiar.UseVisualStyleBackColor = true;
             // 
-            // dgvbtnsleciona
+            // txtid
             // 
-            this.dgvbtnsleciona.HeaderText = "";
-            this.dgvbtnsleciona.MinimumWidth = 6;
-            this.dgvbtnsleciona.Name = "dgvbtnsleciona";
-            this.dgvbtnsleciona.Width = 30;
+            this.txtid.Location = new System.Drawing.Point(240, 620);
+            this.txtid.Name = "txtid";
+            this.txtid.Size = new System.Drawing.Size(39, 22);
+            this.txtid.TabIndex = 101;
+            this.txtid.TextChanged += new System.EventHandler(this.txtid_TextChanged);
             // 
-            // estatus
+            // txtnombre
             // 
-            this.estatus.HeaderText = "Estatus";
-            this.estatus.MinimumWidth = 6;
-            this.estatus.Name = "estatus";
-            this.estatus.Visible = false;
-            this.estatus.Width = 125;
+            this.txtnombre.Location = new System.Drawing.Point(460, 620);
+            this.txtnombre.Name = "txtnombre";
+            this.txtnombre.Size = new System.Drawing.Size(166, 22);
+            this.txtnombre.TabIndex = 102;
             // 
-            // Id_Cliente
+            // label1
             // 
-            this.Id_Cliente.HeaderText = "Identificador de Cliente";
-            this.Id_Cliente.MinimumWidth = 6;
-            this.Id_Cliente.Name = "Id_Cliente";
-            this.Id_Cliente.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Id_Cliente.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Id_Cliente.Width = 125;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(135, 620);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(99, 17);
+            this.label1.TabIndex = 103;
+            this.label1.Text = "ID de Miembro";
             // 
-            // NombreM
+            // label2
             // 
-            this.NombreM.HeaderText = "Nombre Miembro";
-            this.NombreM.MinimumWidth = 6;
-            this.NombreM.Name = "NombreM";
-            this.NombreM.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.NombreM.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.NombreM.Width = 125;
-            // 
-            // Telefono
-            // 
-            this.Telefono.HeaderText = "Telefono";
-            this.Telefono.MinimumWidth = 6;
-            this.Telefono.Name = "Telefono";
-            this.Telefono.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Telefono.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Telefono.Width = 125;
-            // 
-            // Telefono_emer
-            // 
-            this.Telefono_emer.HeaderText = "Telefono de Emergencia";
-            this.Telefono_emer.MinimumWidth = 6;
-            this.Telefono_emer.Name = "Telefono_emer";
-            this.Telefono_emer.Width = 125;
-            // 
-            // Correo
-            // 
-            this.Correo.HeaderText = "Correo";
-            this.Correo.MinimumWidth = 6;
-            this.Correo.Name = "Correo";
-            this.Correo.Width = 125;
-            // 
-            // Domicilio
-            // 
-            this.Domicilio.HeaderText = "Domicilio";
-            this.Domicilio.MinimumWidth = 6;
-            this.Domicilio.Name = "Domicilio";
-            this.Domicilio.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Domicilio.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Domicilio.Width = 125;
-            // 
-            // Ciudad
-            // 
-            this.Ciudad.HeaderText = "Ciudad";
-            this.Ciudad.MinimumWidth = 6;
-            this.Ciudad.Name = "Ciudad";
-            this.Ciudad.Width = 125;
-            // 
-            // FechaCreacion
-            // 
-            this.FechaCreacion.HeaderText = "Fecha Inicio";
-            this.FechaCreacion.MinimumWidth = 6;
-            this.FechaCreacion.Name = "FechaCreacion";
-            this.FechaCreacion.Width = 125;
-            // 
-            // FechaTermina
-            // 
-            this.FechaTermina.HeaderText = "Fecha Termina ";
-            this.FechaTermina.MinimumWidth = 6;
-            this.FechaTermina.Name = "FechaTermina";
-            this.FechaTermina.Width = 125;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(318, 623);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(136, 17);
+            this.label2.TabIndex = 104;
+            this.label2.Text = "Nombre de Miembro";
             // 
             // frmMienbros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1077, 673);
+            this.ClientSize = new System.Drawing.Size(1074, 646);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtnombre);
+            this.Controls.Add(this.txtid);
             this.Controls.Add(this.ibtnlimpiar);
             this.Controls.Add(this.ibtnbusca);
             this.Controls.Add(this.textBox1);
@@ -301,5 +356,9 @@ namespace Proyecto_final
         private System.Windows.Forms.DataGridViewTextBoxColumn Ciudad;
         private System.Windows.Forms.DataGridViewTextBoxColumn FechaCreacion;
         private System.Windows.Forms.DataGridViewTextBoxColumn FechaTermina;
+        private System.Windows.Forms.TextBox txtid;
+        private System.Windows.Forms.TextBox txtnombre;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

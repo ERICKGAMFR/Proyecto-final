@@ -47,6 +47,7 @@ namespace Proyecto_final
 
         private void ibtnsave_Click(object sender, EventArgs e)
         {
+
             objcn_cliente.soyyootravez(id);
             CargarClientes();
         }
@@ -55,18 +56,24 @@ namespace Proyecto_final
         {
 
         }
-        
+
         private void dgvusuario_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if (dgvmiembro.Columns[e.ColumnIndex].Name == "dgvbtnseleciona" && e.RowIndex >= 0)
             {
+                MessageBox.Show("1", "Título del mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
                 int indice = e.RowIndex;
                 if (indice >= 0)
                 {
-                     id = Convert.ToInt32(dgvmiembro.Rows[indice].Cells["Id_Cliente"]);
+                    MessageBox.Show("2", "Título del mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    txtid.Text = dgvmiembro.Rows[indice].Cells["Id_Cliente"].Value.ToString();
+                    txtnombre.Text = dgvmiembro.Rows[indice].Cells["NombreM"].Value.ToString();
                 }
             }
         }
+
 
 
 
@@ -113,6 +120,11 @@ namespace Proyecto_final
                 e.Handled = true;
 
             }
+
+        }
+
+        private void txtid_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

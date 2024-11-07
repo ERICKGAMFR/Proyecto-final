@@ -37,7 +37,7 @@ namespace Proyecto_final
             this.Contenedor = new System.Windows.Forms.Panel();
             this.Con_botonee = new System.Windows.Forms.Panel();
             this.ibtnclientes = new FontAwesome.Sharp.IconButton();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.ibtninicio = new FontAwesome.Sharp.IconButton();
             this.ibtnsalir = new FontAwesome.Sharp.IconButton();
             this.ibtnacercade = new FontAwesome.Sharp.IconButton();
             this.ibtninventario = new FontAwesome.Sharp.IconButton();
@@ -115,7 +115,7 @@ namespace Proyecto_final
             // Con_botonee
             // 
             this.Con_botonee.Controls.Add(this.ibtnclientes);
-            this.Con_botonee.Controls.Add(this.iconButton1);
+            this.Con_botonee.Controls.Add(this.ibtninicio);
             this.Con_botonee.Controls.Add(this.ibtnsalir);
             this.Con_botonee.Controls.Add(this.ibtnacercade);
             this.Con_botonee.Controls.Add(this.ibtninventario);
@@ -144,21 +144,21 @@ namespace Proyecto_final
             this.ibtnclientes.UseVisualStyleBackColor = true;
             this.ibtnclientes.Click += new System.EventHandler(this.ibtnclientes_Click);
             // 
-            // iconButton1
+            // ibtninicio
             // 
-            this.iconButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.House;
-            this.iconButton1.IconColor = System.Drawing.Color.Black;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.IconSize = 50;
-            this.iconButton1.Location = new System.Drawing.Point(26, 52);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(106, 88);
-            this.iconButton1.TabIndex = 7;
-            this.iconButton1.Text = "Inicio";
-            this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.iconButton1.UseVisualStyleBackColor = true;
-            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
+            this.ibtninicio.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ibtninicio.IconChar = FontAwesome.Sharp.IconChar.House;
+            this.ibtninicio.IconColor = System.Drawing.Color.Black;
+            this.ibtninicio.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ibtninicio.IconSize = 50;
+            this.ibtninicio.Location = new System.Drawing.Point(26, 52);
+            this.ibtninicio.Name = "ibtninicio";
+            this.ibtninicio.Size = new System.Drawing.Size(106, 88);
+            this.ibtninicio.TabIndex = 7;
+            this.ibtninicio.Text = "Inicio";
+            this.ibtninicio.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.ibtninicio.UseVisualStyleBackColor = true;
+            this.ibtninicio.Click += new System.EventHandler(this.iconButton1_Click);
             // 
             // ibtnsalir
             // 
@@ -309,7 +309,7 @@ namespace Proyecto_final
         private FontAwesome.Sharp.IconButton ibtnventas;
         private FontAwesome.Sharp.IconButton ibtnmiembros;
         private FontAwesome.Sharp.IconButton ibtnvisita;
-        private FontAwesome.Sharp.IconButton iconButton1;
+        private FontAwesome.Sharp.IconButton ibtninicio;
         private FontAwesome.Sharp.IconButton ibtnclientes;
     }
 }

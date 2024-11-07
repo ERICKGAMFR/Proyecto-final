@@ -17,7 +17,7 @@ namespace Proyecto_final
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new INICIO());
+            Application.Run(new Login ());
         }
     }
 }

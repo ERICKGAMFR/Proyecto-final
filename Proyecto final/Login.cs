@@ -34,7 +34,7 @@ namespace Proyecto_final
             if (ousuario != null)
             {
 
-                INICIO form = new INICIO();
+                INICIO form = new INICIO(ousuario);
 
                 form.Show();
                 this.Hide();

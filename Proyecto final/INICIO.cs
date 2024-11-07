@@ -20,16 +20,17 @@ namespace Proyecto_final
         private static IconButton a = null;
         private static Form FormularioActivo = null;
 
-        public INICIO()
+        public INICIO(USUARIO objUSUARIO)
         {
-
+            usuarioactual = objUSUARIO;
             InitializeComponent();
         }
 
         private void INICIO_Load(object sender, EventArgs e)
         {
+            
             Con_botonee.BackColor = Color.SlateGray;
-            /* List<PERMISO> Listaper = new CN_PERMISO().Listar(usuarioactual.Id_Usuario);
+             List<PERMISO> Listaper = new CN_PERMISO().Listar(usuarioactual.Id_Usuario);
 
 
 
@@ -47,12 +48,10 @@ namespace Proyecto_final
                  if (!encontrado)
                  {
                      iconButton.Visible = false;
-                 }
+                 }               
+             }
 
-            usuarioactual.Nombre_Usuario
-             }*/
-
-           //{ lblusuario.Text = usuarioactual.Nombre_Usuario;
+           lblusuario.Text = usuarioactual.Nombre_Usuario;
         }
 
         private void Abrirformulariobtn(IconButton b, Form formulario)
