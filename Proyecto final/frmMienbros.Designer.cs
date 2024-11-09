@@ -61,10 +61,9 @@ namespace Proyecto_final
             // 
             this.lbtitulolistamiembros.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbtitulolistamiembros.ForeColor = System.Drawing.Color.White;
-            this.lbtitulolistamiembros.Location = new System.Drawing.Point(198, 9);
-            this.lbtitulolistamiembros.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbtitulolistamiembros.Location = new System.Drawing.Point(264, 11);
             this.lbtitulolistamiembros.Name = "lbtitulolistamiembros";
-            this.lbtitulolistamiembros.Size = new System.Drawing.Size(595, 75);
+            this.lbtitulolistamiembros.Size = new System.Drawing.Size(793, 92);
             this.lbtitulolistamiembros.TabIndex = 75;
             this.lbtitulolistamiembros.Text = "LISTA DE MIEMBROS:";
             // 
@@ -77,10 +76,10 @@ namespace Proyecto_final
             this.ibtnsave.IconChar = FontAwesome.Sharp.IconChar.History;
             this.ibtnsave.IconColor = System.Drawing.Color.White;
             this.ibtnsave.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ibtnsave.Location = new System.Drawing.Point(9, 123);
-            this.ibtnsave.Margin = new System.Windows.Forms.Padding(2);
+            this.ibtnsave.Location = new System.Drawing.Point(12, 151);
+            this.ibtnsave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ibtnsave.Name = "ibtnsave";
-            this.ibtnsave.Size = new System.Drawing.Size(64, 64);
+            this.ibtnsave.Size = new System.Drawing.Size(85, 79);
             this.ibtnsave.TabIndex = 92;
             this.ibtnsave.Text = "Renovar";
             this.ibtnsave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -96,14 +95,15 @@ namespace Proyecto_final
             this.ibtnexportarexcel.IconChar = FontAwesome.Sharp.IconChar.FileExcel;
             this.ibtnexportarexcel.IconColor = System.Drawing.Color.White;
             this.ibtnexportarexcel.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ibtnexportarexcel.Location = new System.Drawing.Point(11, 219);
-            this.ibtnexportarexcel.Margin = new System.Windows.Forms.Padding(2);
+            this.ibtnexportarexcel.Location = new System.Drawing.Point(15, 270);
+            this.ibtnexportarexcel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ibtnexportarexcel.Name = "ibtnexportarexcel";
-            this.ibtnexportarexcel.Size = new System.Drawing.Size(64, 88);
+            this.ibtnexportarexcel.Size = new System.Drawing.Size(85, 108);
             this.ibtnexportarexcel.TabIndex = 94;
             this.ibtnexportarexcel.Text = "Exportar a excel";
             this.ibtnexportarexcel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.ibtnexportarexcel.UseVisualStyleBackColor = true;
+            this.ibtnexportarexcel.Click += new System.EventHandler(this.ibtnexportarexcel_Click);
             // 
             // dgvmiembro
             // 
@@ -121,14 +121,14 @@ namespace Proyecto_final
             this.Ciudad,
             this.FechaCreacion,
             this.FechaTermina});
-            this.dgvmiembro.Location = new System.Drawing.Point(84, 86);
-            this.dgvmiembro.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvmiembro.Location = new System.Drawing.Point(112, 106);
+            this.dgvmiembro.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvmiembro.MultiSelect = false;
             this.dgvmiembro.Name = "dgvmiembro";
             this.dgvmiembro.ReadOnly = true;
             this.dgvmiembro.RowHeadersVisible = false;
             this.dgvmiembro.RowHeadersWidth = 51;
-            this.dgvmiembro.Size = new System.Drawing.Size(722, 394);
+            this.dgvmiembro.Size = new System.Drawing.Size(963, 485);
             this.dgvmiembro.TabIndex = 95;
             this.dgvmiembro.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvusuario_CellContentClick);
             this.dgvmiembro.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dgvmiembro_CellPainting);
@@ -235,28 +235,27 @@ namespace Proyecto_final
             this.lbbuscar.AutoSize = true;
             this.lbbuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbbuscar.ForeColor = System.Drawing.Color.White;
-            this.lbbuscar.Location = new System.Drawing.Point(357, 61);
-            this.lbbuscar.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbbuscar.Location = new System.Drawing.Point(476, 75);
             this.lbbuscar.Name = "lbbuscar";
-            this.lbbuscar.Size = new System.Drawing.Size(81, 17);
+            this.lbbuscar.Size = new System.Drawing.Size(97, 20);
             this.lbbuscar.TabIndex = 96;
             this.lbbuscar.Text = "Buscar por:";
             // 
             // cbobusqueda
             // 
             this.cbobusqueda.FormattingEnabled = true;
-            this.cbobusqueda.Location = new System.Drawing.Point(442, 57);
-            this.cbobusqueda.Margin = new System.Windows.Forms.Padding(2);
+            this.cbobusqueda.Location = new System.Drawing.Point(589, 70);
+            this.cbobusqueda.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbobusqueda.Name = "cbobusqueda";
-            this.cbobusqueda.Size = new System.Drawing.Size(95, 21);
+            this.cbobusqueda.Size = new System.Drawing.Size(125, 24);
             this.cbobusqueda.TabIndex = 97;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(541, 57);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox1.Location = new System.Drawing.Point(721, 70);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(126, 20);
+            this.textBox1.Size = new System.Drawing.Size(167, 22);
             this.textBox1.TabIndex = 98;
             // 
             // ibtnbusca
@@ -265,10 +264,10 @@ namespace Proyecto_final
             this.ibtnbusca.IconColor = System.Drawing.Color.Black;
             this.ibtnbusca.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ibtnbusca.IconSize = 30;
-            this.ibtnbusca.Location = new System.Drawing.Point(687, 47);
-            this.ibtnbusca.Margin = new System.Windows.Forms.Padding(2);
+            this.ibtnbusca.Location = new System.Drawing.Point(916, 58);
+            this.ibtnbusca.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ibtnbusca.Name = "ibtnbusca";
-            this.ibtnbusca.Size = new System.Drawing.Size(30, 35);
+            this.ibtnbusca.Size = new System.Drawing.Size(40, 43);
             this.ibtnbusca.TabIndex = 99;
             this.ibtnbusca.UseVisualStyleBackColor = true;
             // 
@@ -278,38 +277,37 @@ namespace Proyecto_final
             this.ibtnlimpiar.IconColor = System.Drawing.Color.Black;
             this.ibtnlimpiar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ibtnlimpiar.IconSize = 30;
-            this.ibtnlimpiar.Location = new System.Drawing.Point(748, 47);
-            this.ibtnlimpiar.Margin = new System.Windows.Forms.Padding(2);
+            this.ibtnlimpiar.Location = new System.Drawing.Point(997, 58);
+            this.ibtnlimpiar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ibtnlimpiar.Name = "ibtnlimpiar";
-            this.ibtnlimpiar.Size = new System.Drawing.Size(30, 35);
+            this.ibtnlimpiar.Size = new System.Drawing.Size(40, 43);
             this.ibtnlimpiar.TabIndex = 100;
             this.ibtnlimpiar.UseVisualStyleBackColor = true;
             // 
             // txtid
             // 
-            this.txtid.Location = new System.Drawing.Point(184, 494);
-            this.txtid.Margin = new System.Windows.Forms.Padding(2);
+            this.txtid.Location = new System.Drawing.Point(388, 609);
+            this.txtid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtid.Name = "txtid";
-            this.txtid.Size = new System.Drawing.Size(44, 20);
+            this.txtid.Size = new System.Drawing.Size(57, 22);
             this.txtid.TabIndex = 101;
             this.txtid.TextChanged += new System.EventHandler(this.txtid_TextChanged);
             // 
             // txtnombre
             // 
-            this.txtnombre.Location = new System.Drawing.Point(348, 494);
-            this.txtnombre.Margin = new System.Windows.Forms.Padding(2);
+            this.txtnombre.Location = new System.Drawing.Point(710, 613);
+            this.txtnombre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtnombre.Name = "txtnombre";
-            this.txtnombre.Size = new System.Drawing.Size(263, 20);
+            this.txtnombre.Size = new System.Drawing.Size(94, 22);
             this.txtnombre.TabIndex = 102;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(104, 497);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(213, 609);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 13);
+            this.label1.Size = new System.Drawing.Size(99, 17);
             this.label1.TabIndex = 103;
             this.label1.Text = "ID de Miembro";
             // 
@@ -317,10 +315,9 @@ namespace Proyecto_final
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(242, 497);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(497, 609);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(102, 13);
+            this.label2.Size = new System.Drawing.Size(136, 17);
             this.label2.TabIndex = 104;
             this.label2.Text = "Nombre de Miembro";
             // 
@@ -333,10 +330,10 @@ namespace Proyecto_final
             this.icbgenerarqr.IconChar = FontAwesome.Sharp.IconChar.Redo;
             this.icbgenerarqr.IconColor = System.Drawing.Color.White;
             this.icbgenerarqr.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.icbgenerarqr.Location = new System.Drawing.Point(9, 322);
-            this.icbgenerarqr.Margin = new System.Windows.Forms.Padding(2);
+            this.icbgenerarqr.Location = new System.Drawing.Point(12, 396);
+            this.icbgenerarqr.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.icbgenerarqr.Name = "icbgenerarqr";
-            this.icbgenerarqr.Size = new System.Drawing.Size(71, 100);
+            this.icbgenerarqr.Size = new System.Drawing.Size(95, 123);
             this.icbgenerarqr.TabIndex = 105;
             this.icbgenerarqr.Text = "Generar Codigo QR";
             this.icbgenerarqr.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -344,10 +341,10 @@ namespace Proyecto_final
             // 
             // frmMienbros
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(65)))), ((int)(((byte)(86)))));
-            this.ClientSize = new System.Drawing.Size(806, 525);
+            this.ClientSize = new System.Drawing.Size(1075, 646);
             this.Controls.Add(this.icbgenerarqr);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -363,7 +360,7 @@ namespace Proyecto_final
             this.Controls.Add(this.ibtnsave);
             this.Controls.Add(this.lbtitulolistamiembros);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmMienbros";
             this.Text = "frmMienbros";
             this.Load += new System.EventHandler(this.frmMienbros_Load);

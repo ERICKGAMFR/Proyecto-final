@@ -180,7 +180,7 @@ namespace Proyecto_final
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Proyecto_final.Properties.Resources.Captura_de_pantalla_2024_11_07_210545;
+            this.pictureBox1.Image = global::Proyecto_final.Properties.Resources._13;
             this.pictureBox1.Location = new System.Drawing.Point(48, 23);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(111, 99);

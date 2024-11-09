@@ -59,11 +59,11 @@ namespace Proyecto_final
            
             if (a != null)
             {
-                a.BackColor = Color.White; 
+                a.BackColor = Color.FromArgb(28, 32, 40); 
             }
 
-            
-            b.BackColor = Color.DarkGray;
+
+            b.BackColor = Color.White;
             a = b;
 
            

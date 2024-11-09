@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using CapaEntidades;
 using CapaNegocios;
+using ClosedXML.Excel;
 using Proyecto_final.Utilidades;
 
 namespace Proyecto_final
@@ -16,7 +17,7 @@ namespace Proyecto_final
     public partial class frmMienbros : Form
     {
         private CN_CLIENTE objcn_cliente = new CN_CLIENTE();
-        int id;
+        
         public frmMienbros()
         {
             InitializeComponent();
@@ -24,7 +25,8 @@ namespace Proyecto_final
 
         private void frmMienbros_Load(object sender, EventArgs e)
         {
-
+            txtid.Enabled = false;
+            txtnombre.Enabled = false;
             foreach (DataGridViewColumn columna in dgvmiembro.Columns)
             {
                 if (columna.Visible == true && columna.Name != "btnseleccionar")
@@ -48,7 +50,9 @@ namespace Proyecto_final
         private void ibtnsave_Click(object sender, EventArgs e)
         {
 
-            objcn_cliente.soyyootravez(id);
+            int idact = int.Parse(txtid.Text);
+
+            objcn_cliente.soyyootravez(idact);
             CargarClientes();
         }
 
@@ -59,15 +63,14 @@ namespace Proyecto_final
 
         private void dgvusuario_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (dgvmiembro.Columns[e.ColumnIndex].Name == "dgvbtnseleciona" && e.RowIndex >= 0)
+            
+            if (dgvmiembro.Columns[e.ColumnIndex].Name == "dgvbtnsleciona" && e.RowIndex >= 0)
             {
-                MessageBox.Show("1", "Título del mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                
 
                 int indice = e.RowIndex;
                 if (indice >= 0)
                 {
-                    MessageBox.Show("2", "Título del mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
                     txtid.Text = dgvmiembro.Rows[indice].Cells["Id_Cliente"].Value.ToString();
                     txtnombre.Text = dgvmiembro.Rows[indice].Cells["NombreM"].Value.ToString();
                 }
@@ -127,5 +130,69 @@ namespace Proyecto_final
         {
 
         }
+
+        private void ibtnexportarexcel_Click(object sender, EventArgs e)
+        {
+            if (dgvmiembro.Rows.Count < 1)
+            {
+                MessageBox.Show("No hay datos para exportar", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else
+            {
+                DataTable dt = new DataTable();
+
+                foreach (DataGridViewColumn colum in dgvmiembro.Columns)
+                {
+                    if (colum.HeaderText != "" && colum.Visible)
+                    {
+                        dt.Columns.Add(colum.HeaderText, typeof(string));
+                    }
+                }
+
+                foreach (DataGridViewRow row in dgvmiembro.Rows)
+                {
+                    if (row.Visible)
+                    {
+                        dt.Rows.Add(new object[]{
+                            //10 este numero puede cambiar depende de las columnas que se vaya a pasara la excel
+                            row.Cells[2].Value.ToString(),
+                            row.Cells[3].Value.ToString(),
+                            row.Cells[4].Value.ToString(),
+                            row.Cells[5].Value.ToString(),
+                            row.Cells[6].Value.ToString(),
+                            row.Cells[7].Value.ToString(),
+                            row.Cells[8].Value.ToString(),
+                            row.Cells[9].Value.ToString(),
+                            row.Cells[10].Value.ToString()
+
+                        });
+                    }
+                }
+                SaveFileDialog savefile = new SaveFileDialog();
+                savefile.FileName = string.Format("REPORTE DE MIEMBROS_{0}.xlsx ", DateTime.Now.ToString("ddMMyyyyHHmmss"));
+                savefile.Filter = "Excel file | *.xlsx";
+
+                if (savefile.ShowDialog() == DialogResult.OK)
+                {
+                    try
+                    {
+                        XLWorkbook wb = new XLWorkbook();
+
+                        var hoja = wb.Worksheets.Add(dt, "informe");
+                        hoja.ColumnsUsed().AdjustToContents();
+                        wb.SaveAs(savefile.FileName);
+                        MessageBox.Show("Reporte Generado", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    catch
+                    {
+                        MessageBox.Show("Error al generar reporte", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    }
+                }
+
+            }
+
+        }
+
+
     }
 }

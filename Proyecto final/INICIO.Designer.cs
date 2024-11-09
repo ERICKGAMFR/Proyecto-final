@@ -83,9 +83,9 @@ namespace Proyecto_final
             this.menutitulo.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menutitulo.Location = new System.Drawing.Point(0, 0);
             this.menutitulo.Name = "menutitulo";
-            this.menutitulo.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menutitulo.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
             this.menutitulo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.menutitulo.Size = new System.Drawing.Size(1010, 59);
+            this.menutitulo.Size = new System.Drawing.Size(1347, 73);
             this.menutitulo.TabIndex = 2;
             this.menutitulo.Text = "menuStrip2";
             // 
@@ -95,10 +95,9 @@ namespace Proyecto_final
             this.lblusuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(79)))), ((int)(((byte)(203)))));
             this.lblusuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblusuario.ForeColor = System.Drawing.Color.White;
-            this.lblusuario.Location = new System.Drawing.Point(858, 33);
-            this.lblusuario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblusuario.Location = new System.Drawing.Point(1144, 41);
             this.lblusuario.Name = "lblusuario";
-            this.lblusuario.Size = new System.Drawing.Size(91, 24);
+            this.lblusuario.Size = new System.Drawing.Size(118, 29);
             this.lblusuario.TabIndex = 7;
             this.lblusuario.Text = "lblusuario";
             // 
@@ -108,10 +107,9 @@ namespace Proyecto_final
             this.lbtitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(80)))), ((int)(((byte)(202)))));
             this.lbtitulo.Font = new System.Drawing.Font("Stencil", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbtitulo.ForeColor = System.Drawing.Color.White;
-            this.lbtitulo.Location = new System.Drawing.Point(106, 16);
-            this.lbtitulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbtitulo.Location = new System.Drawing.Point(141, 20);
             this.lbtitulo.Name = "lbtitulo";
-            this.lbtitulo.Size = new System.Drawing.Size(91, 26);
+            this.lbtitulo.Size = new System.Drawing.Size(115, 33);
             this.lbtitulo.TabIndex = 8;
             this.lbtitulo.Text = "UNI-FIT";
             // 
@@ -138,10 +136,10 @@ namespace Proyecto_final
             this.Contenedor.Controls.Add(this.txtnmproducto);
             this.Contenedor.Controls.Add(this.lbnmproducto);
             this.Contenedor.Controls.Add(this.lbtitulodv);
-            this.Contenedor.Location = new System.Drawing.Point(0, 59);
-            this.Contenedor.Margin = new System.Windows.Forms.Padding(2);
+            this.Contenedor.Location = new System.Drawing.Point(0, 73);
+            this.Contenedor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Contenedor.Name = "Contenedor";
-            this.Contenedor.Size = new System.Drawing.Size(806, 525);
+            this.Contenedor.Size = new System.Drawing.Size(1075, 646);
             this.Contenedor.TabIndex = 11;
             this.Contenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.Contenedor_Paint);
             // 
@@ -157,11 +155,11 @@ namespace Proyecto_final
             this.Precio,
             this.FechaC,
             this.Fecharegistro});
-            this.dgvprod.Location = new System.Drawing.Point(50, 139);
-            this.dgvprod.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvprod.Location = new System.Drawing.Point(67, 171);
+            this.dgvprod.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvprod.Name = "dgvprod";
             this.dgvprod.RowHeadersWidth = 51;
-            this.dgvprod.Size = new System.Drawing.Size(738, 291);
+            this.dgvprod.Size = new System.Drawing.Size(984, 358);
             this.dgvprod.TabIndex = 154;
             // 
             // btnselecionar
@@ -222,23 +220,26 @@ namespace Proyecto_final
             // 
             // txtpago
             // 
-            this.txtpago.Location = new System.Drawing.Point(335, 449);
+            this.txtpago.Location = new System.Drawing.Point(447, 553);
+            this.txtpago.Margin = new System.Windows.Forms.Padding(4);
             this.txtpago.Name = "txtpago";
-            this.txtpago.Size = new System.Drawing.Size(60, 20);
+            this.txtpago.Size = new System.Drawing.Size(79, 22);
             this.txtpago.TabIndex = 153;
             // 
             // txtcambio
             // 
-            this.txtcambio.Location = new System.Drawing.Point(552, 451);
+            this.txtcambio.Location = new System.Drawing.Point(736, 555);
+            this.txtcambio.Margin = new System.Windows.Forms.Padding(4);
             this.txtcambio.Name = "txtcambio";
-            this.txtcambio.Size = new System.Drawing.Size(62, 20);
+            this.txtcambio.Size = new System.Drawing.Size(81, 22);
             this.txtcambio.TabIndex = 152;
             // 
             // txtmtotal
             // 
-            this.txtmtotal.Location = new System.Drawing.Point(126, 448);
+            this.txtmtotal.Location = new System.Drawing.Point(168, 551);
+            this.txtmtotal.Margin = new System.Windows.Forms.Padding(4);
             this.txtmtotal.Name = "txtmtotal";
-            this.txtmtotal.Size = new System.Drawing.Size(65, 20);
+            this.txtmtotal.Size = new System.Drawing.Size(85, 22);
             this.txtmtotal.TabIndex = 151;
             // 
             // icbticket
@@ -251,9 +252,10 @@ namespace Proyecto_final
             this.icbticket.IconColor = System.Drawing.Color.White;
             this.icbticket.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.icbticket.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.icbticket.Location = new System.Drawing.Point(653, 435);
+            this.icbticket.Location = new System.Drawing.Point(871, 535);
+            this.icbticket.Margin = new System.Windows.Forms.Padding(4);
             this.icbticket.Name = "icbticket";
-            this.icbticket.Size = new System.Drawing.Size(135, 50);
+            this.icbticket.Size = new System.Drawing.Size(180, 62);
             this.icbticket.TabIndex = 150;
             this.icbticket.Text = "Generar Ticket";
             this.icbticket.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -264,9 +266,10 @@ namespace Proyecto_final
             this.lbcambio.AutoSize = true;
             this.lbcambio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbcambio.ForeColor = System.Drawing.Color.White;
-            this.lbcambio.Location = new System.Drawing.Point(408, 451);
+            this.lbcambio.Location = new System.Drawing.Point(544, 555);
+            this.lbcambio.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbcambio.Name = "lbcambio";
-            this.lbcambio.Size = new System.Drawing.Size(134, 20);
+            this.lbcambio.Size = new System.Drawing.Size(167, 25);
             this.lbcambio.TabIndex = 149;
             this.lbcambio.Text = "Monto de Cambio";
             this.lbcambio.Click += new System.EventHandler(this.lbcambio_Click);
@@ -276,9 +279,10 @@ namespace Proyecto_final
             this.lbmontopago.AutoSize = true;
             this.lbmontopago.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbmontopago.ForeColor = System.Drawing.Color.White;
-            this.lbmontopago.Location = new System.Drawing.Point(212, 449);
+            this.lbmontopago.Location = new System.Drawing.Point(283, 553);
+            this.lbmontopago.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbmontopago.Name = "lbmontopago";
-            this.lbmontopago.Size = new System.Drawing.Size(117, 20);
+            this.lbmontopago.Size = new System.Drawing.Size(145, 25);
             this.lbmontopago.TabIndex = 148;
             this.lbmontopago.Text = "Monto de Pago";
             // 
@@ -287,31 +291,35 @@ namespace Proyecto_final
             this.lbmontot.AutoSize = true;
             this.lbmontot.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbmontot.ForeColor = System.Drawing.Color.White;
-            this.lbmontot.Location = new System.Drawing.Point(27, 449);
+            this.lbmontot.Location = new System.Drawing.Point(36, 553);
+            this.lbmontot.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbmontot.Name = "lbmontot";
-            this.lbmontot.Size = new System.Drawing.Size(93, 20);
+            this.lbmontot.Size = new System.Drawing.Size(116, 25);
             this.lbmontot.TabIndex = 147;
             this.lbmontot.Text = "Monto Total";
             // 
             // txtusuario2
             // 
-            this.txtusuario2.Location = new System.Drawing.Point(468, 104);
+            this.txtusuario2.Location = new System.Drawing.Point(624, 128);
+            this.txtusuario2.Margin = new System.Windows.Forms.Padding(4);
             this.txtusuario2.Name = "txtusuario2";
-            this.txtusuario2.Size = new System.Drawing.Size(146, 20);
+            this.txtusuario2.Size = new System.Drawing.Size(193, 22);
             this.txtusuario2.TabIndex = 145;
             // 
             // txttpproducto
             // 
-            this.txttpproducto.Location = new System.Drawing.Point(234, 104);
+            this.txttpproducto.Location = new System.Drawing.Point(312, 128);
+            this.txttpproducto.Margin = new System.Windows.Forms.Padding(4);
             this.txttpproducto.Name = "txttpproducto";
-            this.txttpproducto.Size = new System.Drawing.Size(146, 20);
+            this.txttpproducto.Size = new System.Drawing.Size(193, 22);
             this.txttpproducto.TabIndex = 144;
             // 
             // txtfecha1
             // 
-            this.txtfecha1.Location = new System.Drawing.Point(23, 104);
+            this.txtfecha1.Location = new System.Drawing.Point(31, 128);
+            this.txtfecha1.Margin = new System.Windows.Forms.Padding(4);
             this.txtfecha1.Name = "txtfecha1";
-            this.txtfecha1.Size = new System.Drawing.Size(146, 20);
+            this.txtfecha1.Size = new System.Drawing.Size(193, 22);
             this.txtfecha1.TabIndex = 143;
             // 
             // lb2usuario
@@ -319,9 +327,10 @@ namespace Proyecto_final
             this.lb2usuario.AutoSize = true;
             this.lb2usuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb2usuario.ForeColor = System.Drawing.Color.White;
-            this.lb2usuario.Location = new System.Drawing.Point(465, 78);
+            this.lb2usuario.Location = new System.Drawing.Point(620, 96);
+            this.lb2usuario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb2usuario.Name = "lb2usuario";
-            this.lb2usuario.Size = new System.Drawing.Size(54, 16);
+            this.lb2usuario.Size = new System.Drawing.Size(67, 20);
             this.lb2usuario.TabIndex = 142;
             this.lb2usuario.Text = "Usuario";
             // 
@@ -330,9 +339,10 @@ namespace Proyecto_final
             this.lbtpproducto.AutoSize = true;
             this.lbtpproducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbtpproducto.ForeColor = System.Drawing.Color.White;
-            this.lbtpproducto.Location = new System.Drawing.Point(231, 78);
+            this.lbtpproducto.Location = new System.Drawing.Point(308, 96);
+            this.lbtpproducto.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbtpproducto.Name = "lbtpproducto";
-            this.lbtpproducto.Size = new System.Drawing.Size(111, 16);
+            this.lbtpproducto.Size = new System.Drawing.Size(136, 20);
             this.lbtpproducto.TabIndex = 141;
             this.lbtpproducto.Text = "Tipo de Producto";
             // 
@@ -341,9 +351,10 @@ namespace Proyecto_final
             this.lbfecha.AutoSize = true;
             this.lbfecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbfecha.ForeColor = System.Drawing.Color.White;
-            this.lbfecha.Location = new System.Drawing.Point(28, 78);
+            this.lbfecha.Location = new System.Drawing.Point(37, 96);
+            this.lbfecha.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbfecha.Name = "lbfecha";
-            this.lbfecha.Size = new System.Drawing.Size(48, 16);
+            this.lbfecha.Size = new System.Drawing.Size(60, 20);
             this.lbfecha.TabIndex = 140;
             this.lbfecha.Text = "Fecha:";
             // 
@@ -352,9 +363,10 @@ namespace Proyecto_final
             this.lbinfventa.AutoSize = true;
             this.lbinfventa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbinfventa.ForeColor = System.Drawing.Color.White;
-            this.lbinfventa.Location = new System.Drawing.Point(19, 44);
+            this.lbinfventa.Location = new System.Drawing.Point(25, 54);
+            this.lbinfventa.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbinfventa.Name = "lbinfventa";
-            this.lbinfventa.Size = new System.Drawing.Size(162, 20);
+            this.lbinfventa.Size = new System.Drawing.Size(197, 25);
             this.lbinfventa.TabIndex = 139;
             this.lbinfventa.Text = "Informacion de Venta";
             // 
@@ -366,10 +378,10 @@ namespace Proyecto_final
             this.ibtnlimpiar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ibtnlimpiar.IconSize = 30;
             this.ibtnlimpiar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ibtnlimpiar.Location = new System.Drawing.Point(710, 40);
-            this.ibtnlimpiar.Margin = new System.Windows.Forms.Padding(2);
+            this.ibtnlimpiar.Location = new System.Drawing.Point(947, 49);
+            this.ibtnlimpiar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ibtnlimpiar.Name = "ibtnlimpiar";
-            this.ibtnlimpiar.Size = new System.Drawing.Size(91, 35);
+            this.ibtnlimpiar.Size = new System.Drawing.Size(121, 43);
             this.ibtnlimpiar.TabIndex = 138;
             this.ibtnlimpiar.Text = "Limpiar";
             this.ibtnlimpiar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -383,10 +395,10 @@ namespace Proyecto_final
             this.ibtnbusca.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ibtnbusca.IconSize = 30;
             this.ibtnbusca.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ibtnbusca.Location = new System.Drawing.Point(615, 40);
-            this.ibtnbusca.Margin = new System.Windows.Forms.Padding(2);
+            this.ibtnbusca.Location = new System.Drawing.Point(820, 49);
+            this.ibtnbusca.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ibtnbusca.Name = "ibtnbusca";
-            this.ibtnbusca.Size = new System.Drawing.Size(91, 35);
+            this.ibtnbusca.Size = new System.Drawing.Size(121, 43);
             this.ibtnbusca.TabIndex = 137;
             this.ibtnbusca.Text = " Buscar";
             this.ibtnbusca.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -394,9 +406,10 @@ namespace Proyecto_final
             // 
             // txtnmproducto
             // 
-            this.txtnmproducto.Location = new System.Drawing.Point(425, 49);
+            this.txtnmproducto.Location = new System.Drawing.Point(567, 60);
+            this.txtnmproducto.Margin = new System.Windows.Forms.Padding(4);
             this.txtnmproducto.Name = "txtnmproducto";
-            this.txtnmproducto.Size = new System.Drawing.Size(185, 20);
+            this.txtnmproducto.Size = new System.Drawing.Size(245, 22);
             this.txtnmproducto.TabIndex = 2;
             // 
             // lbnmproducto
@@ -404,9 +417,10 @@ namespace Proyecto_final
             this.lbnmproducto.AutoSize = true;
             this.lbnmproducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbnmproducto.ForeColor = System.Drawing.Color.White;
-            this.lbnmproducto.Location = new System.Drawing.Point(264, 49);
+            this.lbnmproducto.Location = new System.Drawing.Point(352, 60);
+            this.lbnmproducto.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbnmproducto.Name = "lbnmproducto";
-            this.lbnmproducto.Size = new System.Drawing.Size(159, 20);
+            this.lbnmproducto.Size = new System.Drawing.Size(197, 25);
             this.lbnmproducto.TabIndex = 1;
             this.lbnmproducto.Text = "Numero de Producto:";
             // 
@@ -415,9 +429,10 @@ namespace Proyecto_final
             this.lbtitulodv.AutoSize = true;
             this.lbtitulodv.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbtitulodv.ForeColor = System.Drawing.Color.White;
-            this.lbtitulodv.Location = new System.Drawing.Point(20, 11);
+            this.lbtitulodv.Location = new System.Drawing.Point(27, 14);
+            this.lbtitulodv.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbtitulodv.Name = "lbtitulodv";
-            this.lbtitulodv.Size = new System.Drawing.Size(171, 25);
+            this.lbtitulodv.Size = new System.Drawing.Size(214, 31);
             this.lbtitulodv.TabIndex = 0;
             this.lbtitulodv.Text = "Detalle de Venta";
             // 
@@ -433,10 +448,10 @@ namespace Proyecto_final
             this.Con_botonee.Controls.Add(this.ibtnmiembros);
             this.Con_botonee.Controls.Add(this.ibtnvisita);
             this.Con_botonee.Controls.Add(this.ibtnusuario);
-            this.Con_botonee.Location = new System.Drawing.Point(805, 59);
-            this.Con_botonee.Margin = new System.Windows.Forms.Padding(2);
+            this.Con_botonee.Location = new System.Drawing.Point(1075, 73);
+            this.Con_botonee.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Con_botonee.Name = "Con_botonee";
-            this.Con_botonee.Size = new System.Drawing.Size(205, 525);
+            this.Con_botonee.Size = new System.Drawing.Size(272, 646);
             this.Con_botonee.TabIndex = 14;
             this.Con_botonee.Paint += new System.Windows.Forms.PaintEventHandler(this.Con_botonee_Paint);
             // 
@@ -451,10 +466,10 @@ namespace Proyecto_final
             this.ibtnclientes.IconColor = System.Drawing.Color.White;
             this.ibtnclientes.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ibtnclientes.IconSize = 50;
-            this.ibtnclientes.Location = new System.Drawing.Point(22, 118);
-            this.ibtnclientes.Margin = new System.Windows.Forms.Padding(2);
+            this.ibtnclientes.Location = new System.Drawing.Point(29, 145);
+            this.ibtnclientes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ibtnclientes.Name = "ibtnclientes";
-            this.ibtnclientes.Size = new System.Drawing.Size(80, 72);
+            this.ibtnclientes.Size = new System.Drawing.Size(107, 89);
             this.ibtnclientes.TabIndex = 7;
             this.ibtnclientes.Text = "Cliente";
             this.ibtnclientes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -473,10 +488,10 @@ namespace Proyecto_final
             this.ibtninicio.IconColor = System.Drawing.Color.White;
             this.ibtninicio.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ibtninicio.IconSize = 50;
-            this.ibtninicio.Location = new System.Drawing.Point(20, 42);
-            this.ibtninicio.Margin = new System.Windows.Forms.Padding(2);
+            this.ibtninicio.Location = new System.Drawing.Point(27, 52);
+            this.ibtninicio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ibtninicio.Name = "ibtninicio";
-            this.ibtninicio.Size = new System.Drawing.Size(80, 72);
+            this.ibtninicio.Size = new System.Drawing.Size(107, 89);
             this.ibtninicio.TabIndex = 7;
             this.ibtninicio.Text = "Inicio";
             this.ibtninicio.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -494,10 +509,10 @@ namespace Proyecto_final
             this.ibtnsalir.IconColor = System.Drawing.Color.White;
             this.ibtnsalir.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ibtnsalir.IconSize = 50;
-            this.ibtnsalir.Location = new System.Drawing.Point(64, 372);
-            this.ibtnsalir.Margin = new System.Windows.Forms.Padding(2);
+            this.ibtnsalir.Location = new System.Drawing.Point(85, 458);
+            this.ibtnsalir.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ibtnsalir.Name = "ibtnsalir";
-            this.ibtnsalir.Size = new System.Drawing.Size(80, 72);
+            this.ibtnsalir.Size = new System.Drawing.Size(107, 89);
             this.ibtnsalir.TabIndex = 6;
             this.ibtnsalir.Text = "Salir";
             this.ibtnsalir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -517,10 +532,10 @@ namespace Proyecto_final
             this.ibtnacercade.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ibtnacercade.IconSize = 50;
             this.ibtnacercade.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.ibtnacercade.Location = new System.Drawing.Point(109, 271);
-            this.ibtnacercade.Margin = new System.Windows.Forms.Padding(2);
+            this.ibtnacercade.Location = new System.Drawing.Point(145, 334);
+            this.ibtnacercade.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ibtnacercade.Name = "ibtnacercade";
-            this.ibtnacercade.Size = new System.Drawing.Size(80, 72);
+            this.ibtnacercade.Size = new System.Drawing.Size(107, 89);
             this.ibtnacercade.TabIndex = 5;
             this.ibtnacercade.Text = "Acerca de";
             this.ibtnacercade.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -538,10 +553,10 @@ namespace Proyecto_final
             this.ibtninventario.IconColor = System.Drawing.Color.White;
             this.ibtninventario.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ibtninventario.IconSize = 50;
-            this.ibtninventario.Location = new System.Drawing.Point(109, 195);
-            this.ibtninventario.Margin = new System.Windows.Forms.Padding(2);
+            this.ibtninventario.Location = new System.Drawing.Point(145, 240);
+            this.ibtninventario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ibtninventario.Name = "ibtninventario";
-            this.ibtninventario.Size = new System.Drawing.Size(80, 72);
+            this.ibtninventario.Size = new System.Drawing.Size(107, 89);
             this.ibtninventario.TabIndex = 4;
             this.ibtninventario.Text = "Inventario";
             this.ibtninventario.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -559,10 +574,10 @@ namespace Proyecto_final
             this.ibtnventas.IconColor = System.Drawing.Color.White;
             this.ibtnventas.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ibtnventas.IconSize = 50;
-            this.ibtnventas.Location = new System.Drawing.Point(106, 42);
-            this.ibtnventas.Margin = new System.Windows.Forms.Padding(2);
+            this.ibtnventas.Location = new System.Drawing.Point(141, 52);
+            this.ibtnventas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ibtnventas.Name = "ibtnventas";
-            this.ibtnventas.Size = new System.Drawing.Size(80, 72);
+            this.ibtnventas.Size = new System.Drawing.Size(107, 89);
             this.ibtnventas.TabIndex = 3;
             this.ibtnventas.Text = "Ventas";
             this.ibtnventas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -580,10 +595,10 @@ namespace Proyecto_final
             this.ibtnmiembros.IconColor = System.Drawing.Color.White;
             this.ibtnmiembros.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ibtnmiembros.IconSize = 50;
-            this.ibtnmiembros.Location = new System.Drawing.Point(109, 118);
-            this.ibtnmiembros.Margin = new System.Windows.Forms.Padding(2);
+            this.ibtnmiembros.Location = new System.Drawing.Point(145, 145);
+            this.ibtnmiembros.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ibtnmiembros.Name = "ibtnmiembros";
-            this.ibtnmiembros.Size = new System.Drawing.Size(80, 72);
+            this.ibtnmiembros.Size = new System.Drawing.Size(107, 89);
             this.ibtnmiembros.TabIndex = 2;
             this.ibtnmiembros.Text = "Miembros";
             this.ibtnmiembros.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -601,10 +616,10 @@ namespace Proyecto_final
             this.ibtnvisita.IconColor = System.Drawing.Color.White;
             this.ibtnvisita.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ibtnvisita.IconSize = 50;
-            this.ibtnvisita.Location = new System.Drawing.Point(20, 195);
-            this.ibtnvisita.Margin = new System.Windows.Forms.Padding(2);
+            this.ibtnvisita.Location = new System.Drawing.Point(27, 240);
+            this.ibtnvisita.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ibtnvisita.Name = "ibtnvisita";
-            this.ibtnvisita.Size = new System.Drawing.Size(80, 72);
+            this.ibtnvisita.Size = new System.Drawing.Size(107, 89);
             this.ibtnvisita.TabIndex = 1;
             this.ibtnvisita.Text = "Visitantes";
             this.ibtnvisita.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -622,10 +637,10 @@ namespace Proyecto_final
             this.ibtnusuario.IconColor = System.Drawing.Color.White;
             this.ibtnusuario.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ibtnusuario.IconSize = 50;
-            this.ibtnusuario.Location = new System.Drawing.Point(20, 271);
-            this.ibtnusuario.Margin = new System.Windows.Forms.Padding(2);
+            this.ibtnusuario.Location = new System.Drawing.Point(27, 334);
+            this.ibtnusuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ibtnusuario.Name = "ibtnusuario";
-            this.ibtnusuario.Size = new System.Drawing.Size(80, 72);
+            this.ibtnusuario.Size = new System.Drawing.Size(107, 89);
             this.ibtnusuario.TabIndex = 0;
             this.ibtnusuario.Text = "Usuarios";
             this.ibtnusuario.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -643,16 +658,16 @@ namespace Proyecto_final
             // 
             // INICIO
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1010, 583);
+            this.ClientSize = new System.Drawing.Size(1347, 718);
             this.Controls.Add(this.Con_botonee);
             this.Controls.Add(this.Contenedor);
             this.Controls.Add(this.lbtitulo);
             this.Controls.Add(this.lblusuario);
             this.Controls.Add(this.menutitulo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "INICIO";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "INICIO";
