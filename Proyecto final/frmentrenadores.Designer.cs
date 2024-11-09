@@ -29,6 +29,13 @@
         private void InitializeComponent()
         {
             this.dgvusuario = new System.Windows.Forms.DataGridView();
+            this.Id_Entrenadores = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NombreE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Edad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Direccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ciudad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lbNE = new System.Windows.Forms.Label();
             this.txtNombreEntrenadores = new System.Windows.Forms.TextBox();
             this.lbedad = new System.Windows.Forms.Label();
@@ -53,13 +60,6 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.ibtnbusca = new FontAwesome.Sharp.IconButton();
             this.ibtnlimpiar = new FontAwesome.Sharp.IconButton();
-            this.Id_Entrenadores = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NombreE = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Edad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Direccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Ciudad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvusuario)).BeginInit();
             this.SuspendLayout();
             // 
@@ -80,255 +80,6 @@
             this.dgvusuario.RowHeadersWidth = 51;
             this.dgvusuario.Size = new System.Drawing.Size(618, 432);
             this.dgvusuario.TabIndex = 96;
-            // 
-            // lbNE
-            // 
-            this.lbNE.AutoSize = true;
-            this.lbNE.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNE.Location = new System.Drawing.Point(-1, 79);
-            this.lbNE.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbNE.Name = "lbNE";
-            this.lbNE.Size = new System.Drawing.Size(172, 17);
-            this.lbNE.TabIndex = 97;
-            this.lbNE.Text = "Nombre Entrenadores:";
-            // 
-            // txtNombreEntrenadores
-            // 
-            this.txtNombreEntrenadores.Location = new System.Drawing.Point(0, 98);
-            this.txtNombreEntrenadores.Margin = new System.Windows.Forms.Padding(2);
-            this.txtNombreEntrenadores.Name = "txtNombreEntrenadores";
-            this.txtNombreEntrenadores.Size = new System.Drawing.Size(155, 20);
-            this.txtNombreEntrenadores.TabIndex = 98;
-            // 
-            // lbedad
-            // 
-            this.lbedad.AutoSize = true;
-            this.lbedad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbedad.Location = new System.Drawing.Point(-1, 120);
-            this.lbedad.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbedad.Name = "lbedad";
-            this.lbedad.Size = new System.Drawing.Size(50, 17);
-            this.lbedad.TabIndex = 99;
-            this.lbedad.Text = "Edad:";
-            // 
-            // txtEdad
-            // 
-            this.txtEdad.Location = new System.Drawing.Point(0, 139);
-            this.txtEdad.Margin = new System.Windows.Forms.Padding(2);
-            this.txtEdad.Name = "txtEdad";
-            this.txtEdad.Size = new System.Drawing.Size(155, 20);
-            this.txtEdad.TabIndex = 100;
-            // 
-            // lbtelefono
-            // 
-            this.lbtelefono.AutoSize = true;
-            this.lbtelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbtelefono.Location = new System.Drawing.Point(-3, 161);
-            this.lbtelefono.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbtelefono.Name = "lbtelefono";
-            this.lbtelefono.Size = new System.Drawing.Size(77, 17);
-            this.lbtelefono.TabIndex = 101;
-            this.lbtelefono.Text = "Telefono:";
-            // 
-            // txtTelefono
-            // 
-            this.txtTelefono.Location = new System.Drawing.Point(0, 180);
-            this.txtTelefono.Margin = new System.Windows.Forms.Padding(2);
-            this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(155, 20);
-            this.txtTelefono.TabIndex = 102;
-            // 
-            // lbdireccion
-            // 
-            this.lbdireccion.AutoSize = true;
-            this.lbdireccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbdireccion.Location = new System.Drawing.Point(-1, 202);
-            this.lbdireccion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbdireccion.Name = "lbdireccion";
-            this.lbdireccion.Size = new System.Drawing.Size(81, 17);
-            this.lbdireccion.TabIndex = 103;
-            this.lbdireccion.Text = "Direccion:";
-            // 
-            // txtTelefonoEmergencia
-            // 
-            this.txtTelefonoEmergencia.Location = new System.Drawing.Point(0, 221);
-            this.txtTelefonoEmergencia.Margin = new System.Windows.Forms.Padding(2);
-            this.txtTelefonoEmergencia.Name = "txtTelefonoEmergencia";
-            this.txtTelefonoEmergencia.Size = new System.Drawing.Size(155, 20);
-            this.txtTelefonoEmergencia.TabIndex = 104;
-            // 
-            // lbcalle
-            // 
-            this.lbcalle.AutoSize = true;
-            this.lbcalle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbcalle.Location = new System.Drawing.Point(0, 243);
-            this.lbcalle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbcalle.Name = "lbcalle";
-            this.lbcalle.Size = new System.Drawing.Size(49, 17);
-            this.lbcalle.TabIndex = 105;
-            this.lbcalle.Text = "Calle:";
-            // 
-            // txtCalle
-            // 
-            this.txtCalle.Location = new System.Drawing.Point(0, 262);
-            this.txtCalle.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCalle.Name = "txtCalle";
-            this.txtCalle.Size = new System.Drawing.Size(155, 20);
-            this.txtCalle.TabIndex = 106;
-            // 
-            // lbciudad
-            // 
-            this.lbciudad.AutoSize = true;
-            this.lbciudad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbciudad.Location = new System.Drawing.Point(0, 284);
-            this.lbciudad.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbciudad.Name = "lbciudad";
-            this.lbciudad.Size = new System.Drawing.Size(63, 17);
-            this.lbciudad.TabIndex = 107;
-            this.lbciudad.Text = "Ciudad:";
-            // 
-            // textCiudad
-            // 
-            this.textCiudad.Location = new System.Drawing.Point(2, 303);
-            this.textCiudad.Margin = new System.Windows.Forms.Padding(2);
-            this.textCiudad.Name = "textCiudad";
-            this.textCiudad.Size = new System.Drawing.Size(155, 20);
-            this.textCiudad.TabIndex = 108;
-            // 
-            // lbestado
-            // 
-            this.lbestado.AutoSize = true;
-            this.lbestado.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbestado.Location = new System.Drawing.Point(0, 325);
-            this.lbestado.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbestado.Name = "lbestado";
-            this.lbestado.Size = new System.Drawing.Size(63, 17);
-            this.lbestado.TabIndex = 109;
-            this.lbestado.Text = "Estado:";
-            // 
-            // textEstado
-            // 
-            this.textEstado.Location = new System.Drawing.Point(0, 344);
-            this.textEstado.Margin = new System.Windows.Forms.Padding(2);
-            this.textEstado.Name = "textEstado";
-            this.textEstado.Size = new System.Drawing.Size(155, 20);
-            this.textEstado.TabIndex = 110;
-            // 
-            // ibtnsave
-            // 
-            this.ibtnsave.IconChar = FontAwesome.Sharp.IconChar.FloppyDisk;
-            this.ibtnsave.IconColor = System.Drawing.Color.ForestGreen;
-            this.ibtnsave.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ibtnsave.Location = new System.Drawing.Point(-1, 368);
-            this.ibtnsave.Margin = new System.Windows.Forms.Padding(2);
-            this.ibtnsave.Name = "ibtnsave";
-            this.ibtnsave.Size = new System.Drawing.Size(64, 57);
-            this.ibtnsave.TabIndex = 111;
-            this.ibtnsave.Text = "Guardar";
-            this.ibtnsave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.ibtnsave.UseVisualStyleBackColor = true;
-            // 
-            // ibtneliminar
-            // 
-            this.ibtneliminar.IconChar = FontAwesome.Sharp.IconChar.X;
-            this.ibtneliminar.IconColor = System.Drawing.Color.Red;
-            this.ibtneliminar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ibtneliminar.Location = new System.Drawing.Point(82, 368);
-            this.ibtneliminar.Margin = new System.Windows.Forms.Padding(2);
-            this.ibtneliminar.Name = "ibtneliminar";
-            this.ibtneliminar.Size = new System.Drawing.Size(64, 57);
-            this.ibtneliminar.TabIndex = 112;
-            this.ibtneliminar.Text = "Eliminar";
-            this.ibtneliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.ibtneliminar.UseVisualStyleBackColor = true;
-            // 
-            // ibtnexportarexcel
-            // 
-            this.ibtnexportarexcel.IconChar = FontAwesome.Sharp.IconChar.FileExcel;
-            this.ibtnexportarexcel.IconColor = System.Drawing.Color.Green;
-            this.ibtnexportarexcel.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ibtnexportarexcel.Location = new System.Drawing.Point(42, 429);
-            this.ibtnexportarexcel.Margin = new System.Windows.Forms.Padding(2);
-            this.ibtnexportarexcel.Name = "ibtnexportarexcel";
-            this.ibtnexportarexcel.Size = new System.Drawing.Size(64, 68);
-            this.ibtnexportarexcel.TabIndex = 113;
-            this.ibtnexportarexcel.Text = "Exportar a excel";
-            this.ibtnexportarexcel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.ibtnexportarexcel.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(-3, -1);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(196, 512);
-            this.label1.TabIndex = 114;
-            this.label1.Text = "Datos de registro";
-            // 
-            // lbtitulolistaentrenadores
-            // 
-            this.lbtitulolistaentrenadores.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbtitulolistaentrenadores.Location = new System.Drawing.Point(198, 4);
-            this.lbtitulolistaentrenadores.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbtitulolistaentrenadores.Name = "lbtitulolistaentrenadores";
-            this.lbtitulolistaentrenadores.Size = new System.Drawing.Size(595, 75);
-            this.lbtitulolistaentrenadores.TabIndex = 115;
-            this.lbtitulolistaentrenadores.Text = "LISTA DE ENTRENADORES:";
-            // 
-            // lbbuscar
-            // 
-            this.lbbuscar.AutoSize = true;
-            this.lbbuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbbuscar.Location = new System.Drawing.Point(378, 36);
-            this.lbbuscar.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbbuscar.Name = "lbbuscar";
-            this.lbbuscar.Size = new System.Drawing.Size(81, 17);
-            this.lbbuscar.TabIndex = 116;
-            this.lbbuscar.Text = "Buscar por:";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(463, 35);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(95, 21);
-            this.comboBox1.TabIndex = 117;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(562, 35);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(126, 20);
-            this.textBox1.TabIndex = 118;
-            // 
-            // ibtnbusca
-            // 
-            this.ibtnbusca.IconChar = FontAwesome.Sharp.IconChar.Sistrix;
-            this.ibtnbusca.IconColor = System.Drawing.Color.Black;
-            this.ibtnbusca.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ibtnbusca.IconSize = 30;
-            this.ibtnbusca.Location = new System.Drawing.Point(715, 28);
-            this.ibtnbusca.Margin = new System.Windows.Forms.Padding(2);
-            this.ibtnbusca.Name = "ibtnbusca";
-            this.ibtnbusca.Size = new System.Drawing.Size(30, 35);
-            this.ibtnbusca.TabIndex = 119;
-            this.ibtnbusca.UseVisualStyleBackColor = true;
-            // 
-            // ibtnlimpiar
-            // 
-            this.ibtnlimpiar.IconChar = FontAwesome.Sharp.IconChar.Brush;
-            this.ibtnlimpiar.IconColor = System.Drawing.Color.Black;
-            this.ibtnlimpiar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ibtnlimpiar.IconSize = 30;
-            this.ibtnlimpiar.Location = new System.Drawing.Point(763, 28);
-            this.ibtnlimpiar.Margin = new System.Windows.Forms.Padding(2);
-            this.ibtnlimpiar.Name = "ibtnlimpiar";
-            this.ibtnlimpiar.Size = new System.Drawing.Size(30, 35);
-            this.ibtnlimpiar.TabIndex = 120;
-            this.ibtnlimpiar.UseVisualStyleBackColor = true;
             // 
             // Id_Entrenadores
             // 
@@ -388,6 +139,290 @@
             this.Estado.Name = "Estado";
             this.Estado.Width = 125;
             // 
+            // lbNE
+            // 
+            this.lbNE.AutoSize = true;
+            this.lbNE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(65)))), ((int)(((byte)(86)))));
+            this.lbNE.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNE.ForeColor = System.Drawing.Color.White;
+            this.lbNE.Location = new System.Drawing.Point(-1, 79);
+            this.lbNE.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbNE.Name = "lbNE";
+            this.lbNE.Size = new System.Drawing.Size(172, 17);
+            this.lbNE.TabIndex = 97;
+            this.lbNE.Text = "Nombre Entrenadores:";
+            // 
+            // txtNombreEntrenadores
+            // 
+            this.txtNombreEntrenadores.Location = new System.Drawing.Point(0, 98);
+            this.txtNombreEntrenadores.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNombreEntrenadores.Name = "txtNombreEntrenadores";
+            this.txtNombreEntrenadores.Size = new System.Drawing.Size(155, 20);
+            this.txtNombreEntrenadores.TabIndex = 98;
+            // 
+            // lbedad
+            // 
+            this.lbedad.AutoSize = true;
+            this.lbedad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(65)))), ((int)(((byte)(86)))));
+            this.lbedad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbedad.ForeColor = System.Drawing.Color.White;
+            this.lbedad.Location = new System.Drawing.Point(-1, 120);
+            this.lbedad.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbedad.Name = "lbedad";
+            this.lbedad.Size = new System.Drawing.Size(50, 17);
+            this.lbedad.TabIndex = 99;
+            this.lbedad.Text = "Edad:";
+            // 
+            // txtEdad
+            // 
+            this.txtEdad.Location = new System.Drawing.Point(0, 139);
+            this.txtEdad.Margin = new System.Windows.Forms.Padding(2);
+            this.txtEdad.Name = "txtEdad";
+            this.txtEdad.Size = new System.Drawing.Size(155, 20);
+            this.txtEdad.TabIndex = 100;
+            // 
+            // lbtelefono
+            // 
+            this.lbtelefono.AutoSize = true;
+            this.lbtelefono.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(65)))), ((int)(((byte)(86)))));
+            this.lbtelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbtelefono.ForeColor = System.Drawing.Color.White;
+            this.lbtelefono.Location = new System.Drawing.Point(-3, 161);
+            this.lbtelefono.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbtelefono.Name = "lbtelefono";
+            this.lbtelefono.Size = new System.Drawing.Size(77, 17);
+            this.lbtelefono.TabIndex = 101;
+            this.lbtelefono.Text = "Telefono:";
+            // 
+            // txtTelefono
+            // 
+            this.txtTelefono.Location = new System.Drawing.Point(0, 180);
+            this.txtTelefono.Margin = new System.Windows.Forms.Padding(2);
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Size = new System.Drawing.Size(155, 20);
+            this.txtTelefono.TabIndex = 102;
+            // 
+            // lbdireccion
+            // 
+            this.lbdireccion.AutoSize = true;
+            this.lbdireccion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(65)))), ((int)(((byte)(86)))));
+            this.lbdireccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbdireccion.ForeColor = System.Drawing.Color.White;
+            this.lbdireccion.Location = new System.Drawing.Point(-1, 202);
+            this.lbdireccion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbdireccion.Name = "lbdireccion";
+            this.lbdireccion.Size = new System.Drawing.Size(81, 17);
+            this.lbdireccion.TabIndex = 103;
+            this.lbdireccion.Text = "Direccion:";
+            // 
+            // txtTelefonoEmergencia
+            // 
+            this.txtTelefonoEmergencia.Location = new System.Drawing.Point(0, 221);
+            this.txtTelefonoEmergencia.Margin = new System.Windows.Forms.Padding(2);
+            this.txtTelefonoEmergencia.Name = "txtTelefonoEmergencia";
+            this.txtTelefonoEmergencia.Size = new System.Drawing.Size(155, 20);
+            this.txtTelefonoEmergencia.TabIndex = 104;
+            // 
+            // lbcalle
+            // 
+            this.lbcalle.AutoSize = true;
+            this.lbcalle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(65)))), ((int)(((byte)(86)))));
+            this.lbcalle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbcalle.ForeColor = System.Drawing.Color.White;
+            this.lbcalle.Location = new System.Drawing.Point(0, 243);
+            this.lbcalle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbcalle.Name = "lbcalle";
+            this.lbcalle.Size = new System.Drawing.Size(49, 17);
+            this.lbcalle.TabIndex = 105;
+            this.lbcalle.Text = "Calle:";
+            // 
+            // txtCalle
+            // 
+            this.txtCalle.Location = new System.Drawing.Point(0, 262);
+            this.txtCalle.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCalle.Name = "txtCalle";
+            this.txtCalle.Size = new System.Drawing.Size(155, 20);
+            this.txtCalle.TabIndex = 106;
+            // 
+            // lbciudad
+            // 
+            this.lbciudad.AutoSize = true;
+            this.lbciudad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(65)))), ((int)(((byte)(86)))));
+            this.lbciudad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbciudad.ForeColor = System.Drawing.Color.White;
+            this.lbciudad.Location = new System.Drawing.Point(0, 284);
+            this.lbciudad.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbciudad.Name = "lbciudad";
+            this.lbciudad.Size = new System.Drawing.Size(63, 17);
+            this.lbciudad.TabIndex = 107;
+            this.lbciudad.Text = "Ciudad:";
+            // 
+            // textCiudad
+            // 
+            this.textCiudad.Location = new System.Drawing.Point(2, 303);
+            this.textCiudad.Margin = new System.Windows.Forms.Padding(2);
+            this.textCiudad.Name = "textCiudad";
+            this.textCiudad.Size = new System.Drawing.Size(155, 20);
+            this.textCiudad.TabIndex = 108;
+            // 
+            // lbestado
+            // 
+            this.lbestado.AutoSize = true;
+            this.lbestado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(65)))), ((int)(((byte)(86)))));
+            this.lbestado.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbestado.ForeColor = System.Drawing.Color.White;
+            this.lbestado.Location = new System.Drawing.Point(0, 325);
+            this.lbestado.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbestado.Name = "lbestado";
+            this.lbestado.Size = new System.Drawing.Size(63, 17);
+            this.lbestado.TabIndex = 109;
+            this.lbestado.Text = "Estado:";
+            // 
+            // textEstado
+            // 
+            this.textEstado.Location = new System.Drawing.Point(0, 344);
+            this.textEstado.Margin = new System.Windows.Forms.Padding(2);
+            this.textEstado.Name = "textEstado";
+            this.textEstado.Size = new System.Drawing.Size(155, 20);
+            this.textEstado.TabIndex = 110;
+            // 
+            // ibtnsave
+            // 
+            this.ibtnsave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(65)))), ((int)(((byte)(86)))));
+            this.ibtnsave.FlatAppearance.BorderSize = 0;
+            this.ibtnsave.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(79)))), ((int)(((byte)(203)))));
+            this.ibtnsave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ibtnsave.ForeColor = System.Drawing.Color.White;
+            this.ibtnsave.IconChar = FontAwesome.Sharp.IconChar.FloppyDisk;
+            this.ibtnsave.IconColor = System.Drawing.Color.White;
+            this.ibtnsave.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ibtnsave.Location = new System.Drawing.Point(-1, 368);
+            this.ibtnsave.Margin = new System.Windows.Forms.Padding(2);
+            this.ibtnsave.Name = "ibtnsave";
+            this.ibtnsave.Size = new System.Drawing.Size(64, 66);
+            this.ibtnsave.TabIndex = 111;
+            this.ibtnsave.Text = "Guardar";
+            this.ibtnsave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.ibtnsave.UseVisualStyleBackColor = false;
+            // 
+            // ibtneliminar
+            // 
+            this.ibtneliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(65)))), ((int)(((byte)(86)))));
+            this.ibtneliminar.FlatAppearance.BorderSize = 0;
+            this.ibtneliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(79)))), ((int)(((byte)(203)))));
+            this.ibtneliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ibtneliminar.ForeColor = System.Drawing.Color.White;
+            this.ibtneliminar.IconChar = FontAwesome.Sharp.IconChar.X;
+            this.ibtneliminar.IconColor = System.Drawing.Color.White;
+            this.ibtneliminar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ibtneliminar.Location = new System.Drawing.Point(107, 368);
+            this.ibtneliminar.Margin = new System.Windows.Forms.Padding(2);
+            this.ibtneliminar.Name = "ibtneliminar";
+            this.ibtneliminar.Size = new System.Drawing.Size(64, 66);
+            this.ibtneliminar.TabIndex = 112;
+            this.ibtneliminar.Text = "Eliminar";
+            this.ibtneliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.ibtneliminar.UseVisualStyleBackColor = false;
+            // 
+            // ibtnexportarexcel
+            // 
+            this.ibtnexportarexcel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(65)))), ((int)(((byte)(86)))));
+            this.ibtnexportarexcel.FlatAppearance.BorderSize = 0;
+            this.ibtnexportarexcel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(79)))), ((int)(((byte)(203)))));
+            this.ibtnexportarexcel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ibtnexportarexcel.ForeColor = System.Drawing.Color.White;
+            this.ibtnexportarexcel.IconChar = FontAwesome.Sharp.IconChar.FileExcel;
+            this.ibtnexportarexcel.IconColor = System.Drawing.Color.White;
+            this.ibtnexportarexcel.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ibtnexportarexcel.Location = new System.Drawing.Point(50, 416);
+            this.ibtnexportarexcel.Margin = new System.Windows.Forms.Padding(2);
+            this.ibtnexportarexcel.Name = "ibtnexportarexcel";
+            this.ibtnexportarexcel.Size = new System.Drawing.Size(64, 81);
+            this.ibtnexportarexcel.TabIndex = 113;
+            this.ibtnexportarexcel.Text = "Exportar a excel";
+            this.ibtnexportarexcel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.ibtnexportarexcel.UseVisualStyleBackColor = false;
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(65)))), ((int)(((byte)(86)))));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(-6, -1);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(205, 512);
+            this.label1.TabIndex = 114;
+            this.label1.Text = "Datos de registro";
+            // 
+            // lbtitulolistaentrenadores
+            // 
+            this.lbtitulolistaentrenadores.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(65)))), ((int)(((byte)(86)))));
+            this.lbtitulolistaentrenadores.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbtitulolistaentrenadores.ForeColor = System.Drawing.Color.White;
+            this.lbtitulolistaentrenadores.Location = new System.Drawing.Point(197, -1);
+            this.lbtitulolistaentrenadores.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbtitulolistaentrenadores.Name = "lbtitulolistaentrenadores";
+            this.lbtitulolistaentrenadores.Size = new System.Drawing.Size(614, 75);
+            this.lbtitulolistaentrenadores.TabIndex = 115;
+            this.lbtitulolistaentrenadores.Text = "LISTA DE ENTRENADORES:";
+            // 
+            // lbbuscar
+            // 
+            this.lbbuscar.AutoSize = true;
+            this.lbbuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(65)))), ((int)(((byte)(86)))));
+            this.lbbuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbbuscar.ForeColor = System.Drawing.Color.White;
+            this.lbbuscar.Location = new System.Drawing.Point(378, 36);
+            this.lbbuscar.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbbuscar.Name = "lbbuscar";
+            this.lbbuscar.Size = new System.Drawing.Size(81, 17);
+            this.lbbuscar.TabIndex = 116;
+            this.lbbuscar.Text = "Buscar por:";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(463, 35);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(95, 21);
+            this.comboBox1.TabIndex = 117;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(562, 35);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(126, 20);
+            this.textBox1.TabIndex = 118;
+            // 
+            // ibtnbusca
+            // 
+            this.ibtnbusca.IconChar = FontAwesome.Sharp.IconChar.Sistrix;
+            this.ibtnbusca.IconColor = System.Drawing.Color.Black;
+            this.ibtnbusca.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ibtnbusca.IconSize = 30;
+            this.ibtnbusca.Location = new System.Drawing.Point(709, 27);
+            this.ibtnbusca.Margin = new System.Windows.Forms.Padding(2);
+            this.ibtnbusca.Name = "ibtnbusca";
+            this.ibtnbusca.Size = new System.Drawing.Size(30, 35);
+            this.ibtnbusca.TabIndex = 119;
+            this.ibtnbusca.UseVisualStyleBackColor = true;
+            // 
+            // ibtnlimpiar
+            // 
+            this.ibtnlimpiar.IconChar = FontAwesome.Sharp.IconChar.Brush;
+            this.ibtnlimpiar.IconColor = System.Drawing.Color.Black;
+            this.ibtnlimpiar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ibtnlimpiar.IconSize = 30;
+            this.ibtnlimpiar.Location = new System.Drawing.Point(751, 27);
+            this.ibtnlimpiar.Margin = new System.Windows.Forms.Padding(2);
+            this.ibtnlimpiar.Name = "ibtnlimpiar";
+            this.ibtnlimpiar.Size = new System.Drawing.Size(30, 35);
+            this.ibtnlimpiar.TabIndex = 120;
+            this.ibtnlimpiar.UseVisualStyleBackColor = true;
+            // 
             // frmentrenadores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -418,7 +453,7 @@
             this.Controls.Add(this.dgvusuario);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lbtitulolistaentrenadores);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmentrenadores";
             this.Text = "frmentrenadores";
             ((System.ComponentModel.ISupportInitialize)(this.dgvusuario)).EndInit();

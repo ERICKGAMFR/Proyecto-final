@@ -30,14 +30,6 @@ namespace Proyecto_final
         private void InitializeComponent()
         {
             this.dgvvisita = new System.Windows.Forms.DataGridView();
-            this.ibtneliminar = new FontAwesome.Sharp.IconButton();
-            this.ibtnexportarexcel = new FontAwesome.Sharp.IconButton();
-            this.lbtitulovisitantes = new System.Windows.Forms.Label();
-            this.lbbuscar = new System.Windows.Forms.Label();
-            this.cbobusqueda = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.ibtnbusca = new FontAwesome.Sharp.IconButton();
-            this.ibtnlimpiar = new FontAwesome.Sharp.IconButton();
             this.dgvbtnseleciona = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Estatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Id_Cliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -48,6 +40,14 @@ namespace Proyecto_final
             this.Domicilio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Ciudad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FechaCreacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ibtneliminar = new FontAwesome.Sharp.IconButton();
+            this.ibtnexportarexcel = new FontAwesome.Sharp.IconButton();
+            this.lbtitulovisitantes = new System.Windows.Forms.Label();
+            this.lbbuscar = new System.Windows.Forms.Label();
+            this.cbobusqueda = new System.Windows.Forms.ComboBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.ibtnbusca = new FontAwesome.Sharp.IconButton();
+            this.ibtnlimpiar = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvvisita)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,103 +66,12 @@ namespace Proyecto_final
             this.Domicilio,
             this.Ciudad,
             this.FechaCreacion});
-            this.dgvvisita.Location = new System.Drawing.Point(217, 57);
-            this.dgvvisita.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgvvisita.Location = new System.Drawing.Point(163, 46);
+            this.dgvvisita.Margin = new System.Windows.Forms.Padding(2);
             this.dgvvisita.Name = "dgvvisita";
             this.dgvvisita.RowHeadersWidth = 51;
-            this.dgvvisita.Size = new System.Drawing.Size(824, 532);
+            this.dgvvisita.Size = new System.Drawing.Size(618, 432);
             this.dgvvisita.TabIndex = 99;
-            // 
-            // ibtneliminar
-            // 
-            this.ibtneliminar.IconChar = FontAwesome.Sharp.IconChar.X;
-            this.ibtneliminar.IconColor = System.Drawing.Color.Red;
-            this.ibtneliminar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ibtneliminar.Location = new System.Drawing.Point(30, 303);
-            this.ibtneliminar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ibtneliminar.Name = "ibtneliminar";
-            this.ibtneliminar.Size = new System.Drawing.Size(139, 88);
-            this.ibtneliminar.TabIndex = 131;
-            this.ibtneliminar.Text = "Eliminar";
-            this.ibtneliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.ibtneliminar.UseVisualStyleBackColor = true;
-            // 
-            // ibtnexportarexcel
-            // 
-            this.ibtnexportarexcel.IconChar = FontAwesome.Sharp.IconChar.FileExcel;
-            this.ibtnexportarexcel.IconColor = System.Drawing.Color.Green;
-            this.ibtnexportarexcel.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ibtnexportarexcel.Location = new System.Drawing.Point(30, 171);
-            this.ibtnexportarexcel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ibtnexportarexcel.Name = "ibtnexportarexcel";
-            this.ibtnexportarexcel.Size = new System.Drawing.Size(139, 88);
-            this.ibtnexportarexcel.TabIndex = 132;
-            this.ibtnexportarexcel.Text = "Exportar a excel";
-            this.ibtnexportarexcel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.ibtnexportarexcel.UseVisualStyleBackColor = true;
-            // 
-            // lbtitulovisitantes
-            // 
-            this.lbtitulovisitantes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbtitulovisitantes.Location = new System.Drawing.Point(212, -2);
-            this.lbtitulovisitantes.Name = "lbtitulovisitantes";
-            this.lbtitulovisitantes.Size = new System.Drawing.Size(829, 92);
-            this.lbtitulovisitantes.TabIndex = 133;
-            this.lbtitulovisitantes.Text = "LISTA DE VISITANTES:";
-            // 
-            // lbbuscar
-            // 
-            this.lbbuscar.AutoSize = true;
-            this.lbbuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbbuscar.Location = new System.Drawing.Point(515, 16);
-            this.lbbuscar.Name = "lbbuscar";
-            this.lbbuscar.Size = new System.Drawing.Size(97, 20);
-            this.lbbuscar.TabIndex = 134;
-            this.lbbuscar.Text = "Buscar por:";
-            this.lbbuscar.Click += new System.EventHandler(this.lbbuscar_Click);
-            // 
-            // cbobusqueda
-            // 
-            this.cbobusqueda.FormattingEnabled = true;
-            this.cbobusqueda.Location = new System.Drawing.Point(628, 16);
-            this.cbobusqueda.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cbobusqueda.Name = "cbobusqueda";
-            this.cbobusqueda.Size = new System.Drawing.Size(125, 24);
-            this.cbobusqueda.TabIndex = 135;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(760, 17);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(167, 22);
-            this.textBox1.TabIndex = 136;
-            // 
-            // ibtnbusca
-            // 
-            this.ibtnbusca.IconChar = FontAwesome.Sharp.IconChar.Sistrix;
-            this.ibtnbusca.IconColor = System.Drawing.Color.Black;
-            this.ibtnbusca.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ibtnbusca.IconSize = 30;
-            this.ibtnbusca.Location = new System.Drawing.Point(945, 6);
-            this.ibtnbusca.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ibtnbusca.Name = "ibtnbusca";
-            this.ibtnbusca.Size = new System.Drawing.Size(40, 43);
-            this.ibtnbusca.TabIndex = 137;
-            this.ibtnbusca.UseVisualStyleBackColor = true;
-            // 
-            // ibtnlimpiar
-            // 
-            this.ibtnlimpiar.IconChar = FontAwesome.Sharp.IconChar.Brush;
-            this.ibtnlimpiar.IconColor = System.Drawing.Color.Black;
-            this.ibtnlimpiar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ibtnlimpiar.IconSize = 30;
-            this.ibtnlimpiar.Location = new System.Drawing.Point(1001, 9);
-            this.ibtnlimpiar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ibtnlimpiar.Name = "ibtnlimpiar";
-            this.ibtnlimpiar.Size = new System.Drawing.Size(40, 43);
-            this.ibtnlimpiar.TabIndex = 138;
-            this.ibtnlimpiar.UseVisualStyleBackColor = true;
             // 
             // dgvbtnseleciona
             // 
@@ -235,11 +144,124 @@ namespace Proyecto_final
             this.FechaCreacion.Name = "FechaCreacion";
             this.FechaCreacion.Width = 125;
             // 
+            // ibtneliminar
+            // 
+            this.ibtneliminar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(79)))), ((int)(((byte)(203)))));
+            this.ibtneliminar.FlatAppearance.BorderSize = 0;
+            this.ibtneliminar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(79)))), ((int)(((byte)(203)))));
+            this.ibtneliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(79)))), ((int)(((byte)(203)))));
+            this.ibtneliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ibtneliminar.ForeColor = System.Drawing.Color.White;
+            this.ibtneliminar.IconChar = FontAwesome.Sharp.IconChar.X;
+            this.ibtneliminar.IconColor = System.Drawing.Color.White;
+            this.ibtneliminar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ibtneliminar.Location = new System.Drawing.Point(22, 246);
+            this.ibtneliminar.Margin = new System.Windows.Forms.Padding(2);
+            this.ibtneliminar.Name = "ibtneliminar";
+            this.ibtneliminar.Size = new System.Drawing.Size(104, 72);
+            this.ibtneliminar.TabIndex = 131;
+            this.ibtneliminar.Text = "Eliminar";
+            this.ibtneliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.ibtneliminar.UseVisualStyleBackColor = true;
+            // 
+            // ibtnexportarexcel
+            // 
+            this.ibtnexportarexcel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(65)))), ((int)(((byte)(86)))));
+            this.ibtnexportarexcel.FlatAppearance.BorderSize = 0;
+            this.ibtnexportarexcel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(79)))), ((int)(((byte)(203)))));
+            this.ibtnexportarexcel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ibtnexportarexcel.ForeColor = System.Drawing.Color.White;
+            this.ibtnexportarexcel.IconChar = FontAwesome.Sharp.IconChar.FileExcel;
+            this.ibtnexportarexcel.IconColor = System.Drawing.Color.White;
+            this.ibtnexportarexcel.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ibtnexportarexcel.Location = new System.Drawing.Point(22, 139);
+            this.ibtnexportarexcel.Margin = new System.Windows.Forms.Padding(2);
+            this.ibtnexportarexcel.Name = "ibtnexportarexcel";
+            this.ibtnexportarexcel.Size = new System.Drawing.Size(104, 72);
+            this.ibtnexportarexcel.TabIndex = 132;
+            this.ibtnexportarexcel.Text = "Exportar a excel";
+            this.ibtnexportarexcel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.ibtnexportarexcel.UseVisualStyleBackColor = false;
+            // 
+            // lbtitulovisitantes
+            // 
+            this.lbtitulovisitantes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(65)))), ((int)(((byte)(86)))));
+            this.lbtitulovisitantes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbtitulovisitantes.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbtitulovisitantes.Location = new System.Drawing.Point(11, 14);
+            this.lbtitulovisitantes.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbtitulovisitantes.Name = "lbtitulovisitantes";
+            this.lbtitulovisitantes.Size = new System.Drawing.Size(622, 75);
+            this.lbtitulovisitantes.TabIndex = 133;
+            this.lbtitulovisitantes.Text = "LISTA DE VISITANTES:";
+            // 
+            // lbbuscar
+            // 
+            this.lbbuscar.AutoSize = true;
+            this.lbbuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(65)))), ((int)(((byte)(86)))));
+            this.lbbuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbbuscar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbbuscar.Location = new System.Drawing.Point(386, 13);
+            this.lbbuscar.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbbuscar.Name = "lbbuscar";
+            this.lbbuscar.Size = new System.Drawing.Size(81, 17);
+            this.lbbuscar.TabIndex = 134;
+            this.lbbuscar.Text = "Buscar por:";
+            this.lbbuscar.Click += new System.EventHandler(this.lbbuscar_Click);
+            // 
+            // cbobusqueda
+            // 
+            this.cbobusqueda.FormattingEnabled = true;
+            this.cbobusqueda.Location = new System.Drawing.Point(471, 13);
+            this.cbobusqueda.Margin = new System.Windows.Forms.Padding(2);
+            this.cbobusqueda.Name = "cbobusqueda";
+            this.cbobusqueda.Size = new System.Drawing.Size(95, 21);
+            this.cbobusqueda.TabIndex = 135;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(570, 14);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(126, 20);
+            this.textBox1.TabIndex = 136;
+            // 
+            // ibtnbusca
+            // 
+            this.ibtnbusca.FlatAppearance.BorderSize = 0;
+            this.ibtnbusca.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(79)))), ((int)(((byte)(204)))));
+            this.ibtnbusca.IconChar = FontAwesome.Sharp.IconChar.Sistrix;
+            this.ibtnbusca.IconColor = System.Drawing.Color.Black;
+            this.ibtnbusca.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ibtnbusca.IconSize = 30;
+            this.ibtnbusca.Location = new System.Drawing.Point(709, 5);
+            this.ibtnbusca.Margin = new System.Windows.Forms.Padding(2);
+            this.ibtnbusca.Name = "ibtnbusca";
+            this.ibtnbusca.Size = new System.Drawing.Size(30, 35);
+            this.ibtnbusca.TabIndex = 137;
+            this.ibtnbusca.UseVisualStyleBackColor = true;
+            // 
+            // ibtnlimpiar
+            // 
+            this.ibtnlimpiar.FlatAppearance.BorderSize = 0;
+            this.ibtnlimpiar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(79)))), ((int)(((byte)(204)))));
+            this.ibtnlimpiar.IconChar = FontAwesome.Sharp.IconChar.Brush;
+            this.ibtnlimpiar.IconColor = System.Drawing.Color.Black;
+            this.ibtnlimpiar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ibtnlimpiar.IconSize = 30;
+            this.ibtnlimpiar.Location = new System.Drawing.Point(751, 7);
+            this.ibtnlimpiar.Margin = new System.Windows.Forms.Padding(2);
+            this.ibtnlimpiar.Name = "ibtnlimpiar";
+            this.ibtnlimpiar.Size = new System.Drawing.Size(30, 35);
+            this.ibtnlimpiar.TabIndex = 138;
+            this.ibtnlimpiar.UseVisualStyleBackColor = true;
+            // 
             // frmregistar_Visitantes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1056, 602);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(65)))), ((int)(((byte)(86)))));
+            this.ClientSize = new System.Drawing.Size(792, 489);
             this.Controls.Add(this.ibtnlimpiar);
             this.Controls.Add(this.ibtnbusca);
             this.Controls.Add(this.textBox1);
@@ -249,7 +271,6 @@ namespace Proyecto_final
             this.Controls.Add(this.ibtneliminar);
             this.Controls.Add(this.dgvvisita);
             this.Controls.Add(this.lbtitulovisitantes);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmregistar_Visitantes";
             this.Text = "frmregistar_Visitantes";
             this.Load += new System.EventHandler(this.frmregistar_Visitantes_Load);

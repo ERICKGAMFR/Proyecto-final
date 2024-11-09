@@ -131,7 +131,7 @@ namespace Proyecto_final
         
         private void iconButton1_Click(object sender, EventArgs e)
         {
-           
+            //botonde inicio
             Contenedor.Controls.Clear();
             Contenedor.BackColor = Color.White;
 
@@ -155,8 +155,25 @@ namespace Proyecto_final
             Abrirformulariobtn(ibtnclientes, new frmcliente()); 
         }
 
+        private void ibtnacercade_Click(object sender, EventArgs e)
+        {
+            Abrirformulariobtn(ibtnacercade, new frmacercade());
+        }
 
+        private void Contenedor_Paint(object sender, PaintEventArgs e)
+        {
 
+        }
+
+        private void Con_botonee_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lbcambio_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

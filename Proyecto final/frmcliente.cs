@@ -47,7 +47,7 @@ namespace Proyecto_final
             }
             cboestatus.DisplayMember = "Texto";
             cboestatus.ValueMember = "Valor";
-            cboestatus.SelectedIndex = 2;
+            cboestatus.SelectedIndex = 0;
 
             foreach (DataGridViewColumn columna in dgvcliente.Columns)
             {

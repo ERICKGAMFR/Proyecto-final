@@ -68,6 +68,26 @@ namespace Proyecto_final
             this.Show();
 
         }
+
+        private void iconPictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtnomusuario_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtclave_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
 

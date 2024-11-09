@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace Proyecto_final
 {
-    public partial class frmVenta : Form
+    public partial class frmacercade : Form
     {
-        public frmVenta()
+        public frmacercade()
         {
             InitializeComponent();
-        }
-
-        private void lbbuscar_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void frmVenta_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

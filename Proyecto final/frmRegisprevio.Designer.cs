@@ -42,116 +42,124 @@ namespace Proyecto_final
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.lbNU = new System.Windows.Forms.Label();
             this.ibtnsave = new FontAwesome.Sharp.IconButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // cboestado
             // 
             this.cboestado.FormattingEnabled = true;
-            this.cboestado.Location = new System.Drawing.Point(9, 395);
-            this.cboestado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cboestado.Location = new System.Drawing.Point(27, 397);
+            this.cboestado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cboestado.Name = "cboestado";
-            this.cboestado.Size = new System.Drawing.Size(205, 24);
+            this.cboestado.Size = new System.Drawing.Size(155, 21);
             this.cboestado.TabIndex = 61;
             // 
             // lbestado
             // 
             this.lbestado.AutoSize = true;
             this.lbestado.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbestado.Location = new System.Drawing.Point(12, 361);
+            this.lbestado.Location = new System.Drawing.Point(29, 369);
+            this.lbestado.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbestado.Name = "lbestado";
-            this.lbestado.Size = new System.Drawing.Size(73, 20);
+            this.lbestado.Size = new System.Drawing.Size(63, 17);
             this.lbestado.TabIndex = 60;
             this.lbestado.Text = "Estado:";
             // 
             // cborol
             // 
             this.cborol.FormattingEnabled = true;
-            this.cborol.Location = new System.Drawing.Point(12, 333);
-            this.cborol.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cborol.Location = new System.Drawing.Point(29, 347);
+            this.cborol.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cborol.Name = "cborol";
-            this.cborol.Size = new System.Drawing.Size(205, 24);
+            this.cborol.Size = new System.Drawing.Size(155, 21);
             this.cborol.TabIndex = 59;
             // 
             // lbrol
             // 
             this.lbrol.AutoSize = true;
             this.lbrol.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbrol.Location = new System.Drawing.Point(10, 309);
+            this.lbrol.Location = new System.Drawing.Point(28, 327);
+            this.lbrol.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbrol.Name = "lbrol";
-            this.lbrol.Size = new System.Drawing.Size(49, 20);
+            this.lbrol.Size = new System.Drawing.Size(42, 17);
             this.lbrol.TabIndex = 58;
             this.lbrol.Text = "Rol :";
             // 
             // txtcorreo
             // 
-            this.txtcorreo.Location = new System.Drawing.Point(9, 271);
-            this.txtcorreo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtcorreo.Location = new System.Drawing.Point(27, 296);
+            this.txtcorreo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtcorreo.Name = "txtcorreo";
-            this.txtcorreo.Size = new System.Drawing.Size(205, 22);
+            this.txtcorreo.Size = new System.Drawing.Size(155, 20);
             this.txtcorreo.TabIndex = 57;
             // 
             // lbcorreo
             // 
             this.lbcorreo.AutoSize = true;
             this.lbcorreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbcorreo.Location = new System.Drawing.Point(5, 248);
+            this.lbcorreo.Location = new System.Drawing.Point(24, 278);
+            this.lbcorreo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbcorreo.Name = "lbcorreo";
-            this.lbcorreo.Size = new System.Drawing.Size(72, 20);
+            this.lbcorreo.Size = new System.Drawing.Size(62, 17);
             this.lbcorreo.TabIndex = 56;
             this.lbcorreo.Text = "Correo:";
             // 
             // txtclave
             // 
-            this.txtclave.Location = new System.Drawing.Point(9, 210);
-            this.txtclave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtclave.Location = new System.Drawing.Point(27, 247);
+            this.txtclave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtclave.Name = "txtclave";
             this.txtclave.PasswordChar = '*';
-            this.txtclave.Size = new System.Drawing.Size(205, 22);
+            this.txtclave.Size = new System.Drawing.Size(155, 20);
             this.txtclave.TabIndex = 55;
             // 
             // lbclave
             // 
             this.lbclave.AutoSize = true;
             this.lbclave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbclave.Location = new System.Drawing.Point(5, 186);
+            this.lbclave.Location = new System.Drawing.Point(24, 227);
+            this.lbclave.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbclave.Name = "lbclave";
-            this.lbclave.Size = new System.Drawing.Size(111, 20);
+            this.lbclave.Size = new System.Drawing.Size(96, 17);
             this.lbclave.TabIndex = 54;
             this.lbclave.Text = "Contraseña:";
             // 
             // txtphone
             // 
-            this.txtphone.Location = new System.Drawing.Point(9, 159);
-            this.txtphone.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtphone.Location = new System.Drawing.Point(27, 205);
+            this.txtphone.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtphone.Name = "txtphone";
-            this.txtphone.Size = new System.Drawing.Size(205, 22);
+            this.txtphone.Size = new System.Drawing.Size(155, 20);
             this.txtphone.TabIndex = 53;
             // 
             // lbphone
             // 
             this.lbphone.AutoSize = true;
             this.lbphone.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbphone.Location = new System.Drawing.Point(12, 136);
+            this.lbphone.Location = new System.Drawing.Point(29, 186);
+            this.lbphone.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbphone.Name = "lbphone";
-            this.lbphone.Size = new System.Drawing.Size(87, 20);
+            this.lbphone.Size = new System.Drawing.Size(77, 17);
             this.lbphone.TabIndex = 52;
             this.lbphone.Text = "Telefono:";
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(12, 96);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtNombre.Location = new System.Drawing.Point(29, 154);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(205, 22);
+            this.txtNombre.Size = new System.Drawing.Size(155, 20);
             this.txtNombre.TabIndex = 51;
             // 
             // lbNU
             // 
             this.lbNU.AutoSize = true;
             this.lbNU.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNU.Location = new System.Drawing.Point(12, 72);
+            this.lbNU.Location = new System.Drawing.Point(29, 134);
+            this.lbNU.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbNU.Name = "lbNU";
-            this.lbNU.Size = new System.Drawing.Size(151, 20);
+            this.lbNU.Size = new System.Drawing.Size(130, 17);
             this.lbNU.TabIndex = 50;
             this.lbNU.Text = "Nombre Usuario:";
             // 
@@ -160,21 +168,32 @@ namespace Proyecto_final
             this.ibtnsave.IconChar = FontAwesome.Sharp.IconChar.FloppyDisk;
             this.ibtnsave.IconColor = System.Drawing.Color.ForestGreen;
             this.ibtnsave.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ibtnsave.Location = new System.Drawing.Point(78, 459);
-            this.ibtnsave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ibtnsave.Location = new System.Drawing.Point(78, 449);
+            this.ibtnsave.Margin = new System.Windows.Forms.Padding(2);
             this.ibtnsave.Name = "ibtnsave";
-            this.ibtnsave.Size = new System.Drawing.Size(85, 70);
+            this.ibtnsave.Size = new System.Drawing.Size(64, 57);
             this.ibtnsave.TabIndex = 63;
             this.ibtnsave.Text = "Guardar";
             this.ibtnsave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.ibtnsave.UseVisualStyleBackColor = true;
             this.ibtnsave.Click += new System.EventHandler(this.ibtnsave_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Proyecto_final.Properties.Resources.Captura_de_pantalla_2024_11_07_210545;
+            this.pictureBox1.Location = new System.Drawing.Point(48, 23);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(111, 99);
+            this.pictureBox1.TabIndex = 64;
+            this.pictureBox1.TabStop = false;
+            // 
             // frmRegisprevio
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(294, 682);
+            this.BackColor = System.Drawing.Color.SlateGray;
+            this.ClientSize = new System.Drawing.Size(220, 554);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.ibtnsave);
             this.Controls.Add(this.cboestado);
             this.Controls.Add(this.lbestado);
@@ -189,10 +208,12 @@ namespace Proyecto_final
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.lbNU);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmRegisprevio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmRegisprevio";
             this.Load += new System.EventHandler(this.frmRegisprevio_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -212,5 +233,6 @@ namespace Proyecto_final
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label lbNU;
         private FontAwesome.Sharp.IconButton ibtnsave;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

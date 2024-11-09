@@ -62,184 +62,223 @@ namespace Proyecto_final
             // 
             // lbtitulolistaproductos
             // 
+            this.lbtitulolistaproductos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(65)))), ((int)(((byte)(86)))));
             this.lbtitulolistaproductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbtitulolistaproductos.Location = new System.Drawing.Point(384, 7);
+            this.lbtitulolistaproductos.ForeColor = System.Drawing.Color.White;
+            this.lbtitulolistaproductos.Location = new System.Drawing.Point(288, 6);
+            this.lbtitulolistaproductos.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbtitulolistaproductos.Name = "lbtitulolistaproductos";
-            this.lbtitulolistaproductos.Size = new System.Drawing.Size(690, 92);
+            this.lbtitulolistaproductos.Size = new System.Drawing.Size(518, 75);
             this.lbtitulolistaproductos.TabIndex = 116;
             this.lbtitulolistaproductos.Text = "LISTA DE PRODUCTOS:";
             // 
             // label1
             // 
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(65)))), ((int)(((byte)(86)))));
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(2, 1);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(0, 6);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(376, 640);
+            this.label1.Size = new System.Drawing.Size(293, 520);
             this.label1.TabIndex = 117;
             this.label1.Text = "Datos de registro";
             // 
             // lbCB
             // 
             this.lbCB.AutoSize = true;
+            this.lbCB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(65)))), ((int)(((byte)(86)))));
             this.lbCB.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCB.Location = new System.Drawing.Point(61, 93);
+            this.lbCB.ForeColor = System.Drawing.Color.White;
+            this.lbCB.Location = new System.Drawing.Point(41, 64);
+            this.lbCB.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbCB.Name = "lbCB";
-            this.lbCB.Size = new System.Drawing.Size(162, 20);
+            this.lbCB.Size = new System.Drawing.Size(139, 17);
             this.lbCB.TabIndex = 118;
             this.lbCB.Text = "Codigo de Barras:";
             // 
             // txtCodigoBarras
             // 
-            this.txtCodigoBarras.Location = new System.Drawing.Point(61, 116);
-            this.txtCodigoBarras.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtCodigoBarras.Location = new System.Drawing.Point(44, 94);
+            this.txtCodigoBarras.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCodigoBarras.Name = "txtCodigoBarras";
-            this.txtCodigoBarras.Size = new System.Drawing.Size(205, 22);
+            this.txtCodigoBarras.Size = new System.Drawing.Size(155, 20);
             this.txtCodigoBarras.TabIndex = 119;
             // 
             // lbNP
             // 
             this.lbNP.AutoSize = true;
+            this.lbNP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(65)))), ((int)(((byte)(86)))));
             this.lbNP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNP.Location = new System.Drawing.Point(61, 143);
+            this.lbNP.ForeColor = System.Drawing.Color.White;
+            this.lbNP.Location = new System.Drawing.Point(46, 116);
+            this.lbNP.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbNP.Name = "lbNP";
-            this.lbNP.Size = new System.Drawing.Size(216, 20);
+            this.lbNP.Size = new System.Drawing.Size(185, 17);
             this.lbNP.TabIndex = 120;
             this.lbNP.Text = "Descricion del producto:";
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(65, 167);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtNombre.Location = new System.Drawing.Point(44, 135);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(205, 22);
+            this.txtNombre.Size = new System.Drawing.Size(155, 20);
             this.txtNombre.TabIndex = 121;
             // 
             // lbCantidad
             // 
             this.lbCantidad.AutoSize = true;
+            this.lbCantidad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(65)))), ((int)(((byte)(86)))));
             this.lbCantidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCantidad.Location = new System.Drawing.Point(61, 194);
+            this.lbCantidad.ForeColor = System.Drawing.Color.White;
+            this.lbCantidad.Location = new System.Drawing.Point(43, 167);
+            this.lbCantidad.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbCantidad.Name = "lbCantidad";
-            this.lbCantidad.Size = new System.Drawing.Size(89, 20);
+            this.lbCantidad.Size = new System.Drawing.Size(77, 17);
             this.lbCantidad.TabIndex = 122;
             this.lbCantidad.Text = "Cantidad:";
             this.lbCantidad.Click += new System.EventHandler(this.label2_Click);
             // 
             // txtCantidad
             // 
-            this.txtCantidad.Location = new System.Drawing.Point(61, 217);
-            this.txtCantidad.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtCantidad.Location = new System.Drawing.Point(44, 200);
+            this.txtCantidad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCantidad.Name = "txtCantidad";
-            this.txtCantidad.Size = new System.Drawing.Size(205, 22);
+            this.txtCantidad.Size = new System.Drawing.Size(155, 20);
             this.txtCantidad.TabIndex = 123;
             // 
             // lbprecio
             // 
             this.lbprecio.AutoSize = true;
+            this.lbprecio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(65)))), ((int)(((byte)(86)))));
             this.lbprecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbprecio.Location = new System.Drawing.Point(61, 259);
+            this.lbprecio.ForeColor = System.Drawing.Color.White;
+            this.lbprecio.Location = new System.Drawing.Point(46, 222);
+            this.lbprecio.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbprecio.Name = "lbprecio";
-            this.lbprecio.Size = new System.Drawing.Size(69, 20);
+            this.lbprecio.Size = new System.Drawing.Size(59, 17);
             this.lbprecio.TabIndex = 124;
             this.lbprecio.Text = "Precio:";
             // 
             // txtPrecio
             // 
-            this.txtPrecio.Location = new System.Drawing.Point(61, 283);
-            this.txtPrecio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtPrecio.Location = new System.Drawing.Point(46, 253);
+            this.txtPrecio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtPrecio.Name = "txtPrecio";
-            this.txtPrecio.Size = new System.Drawing.Size(205, 22);
+            this.txtPrecio.Size = new System.Drawing.Size(155, 20);
             this.txtPrecio.TabIndex = 125;
             // 
             // lbcaducidad
             // 
             this.lbcaducidad.AutoSize = true;
+            this.lbcaducidad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(65)))), ((int)(((byte)(86)))));
             this.lbcaducidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbcaducidad.Location = new System.Drawing.Point(61, 321);
+            this.lbcaducidad.ForeColor = System.Drawing.Color.White;
+            this.lbcaducidad.Location = new System.Drawing.Point(43, 288);
+            this.lbcaducidad.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbcaducidad.Name = "lbcaducidad";
-            this.lbcaducidad.Size = new System.Drawing.Size(180, 20);
+            this.lbcaducidad.Size = new System.Drawing.Size(156, 17);
             this.lbcaducidad.TabIndex = 126;
             this.lbcaducidad.Text = "Fecha de Caducidad";
             // 
             // txtCaducidad
             // 
             this.txtCaducidad.ForeColor = System.Drawing.Color.DimGray;
-            this.txtCaducidad.Location = new System.Drawing.Point(61, 358);
-            this.txtCaducidad.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtCaducidad.Location = new System.Drawing.Point(46, 307);
+            this.txtCaducidad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCaducidad.Name = "txtCaducidad";
-            this.txtCaducidad.Size = new System.Drawing.Size(205, 22);
+            this.txtCaducidad.Size = new System.Drawing.Size(155, 20);
             this.txtCaducidad.TabIndex = 127;
             this.txtCaducidad.Text = "ej. 2024-12-01";
             // 
             // ibtnsave
             // 
+            this.ibtnsave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(65)))), ((int)(((byte)(86)))));
+            this.ibtnsave.FlatAppearance.BorderSize = 0;
+            this.ibtnsave.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(79)))), ((int)(((byte)(203)))));
+            this.ibtnsave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ibtnsave.ForeColor = System.Drawing.Color.White;
             this.ibtnsave.IconChar = FontAwesome.Sharp.IconChar.FloppyDisk;
-            this.ibtnsave.IconColor = System.Drawing.Color.ForestGreen;
+            this.ibtnsave.IconColor = System.Drawing.Color.White;
             this.ibtnsave.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ibtnsave.Location = new System.Drawing.Point(32, 477);
-            this.ibtnsave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ibtnsave.Location = new System.Drawing.Point(24, 388);
+            this.ibtnsave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ibtnsave.Name = "ibtnsave";
-            this.ibtnsave.Size = new System.Drawing.Size(103, 97);
+            this.ibtnsave.Size = new System.Drawing.Size(77, 79);
             this.ibtnsave.TabIndex = 128;
             this.ibtnsave.Text = "Guardar";
             this.ibtnsave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.ibtnsave.UseVisualStyleBackColor = true;
+            this.ibtnsave.UseVisualStyleBackColor = false;
             this.ibtnsave.Click += new System.EventHandler(this.ibtnsave_Click);
             // 
             // ibtneliminar
             // 
+            this.ibtneliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(65)))), ((int)(((byte)(86)))));
+            this.ibtneliminar.FlatAppearance.BorderSize = 0;
+            this.ibtneliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(79)))), ((int)(((byte)(203)))));
+            this.ibtneliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ibtneliminar.ForeColor = System.Drawing.Color.White;
             this.ibtneliminar.IconChar = FontAwesome.Sharp.IconChar.X;
-            this.ibtneliminar.IconColor = System.Drawing.Color.Red;
+            this.ibtneliminar.IconColor = System.Drawing.Color.White;
             this.ibtneliminar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ibtneliminar.Location = new System.Drawing.Point(250, 477);
-            this.ibtneliminar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ibtneliminar.Location = new System.Drawing.Point(187, 388);
+            this.ibtneliminar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ibtneliminar.Name = "ibtneliminar";
-            this.ibtneliminar.Size = new System.Drawing.Size(103, 97);
+            this.ibtneliminar.Size = new System.Drawing.Size(77, 79);
             this.ibtneliminar.TabIndex = 129;
             this.ibtneliminar.Text = "Eliminar";
             this.ibtneliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.ibtneliminar.UseVisualStyleBackColor = true;
+            this.ibtneliminar.UseVisualStyleBackColor = false;
             this.ibtneliminar.Click += new System.EventHandler(this.ibtneliminar_Click);
             // 
             // ibtnexportarexcel
             // 
+            this.ibtnexportarexcel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(65)))), ((int)(((byte)(86)))));
+            this.ibtnexportarexcel.FlatAppearance.BorderSize = 0;
+            this.ibtnexportarexcel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(79)))), ((int)(((byte)(203)))));
+            this.ibtnexportarexcel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ibtnexportarexcel.ForeColor = System.Drawing.Color.White;
             this.ibtnexportarexcel.IconChar = FontAwesome.Sharp.IconChar.FileExcel;
-            this.ibtnexportarexcel.IconColor = System.Drawing.Color.Green;
+            this.ibtnexportarexcel.IconColor = System.Drawing.Color.White;
             this.ibtnexportarexcel.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ibtnexportarexcel.Location = new System.Drawing.Point(141, 477);
-            this.ibtnexportarexcel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ibtnexportarexcel.Location = new System.Drawing.Point(106, 388);
+            this.ibtnexportarexcel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ibtnexportarexcel.Name = "ibtnexportarexcel";
-            this.ibtnexportarexcel.Size = new System.Drawing.Size(103, 97);
+            this.ibtnexportarexcel.Size = new System.Drawing.Size(77, 79);
             this.ibtnexportarexcel.TabIndex = 130;
             this.ibtnexportarexcel.Text = "Exportar a excel";
             this.ibtnexportarexcel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.ibtnexportarexcel.UseVisualStyleBackColor = true;
+            this.ibtnexportarexcel.UseVisualStyleBackColor = false;
             // 
             // lbbuscar
             // 
             this.lbbuscar.AutoSize = true;
+            this.lbbuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(65)))), ((int)(((byte)(86)))));
             this.lbbuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbbuscar.Location = new System.Drawing.Point(499, 52);
+            this.lbbuscar.ForeColor = System.Drawing.Color.White;
+            this.lbbuscar.Location = new System.Drawing.Point(374, 42);
+            this.lbbuscar.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbbuscar.Name = "lbbuscar";
-            this.lbbuscar.Size = new System.Drawing.Size(97, 20);
+            this.lbbuscar.Size = new System.Drawing.Size(81, 17);
             this.lbbuscar.TabIndex = 131;
             this.lbbuscar.Text = "Buscar por:";
             // 
             // cbobusqueda
             // 
             this.cbobusqueda.FormattingEnabled = true;
-            this.cbobusqueda.Location = new System.Drawing.Point(602, 52);
-            this.cbobusqueda.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbobusqueda.Location = new System.Drawing.Point(452, 42);
+            this.cbobusqueda.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbobusqueda.Name = "cbobusqueda";
-            this.cbobusqueda.Size = new System.Drawing.Size(163, 24);
+            this.cbobusqueda.Size = new System.Drawing.Size(123, 21);
             this.cbobusqueda.TabIndex = 132;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(772, 53);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox1.Location = new System.Drawing.Point(579, 43);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(167, 22);
+            this.textBox1.Size = new System.Drawing.Size(126, 20);
             this.textBox1.TabIndex = 133;
             // 
             // ibtnbusca
@@ -248,10 +287,10 @@ namespace Proyecto_final
             this.ibtnbusca.IconColor = System.Drawing.Color.Black;
             this.ibtnbusca.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ibtnbusca.IconSize = 30;
-            this.ibtnbusca.Location = new System.Drawing.Point(957, 42);
-            this.ibtnbusca.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ibtnbusca.Location = new System.Drawing.Point(718, 34);
+            this.ibtnbusca.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ibtnbusca.Name = "ibtnbusca";
-            this.ibtnbusca.Size = new System.Drawing.Size(40, 43);
+            this.ibtnbusca.Size = new System.Drawing.Size(30, 35);
             this.ibtnbusca.TabIndex = 134;
             this.ibtnbusca.UseVisualStyleBackColor = true;
             // 
@@ -261,10 +300,10 @@ namespace Proyecto_final
             this.ibtnlimpiar.IconColor = System.Drawing.Color.Black;
             this.ibtnlimpiar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ibtnlimpiar.IconSize = 30;
-            this.ibtnlimpiar.Location = new System.Drawing.Point(1023, 43);
-            this.ibtnlimpiar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ibtnlimpiar.Location = new System.Drawing.Point(767, 35);
+            this.ibtnlimpiar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ibtnlimpiar.Name = "ibtnlimpiar";
-            this.ibtnlimpiar.Size = new System.Drawing.Size(40, 43);
+            this.ibtnlimpiar.Size = new System.Drawing.Size(30, 35);
             this.ibtnlimpiar.TabIndex = 135;
             this.ibtnlimpiar.UseVisualStyleBackColor = true;
             // 
@@ -280,11 +319,11 @@ namespace Proyecto_final
             this.Precio,
             this.FechaC,
             this.Fecharegistro});
-            this.dgvprod.Location = new System.Drawing.Point(384, 107);
-            this.dgvprod.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgvprod.Location = new System.Drawing.Point(288, 87);
+            this.dgvprod.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvprod.Name = "dgvprod";
             this.dgvprod.RowHeadersWidth = 51;
-            this.dgvprod.Size = new System.Drawing.Size(690, 532);
+            this.dgvprod.Size = new System.Drawing.Size(518, 432);
             this.dgvprod.TabIndex = 97;
             this.dgvprod.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvprod_CellContentClick);
             this.dgvprod.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dgvprod_CellPainting);
@@ -347,10 +386,10 @@ namespace Proyecto_final
             // 
             // frmProducto
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1077, 650);
+            this.ClientSize = new System.Drawing.Size(808, 528);
             this.Controls.Add(this.ibtnlimpiar);
             this.Controls.Add(this.ibtnbusca);
             this.Controls.Add(this.textBox1);
@@ -373,7 +412,7 @@ namespace Proyecto_final
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lbtitulolistaproductos);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmProducto";
             this.Text = "frmProducto";
             this.Load += new System.EventHandler(this.frmProducto_Load);
